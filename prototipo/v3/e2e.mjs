@@ -137,6 +137,10 @@ check('enlace WhatsApp con datos', await js('document.getElementById("waSend").h
 await js('document.getElementById("cotizar").scrollIntoView()'); await sleep(700);
 await shot('4-cotizacion-enviada');
 
+// Diagramas técnicos: marco uniforme 16:10, sin tarjetas estiradas
+check('diagramas con marco uniforme 16:10', await js('[...document.querySelectorAll(".calc img")].every(i=>{const r=i.getBoundingClientRect();return Math.abs(r.height-r.width*10/16)<2})'));
+check('tarjetas de diagramas de igual alto', await js('(()=>{const h=[...document.querySelectorAll(".calc figure")].map(f=>Math.round(f.getBoundingClientRect().height));return Math.max(...h)-Math.min(...h)<=24})()'));
+
 // Regresiones de la auditoría QA
 check('sin encabezados dentro de botones', await js('document.querySelectorAll("button h1,button h2,button h3").length === 0'));
 check('errores del formulario asociados a su campo', await js('[...document.querySelectorAll("#wizard [required]:not([type=radio])")].every(f=>f.getAttribute("aria-describedby"))'));
