@@ -87,6 +87,29 @@
     });
   }
 
+  // ---------- Modo claro / oscuro (sigue al sistema hasta que el visitante elige) ----------
+  function initTheme() {
+    var root = document.documentElement, btn = $('#themeBtn');
+    var media = matchMedia('(prefers-color-scheme: dark)');
+    function isDark() {
+      var t = root.getAttribute('data-theme');
+      return t ? t === 'dark' : media.matches;
+    }
+    function sync() {
+      var dark = isDark();
+      btn.setAttribute('aria-pressed', String(dark));
+      btn.setAttribute('aria-label', dark ? 'Activar modo claro' : 'Activar modo oscuro');
+    }
+    btn.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('gye-theme', next); } catch (e) { /* almacenamiento bloqueado: el cambio vale solo para esta visita */ }
+      sync();
+    });
+    media.addEventListener('change', sync);
+    sync();
+  }
+
   // ---------- Servicios (tarjetas, otros servicios, pie de página) ----------
   function renderServices(onQuote) {
     var grid = $('#svcGrid'), foot = $('#footSvc');
@@ -471,6 +494,7 @@
 
   function boot() {
     initNav();
+    initTheme();
     var quote = initWizard();
     renderServices(quote);
     initContours();

@@ -1,5 +1,6 @@
 // Prueba de extremo a extremo en tiempo real (Edge headless + CDP, sin dependencias).
-// Uso: node e2e.mjs [ancho] [alto]   → capturas en ../capturas/v2-*.png
+// Uso: node e2e.mjs [ancho] [alto] [dark]   → capturas en ../capturas/v3-*.png
+// "dark" emula un dispositivo en modo oscuro (prefers-color-scheme: dark).
 import { spawn } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -7,7 +8,9 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const out = path.join(here, '..', 'capturas');
-const [w = 1440, h = 900] = process.argv.slice(2).map(Number);
+const [w = 1440, h = 900] = process.argv.slice(2, 4).map(Number);
+const dark = process.argv[4] === 'dark';
+const mode = dark ? 'dark' : 'light';
 const edge = 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
 const port = 9300 + Math.floor(Math.random() * 500);
 const prof = fs.mkdtempSync(path.join(process.env.TEMP || '/tmp', 'gye-e2e-'));
@@ -28,16 +31,65 @@ const send = (method, params = {}) => new Promise((r) => { const i = ++id; pendi
 const js = async (expr) => (await send('Runtime.evaluate', { expression: expr, returnByValue: true, awaitPromise: true })).result?.value;
 const shot = async (name) => {
   const r = await send('Page.captureScreenshot', { format: 'png' });
-  fs.writeFileSync(path.join(out, `v3-${w}-${name}.png`), Buffer.from(r.data, 'base64'));
+  fs.writeFileSync(path.join(out, `v3-${w}-${mode}-${name}.png`), Buffer.from(r.data, 'base64'));
 };
 const results = [];
 const check = (name, ok, detail = '') => results.push(`${ok ? 'PASS' : 'FAIL'}  ${name}${detail ? ' — ' + detail : ''}`);
 
 await send('Runtime.enable');
 await send('Emulation.setDeviceMetricsOverride', { width: w, height: h, deviceScaleFactor: 1, mobile: w < 600 });
+await send('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-color-scheme', value: mode }] });
 await send('Page.navigate', { url: pathToFileURL(path.join(here, 'index.html')).href });
 await sleep(5000);
 await shot('1-hero');
+
+// Modo de color: sigue al sistema y usa el logo correcto
+check(`página en modo ${mode} según el sistema`, await js(`(()=>{const c=getComputedStyle(document.body).backgroundColor.match(/\\d+/g).map(Number);const l=(c[0]+c[1]+c[2])/3;return ${dark} ? l<60 : l>200;})()`));
+check('logo visible acorde al modo', await js(`getComputedStyle(document.querySelector(".logo-${dark ? 'd' : 'l'}")).display!=="none" && getComputedStyle(document.querySelector(".logo-${dark ? 'l' : 'd'}")).display==="none"`));
+check('botón de tema refleja el modo', await js(`document.getElementById("themeBtn").getAttribute("aria-pressed")==="${dark}"`));
+
+// Auditoría de contraste WCAG AA de todo el texto visible (contra el fondo sólido real)
+async function contrastAudit() {
+  return js(`(()=>{
+    const lin=v=>{v/=255;return v<=0.03928?v/12.92:Math.pow((v+0.055)/1.055,2.4)};
+    const L=c=>0.2126*lin(c[0])+0.7152*lin(c[1])+0.0722*lin(c[2]);
+    const rgba=s=>{const m=s.match(/[\\d.]+/g);return m?m.map(Number):[0,0,0,0]};
+    const bad=[];let n=0;
+    const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+    const seen=new Set();
+    while(walker.nextNode()){
+      const t=walker.currentNode; if(!t.textContent.trim())continue;
+      const el=t.parentElement; if(seen.has(el))continue; seen.add(el);
+      const cs=getComputedStyle(el);
+      if(cs.visibility==='hidden'||cs.display==='none'||el.closest('[hidden],[aria-hidden="true"],.sr,dialog:not([open]),svg,noscript'))continue;
+      const r=el.getBoundingClientRect(); if(!r.width||!r.height)continue;
+      if(cs.backgroundClip==='text'||cs.webkitBackgroundClip==='text')continue;
+      let fg=rgba(cs.color), op=1, bg=null, a=el;
+      for(;a;a=a.parentElement){const s=getComputedStyle(a);op*=Number(s.opacity);
+        if(s.backgroundImage!=='none'){bg='img';break}
+        const b=rgba(s.backgroundColor); if(b.length>3?b[3]>0.5:true){bg=b;break}}
+      if(bg==='img'||!bg)continue;
+      if(op<0.95)continue;   // elementos en plena animación de entrada
+      n++;
+      const l1=L(fg),l2=L(bg),ratio=(Math.max(l1,l2)+0.05)/(Math.min(l1,l2)+0.05);
+      const size=parseFloat(cs.fontSize),bold=Number(cs.fontWeight)>=700;
+      const need=(size>=24||(size>=18.66&&bold))?3:4.5;
+      if(ratio<need)bad.push(el.tagName.toLowerCase()+'.'+(el.className||'')+' "'+t.textContent.trim().slice(0,30)+'" '+ratio.toFixed(2)+'<'+need);
+    }
+    return JSON.stringify({n,bad:bad.slice(0,12),total:bad.length});
+  })()`).then(JSON.parse);
+}
+await js('document.querySelectorAll("[data-reveal]").forEach(e=>e.classList.add("in"));document.querySelectorAll(".step").forEach(e=>e.classList.add("on"))');
+await sleep(800);
+const ca = await contrastAudit();
+check(`contraste AA en modo ${mode} (${ca.n} textos revisados)`, ca.total === 0, ca.bad.join(' | '));
+
+// El botón alterna el modo y lo recuerda
+await js('document.getElementById("themeBtn").click()'); await sleep(300);
+check('el botón cambia de modo y lo guarda', await js(`document.documentElement.dataset.theme==="${dark ? 'light' : 'dark'}" && localStorage.getItem("gye-theme")==="${dark ? 'light' : 'dark'}"`));
+const ca2 = await contrastAudit();
+check(`contraste AA tras cambiar a modo ${dark ? 'light' : 'dark'} (${ca2.n} textos)`, ca2.total === 0, ca2.bad.join(' | '));
+await js('document.getElementById("themeBtn").click();localStorage.removeItem("gye-theme");document.documentElement.removeAttribute("data-theme")'); await sleep(300);
 check('sin scroll horizontal', await js('document.documentElement.scrollWidth <= innerWidth'), await js('document.documentElement.scrollWidth + "/" + innerWidth'));
 check('etiquetas del perfil visibles', await js('document.querySelectorAll(".st-l.on").length === 4'));
 check('contador llegó a 150 m', await js('document.querySelector("[data-count]").textContent === "150 m"'));
