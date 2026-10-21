@@ -5,6 +5,7 @@
   var D = window.GYE;
   var CONFIG = {
     whatsapp: '573126523638',   // número principal de G&E
+    form: null,                 // en el sitio publicado: { id, version, endpoint } del formulario de Contact Form 7
     maxDepth: 150,              // la página representa la capacidad real de perforación de G&E
     projectsPreview: 9
   };
@@ -425,10 +426,41 @@
       next.textContent = n === 3 ? 'Enviar solicitud' : 'Continuar';
       $('legend', steps[n - 1]).focus({ preventScroll: true });
     }
+    var DONE = {
+      whatsapp: ['Resumen listo', 'Envíe su solicitud por WhatsApp para que la atendamos.', 'También puede escribirnos a info@grupogye.com.'],
+      ok: ['Solicitud enviada', 'Recibimos su solicitud. Le responderemos pronto.', 'Si es urgente, escríbanos también por WhatsApp.'],
+      fallo: ['No se pudo enviar', 'Envíe su solicitud por WhatsApp para que la atendamos.',
+        'Hubo un problema al enviar el formulario. Su resumen está listo para enviarlo por WhatsApp o al correo info@grupogye.com.']
+    };
+    function showDone(kind) {
+      var t = DONE[kind], tag = $('#doneTag');
+      tag.textContent = t[0];
+      tag.style.color = kind === 'fallo' ? 'var(--err)' : 'var(--ok)';
+      $('#doneTitle').textContent = t[1];
+      $('#doneText').textContent = t[2];
+      steps.forEach(function (fs) { fs.hidden = true; });
+      marks.forEach(function (m) { m.classList.add('done'); m.classList.remove('current'); });
+      nav.hidden = true; done.hidden = false;
+      $('#doneTitle').focus();
+    }
+    // Envío al formulario de Contact Form 7 (solo en el sitio publicado; CONFIG.form lo inyecta publicar_v3.py)
+    function send(data, servicio) {
+      var f = CONFIG.form, body = new FormData();
+      [['_wpcf7', f.id], ['_wpcf7_version', f.version], ['_wpcf7_locale', 'es_CO'],
+        ['_wpcf7_unit_tag', 'wpcf7-f' + f.id + '-o1'], ['_wpcf7_container_post', '0'], ['servicio', servicio],
+        ['habeas', data.get('habeas') ? '1' : '']].forEach(function (p) { body.append(p[0], p[1]); });
+      ['ciudad', 'tipo', 'area', 'pisos', 'plazo', 'detalle', 'nombre', 'empresa', 'tel', 'email'].forEach(function (k) { body.append(k, data.get(k) || ''); });
+      next.disabled = true; next.textContent = 'Enviando…';
+      return fetch(f.endpoint, { method: 'POST', body: body })
+        .then(function (r) { return r.json(); })
+        .then(function (res) { return res.status === 'mail_sent'; }, function () { return false; })
+        .then(function (ok) { next.disabled = false; next.textContent = 'Enviar solicitud'; showDone(ok ? 'ok' : 'fallo'); });
+    }
     function finish() {
       var data = new FormData(form), svc = data.get('servicio');
+      var nombreSvc = svcBySlug[svc] ? svcBySlug[svc].nombre : 'Asesoría (no definido)';
       var rows = [
-        ['Servicio', svcBySlug[svc] ? svcBySlug[svc].nombre : 'Asesoría (no definido)'], ['Municipio', data.get('ciudad')],
+        ['Servicio', nombreSvc], ['Municipio', data.get('ciudad')],
         ['Tipo de obra', data.get('tipo')], ['Área', data.get('area') ? data.get('area') + ' m²' : ''], ['Pisos', data.get('pisos')],
         ['Plazo', data.get('plazo')], ['Detalles', data.get('detalle')], ['Nombre', data.get('nombre')],
         ['Empresa', data.get('empresa')], ['Teléfono', data.get('tel')], ['Correo', data.get('email')]
@@ -439,10 +471,8 @@
         li.appendChild(b); li.appendChild(document.createTextNode(r[1])); list.appendChild(li);
       });
       $('#waSend').href = waLink('Hola Grupo G&E, quiero cotizar:\n' + rows.map(function (r) { return '• ' + r[0] + ': ' + r[1]; }).join('\n'));
-      steps.forEach(function (fs) { fs.hidden = true; });
-      marks.forEach(function (m) { m.classList.add('done'); m.classList.remove('current'); });
-      nav.hidden = true; done.hidden = false;
-      $('#doneTitle').focus();
+      if (data.get('website')) { showDone('ok'); return; }   // campo trampa: solo lo llenan robots; no se envía nada
+      if (CONFIG.form) { send(data, nombreSvc); } else { showDone('whatsapp'); }
     }
 
     form.addEventListener('submit', function (e) {

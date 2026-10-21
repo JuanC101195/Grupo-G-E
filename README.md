@@ -29,10 +29,22 @@ node prototipo/v3/e2e.mjs 1440 900 dark   # modo oscuro, con auditoría de contr
 
 El prototipo se abre directamente con `prototipo/v3/index.html`.
 
+## Sitio publicado
+
+https://grupogye.com/ es la v3 publicada en WordPress (portada = página «inicio»). Todo se maneja con los scripts de `scripts/`, que leen las credenciales de `.env` (ver `.env.example`; nunca se sube):
+
+```bash
+python scripts/publicar_v3.py --publicar      # republica la portada tras cambiar contenido/ o prototipo/v3/
+python scripts/formulario_cf7.py              # formulario de cotización (Contact Form 7 → info@grupogye.com)
+python scripts/redirecciones.py               # 301 de las URLs del sitio anterior
+python scripts/respaldo_wp.py                 # respaldo del contenido por la API
+E2E_URL=https://grupogye.com/ node prototipo/v3/e2e.mjs 1440 900   # pruebas sobre el sitio en vivo (el envío del formulario se simula)
+```
+
 ## Datos pendientes de confirmar con la empresa
 
-WhatsApp, horario, NIT, autorización de uso de logos de clientes, aprobación del logo reconstruido, fotos en alta resolución, la ubicación de 7 proyectos y el cliente del logo de la "A" roja. En el sitio aparecen con subrayado punteado (`.tbd`).
+Horario, NIT, correo(s) de destino de las cotizaciones, autorización de uso de logos de clientes, aprobación del logo reconstruido, fotos en alta resolución, la ubicación de 7 proyectos y el cliente del logo de la "A" roja.
 
-## Próximo paso
+## Próximos pasos
 
-Llevar el prototipo a WordPress en HostGator: tema de bloques con `theme.json`, tipos de contenido Servicio y Proyecto, y formulario con envío por correo.
+Tema propio de WordPress (reemplazar Astra), páginas por servicio para SEO, metadatos SEO en el `<head>`, Google Business Profile y Search Console.
