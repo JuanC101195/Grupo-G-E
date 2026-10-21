@@ -12,7 +12,7 @@
 <meta property="og:description" content="Exploración, diseño, interventoría y construcción de cimentaciones. Medellín, Colombia.">
 <meta property="og:url" content="https://grupogye.com/">
 <meta property="og:site_name" content="Grupo G&amp;E">
-<meta property="og:image" content="https://grupogye.com/og-ge.jpg"><!-- TODO: imagen 1200x630 al publicar -->
+<meta property="og:image" content="https://grupogye.com/og-ge.jpg"><!-- imagen de 1200x630 que se sube al publicar en WordPress -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0B1824" media="(prefers-color-scheme: dark)">
@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<script>(function(){try{var t=localStorage.getItem('gye-theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<script>(function(){try{var t=localStorage.getItem('gye-theme');if(t==='dark'||t==='light'){document.documentElement.dataset.theme=t;}}catch(e){/* almacenamiento bloqueado (modo privado): se usa el modo del sistema */}})();</script>
 <script>if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window)document.documentElement.classList.add('motion');</script>
 <script type="application/ld+json">
 {
@@ -95,7 +95,7 @@
     </div>
 
     <div class="strata-wrap">
-      <svg class="strata" id="strata" viewBox="0 0 480 540" role="group" aria-labelledby="st-t">
+      <svg class="strata" id="strata" viewBox="0 0 480 540" aria-labelledby="st-t">
         <title id="st-t">Perfil estratigráfico interactivo con los cuatro colores del logo G&amp;E: seleccione un estrato</title>
         <defs>
           <pattern id="pf" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#0B4F2E"/><path d="M3 9q2-5 4 0M9 5q1.5-4 3 0" stroke="#2E8B57" stroke-width="1.3" fill="none"/></pattern>
@@ -222,7 +222,7 @@
       <div><span class="mono">Proyectos ejecutados</span><h2 id="h-proj">Obras que ya están en pie.</h2></div>
       <p>Filtre por sector y abra cada proyecto para ver su alcance, el cliente y las líneas de servicio que intervinieron.</p>
     </div>
-    <div class="chips" role="group" aria-label="Filtrar proyectos por sector" id="chips"></div>
+    <fieldset class="chips" id="chips"><legend class="sr">Filtrar proyectos por sector</legend></fieldset>
     <output class="sr" id="projStatus"></output>
     <div class="proj-grid" id="projGrid"></div>
     <div class="more-wrap"><button class="btn btn-line" type="button" id="moreProj">Ver todos los proyectos</button></div>
@@ -236,7 +236,7 @@
     <button class="case-close" type="button" id="caseClose" aria-label="Cerrar"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 3l12 12M15 3L3 15" stroke="currentColor" stroke-width="2"/></svg></button>
   </div>
   <div class="case-body">
-    <h2 id="caseTitle"></h2>
+    <h2 id="caseTitle">Ficha del proyecto</h2>
     <p id="caseDesc" style="color:var(--muted);font-size:18px"></p>
     <div class="case-grid">
       <div><span class="mono">Alcance</span><ul id="caseScope" style="margin:0;padding-left:18px;color:var(--muted)"></ul></div>

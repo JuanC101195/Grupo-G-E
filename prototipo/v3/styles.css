@@ -41,14 +41,13 @@
   --hdr-bg:rgba(11,24,36,.96); --nav:#C9D4DD; --focus:var(--signal);
   --shadow:rgba(0,0,0,.45); --logo-l:none; --logo-d:block;}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hdr) + 16px)}
 body{margin:0;background:var(--concrete);color:var(--text);font:400 17px/1.6 var(--f-body);-webkit-font-smoothing:antialiased}
 img,svg{display:block;max-width:100%}
 a{color:inherit}
 button{font:inherit;color:inherit}
 :focus-visible{outline:3px solid var(--focus);outline-offset:3px}
 .on-dark :focus-visible,.hero :focus-visible,footer :focus-visible{outline-color:var(--signal)}
-html{scroll-padding-top:calc(var(--hdr) + 16px)}
 .wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--s3)}
 @media (min-width:768px){.wrap{padding:0 var(--s5)}}
 .mono{font-family:var(--f-mono);font-size:13px;letter-spacing:.04em;text-transform:uppercase}
@@ -103,9 +102,8 @@ p{margin:0}
   .gauge::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:1px;background:currentColor;opacity:.5}
   .gauge-ticks{position:absolute;inset:0;background:repeating-linear-gradient(to bottom,currentColor 0 1px,transparent 1px 10%);width:8px;left:3px;opacity:.5}
   .gauge-mark{position:absolute;left:0;top:0;width:14px;height:2px;background:currentColor;transform:translateY(calc(var(--scroll,0) * (100vh - var(--hdr) - 82px)))}
-  .gauge-mark span{position:absolute;left:22px;top:-8px;white-space:nowrap;font:500 11px/1.3 var(--f-mono);letter-spacing:.05em;text-transform:uppercase}
+  .gauge-mark span{display:none;position:absolute;left:22px;top:-8px;white-space:nowrap;font:500 11px/1.3 var(--f-mono);letter-spacing:.05em;text-transform:uppercase}
   .gauge-mark b{display:block;font-size:15px;font-weight:500}
-  .gauge-mark span{display:none}
 }
 @media (min-width:1520px){.gauge-mark span{display:block}
 }
@@ -185,7 +183,7 @@ section{scroll-margin-top:var(--hdr)}
 .svc li{font:500 12px/1 var(--f-mono);background:var(--concrete);padding:7px 9px;color:var(--text)}
 
 /* Proyectos */
-.chips{display:flex;flex-wrap:wrap;gap:var(--s2);margin-bottom:var(--s4)}
+.chips{display:flex;flex-wrap:wrap;gap:var(--s2);margin:0 0 var(--s4);padding:0;border:0;min-width:0}
 .chip{border:1.5px solid var(--line);background:var(--paper);padding:10px 14px;min-height:44px;border-radius:999px;font:500 14px/1 var(--f-body);cursor:pointer;transition:background .2s,border-color .2s,color .2s,transform .35s var(--e-spring)}
 .chip:hover{border-color:var(--text)}
 .chip[aria-pressed="true"]{background:var(--inv-bg);border-color:var(--inv-bg);color:var(--inv-text)}
@@ -246,10 +244,8 @@ dialog.case[open]{animation:pop .4s var(--e-out)}
 @media (min-width:900px){.steps::after{width:100%;height:2px;transform-origin:left;transform:scaleX(var(--p,1))}}
 
 /* Marquesina de sectores */
-.ticker{background:var(--ink);color:#fff;overflow:hidden;border-top:4px solid transparent;border-image:var(--stripe) 1}
-.ticker-track{display:flex;width:max-content;gap:var(--s5);padding:18px 0;animation:tick 38s linear infinite}
-.ticker{position:relative}
-.ticker-track{list-style:none;margin:0}
+.ticker{position:relative;background:var(--ink);color:#fff;overflow:hidden;border-top:4px solid transparent;border-image:var(--stripe) 1}
+.ticker-track{list-style:none;margin:0;display:flex;width:max-content;gap:var(--s5);padding:18px 0;animation:tick 38s linear infinite}
 .ticker:hover .ticker-track,.ticker:focus-within .ticker-track,.ticker.paused .ticker-track{animation-play-state:paused}
 .ticker-btn{position:absolute;right:8px;top:50%;transform:translateY(-50%);z-index:1;background:var(--ink);color:#fff;border:1.5px solid var(--line-dark);min-width:44px;min-height:44px;cursor:pointer;font:500 12px/1 var(--f-mono)}
 .ticker li{font:700 26px/1 var(--f-display);text-transform:uppercase;white-space:nowrap;display:flex;align-items:center;gap:var(--s5)}
