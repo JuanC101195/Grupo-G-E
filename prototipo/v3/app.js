@@ -4,7 +4,7 @@
 
   var D = window.GYE;
   var CONFIG = {
-    whatsapp: '573242489898',   // TODO confirmar que el +57 324 248 9898 tiene WhatsApp
+    whatsapp: '573126523638',   // número principal de G&E
     maxDepth: 150,              // la página representa la capacidad real de perforación de G&E
     projectsPreview: 9
   };
@@ -59,7 +59,7 @@
   }
   function waLink(text) { return 'https://wa.me/' + CONFIG.whatsapp + (text ? '?text=' + encodeURIComponent(text) : ''); }
   function groupOf(p) { return GROUPS.find(function (g) { return g.sectors.indexOf(p.sector) >= 0; }) || GROUPS[0]; }
-  function place(p) { return p.municipio ? p.municipio + (p.departamento ? ', ' + p.departamento : '') : 'Ubicación por confirmar'; }
+  function place(p) { return p.municipio ? p.municipio + (p.departamento ? ', ' + p.departamento : '') : 'Colombia'; }
 
   // ---------- Navegación ----------
   function initNav() {
@@ -331,7 +331,7 @@
     var ul = $('#logos');
     D.clientes.forEach(function (c) {
       var li = el('li'), img = el('img');
-      img.src = c.logo; img.alt = c.nombre; img.loading = 'lazy';
+      img.src = c.logo; img.alt = c.nombre; img.decoding = 'async';   // sin lazy: sin medidas propias miden 0x0 y nunca se cargarían
       li.appendChild(img); ul.appendChild(li);
     });
   }

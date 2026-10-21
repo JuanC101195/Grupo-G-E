@@ -51,7 +51,8 @@ const check = (name, ok, detail = '') => results.push(`${ok ? 'PASS' : 'FAIL'}  
 await send('Runtime.enable');
 await send('Emulation.setDeviceMetricsOverride', { width: w, height: h, deviceScaleFactor: 1, mobile: w < 600 });
 await send('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-color-scheme', value: mode }] });
-await send('Page.navigate', { url: pathToFileURL(path.join(here, 'index.html')).href });
+// E2E_URL permite probar el sitio publicado (p. ej. E2E_URL=https://grupogye.com/ node e2e.mjs 1440 900)
+await send('Page.navigate', { url: process.env.E2E_URL || pathToFileURL(path.join(here, 'index.html')).href });
 await sleep(5000);
 await shot('1-hero');
 
@@ -107,6 +108,9 @@ check('etiquetas del perfil visibles', await js('document.querySelectorAll(".st-
 check('contador llegó a 150 m', await js('document.querySelector("[data-count]").textContent === "150 m"'));
 check('6 servicios del brochure', await js('document.querySelectorAll(".svc").length === 6'));
 check('12 logos de clientes', await js('document.querySelectorAll(".logos img").length === 12'));
+// antes de cualquier paso que fuerce la carga de imágenes: los logos deben cargar solos al llegar a ellos
+await js('document.querySelector(".logos").scrollIntoView({block:"center"})'); await sleep(2500);
+check('logos de clientes cargados al verlos', await js('[...document.querySelectorAll(".logos img")].every(i=>i.complete&&i.naturalWidth>0)'));
 
 // Estrato interactivo
 await js('document.querySelector(".layer[data-k=\'1\']").dispatchEvent(new MouseEvent("click",{bubbles:true}))');
@@ -149,6 +153,9 @@ check('enlace WhatsApp con datos', await js('document.getElementById("waSend").h
 await js('document.getElementById("cotizar").scrollIntoView()'); await sleep(700);
 await shot('4-cotizacion-enviada');
 
+// Tipografía propia (el tema de WordPress no debe imponer la suya) y logos que cargan solos al llegar a ellos
+check('títulos con Barlow Condensed', await js('getComputedStyle(document.getElementById("h-svc")).fontFamily.includes("Barlow")'));
+
 // Diagramas técnicos: marco uniforme 16:10, sin tarjetas estiradas
 check('diagramas con marco uniforme 16:10', await js('[...document.querySelectorAll(".calc img")].every(i=>{const r=i.getBoundingClientRect();return Math.abs(r.height-r.width*10/16)<2})'));
 check('tarjetas de diagramas de igual alto', await js('(()=>{const h=[...document.querySelectorAll(".calc figure")].map(f=>Math.round(f.getBoundingClientRect().height));return Math.max(...h)-Math.min(...h)<=24})()'));
@@ -158,7 +165,7 @@ check('sin encabezados dentro de botones', await js('document.querySelectorAll("
 check('errores del formulario asociados a su campo', await js('[...document.querySelectorAll("#wizard [required]:not([type=radio])")].every(f=>f.getAttribute("aria-describedby"))'));
 check('estado de proyectos anunciado', await js(String.raw`/Mostrando \d+ de 31/.test(document.getElementById("projStatus").textContent)`));
 check('Universidad del Valle no aparece como cliente', await js('!document.querySelector(".value").textContent.includes("Universidad del Valle")'));
-check('enlaces WhatsApp con número real', await js('[...document.querySelectorAll("[data-wa]")].every(a=>a.href.startsWith("https://wa.me/573242489898"))'));
+check('enlaces WhatsApp con número real', await js('[...document.querySelectorAll("[data-wa]")].every(a=>a.href.startsWith("https://wa.me/573126523638"))'));
 if (w < 960) {
   await js('scrollTo(0,0);document.querySelector(".menu-btn").click()'); await sleep(200);
   await send('Input.dispatchKeyEvent', { type: 'keyDown', key: 'Escape', code: 'Escape', windowsVirtualKeyCode: 27 });

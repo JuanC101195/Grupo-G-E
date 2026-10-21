@@ -13,3 +13,8 @@ node_modules/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Credenciales locales (NUNCA se suben: el repo es público)
+.env
+.env.*
+!.env.example
