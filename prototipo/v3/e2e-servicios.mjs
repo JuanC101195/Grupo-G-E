@@ -41,6 +41,7 @@ await sleep(3500);
 
 check('sin scroll horizontal', await js('document.documentElement.scrollWidth <= innerWidth'), await js('document.documentElement.scrollWidth + "/" + innerWidth'));
 check('un solo H1', await js('document.querySelectorAll("h1").length === 1'));
+check('títulos del pie en tamaño pequeño', await js('[...document.querySelectorAll("footer h2")].every(h=>parseFloat(getComputedStyle(h).fontSize)<=16)'));
 check('H1 en Barlow Condensed', await js('getComputedStyle(document.querySelector("h1")).fontFamily.includes("Barlow")'));
 check('JSON-LD válido (Service, BreadcrumbList, FAQPage)', await js(`(()=>{try{const t=[...document.querySelectorAll('script[type="application/ld+json"]')].map(s=>JSON.parse(s.textContent)["@type"]);return ["Service","BreadcrumbList","FAQPage"].every(x=>t.includes(x))}catch(e){return false}})()`));
 check('botones "Cotizar" llevan al cotizador con el servicio', await js(String.raw`[...document.querySelectorAll('#contenido a.btn-clay')].filter(a=>/Cotizar/.test(a.textContent)).every(a=>/\/\?servicio=[a-z-]+#cotizar$/.test(a.getAttribute("href")))`));
