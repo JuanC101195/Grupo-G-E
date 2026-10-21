@@ -29,7 +29,7 @@
       "h2": "Sistemas de inyección IGU, IR e IRS",
       "parrafos": [
         "En el micropilote, la lechada de cemento inyectada forma el bulbo que se adhiere al terreno y transmite la carga. La forma de inyectar determina cuánta adherencia se logra, y por eso se distinguen tres sistemas, que G&E construye.",
-        "IGU, inyección global única, inyecta la lechada en una sola etapa. IR, inyección repetitiva, vuelve a inyectar en varias etapas para mejorar el bulbo y la adherencia con el terreno. IRS, inyección repetitiva y selectiva, inyecta por tramos controlados, de modo que se puede concentrar el tratamiento en las zonas del terreno que más lo necesitan. La elección entre uno y otro depende del tipo de suelo, de la carga que debe resistir el micropilote y de lo que indique el diseño y las pruebas, no de una preferencia comercial."
+        "IGU, inyección global única, inyecta la lechada en una sola etapa. IR, inyección repetitiva, vuelve a inyectar en varias etapas para mejorar el bulbo y la adherencia con el terreno. IRS, inyección repetitiva selectiva, inyecta por tramos controlados, de modo que se puede concentrar el tratamiento en las zonas del terreno que más lo necesitan. La elección entre uno y otro depende del tipo de suelo, de la carga que debe resistir el micropilote y de lo que indique el diseño y las pruebas, no de una preferencia comercial."
       ],
       "lista": [
         "IGU: una etapa de inyección; más sencillo y rápido de ejecutar.",
@@ -77,7 +77,7 @@
     },
     {
       "pregunta": "¿Qué son los sistemas IGU, IR e IRS?",
-      "respuesta": "Son métodos de inyección de lechada para formar el bulbo del micropilote. IGU es inyección global única, en una sola etapa; IR, inyección repetitiva, en varias etapas; e IRS, inyección repetitiva y selectiva, por tramos controlados."
+      "respuesta": "Son métodos de inyección de lechada para formar el bulbo del micropilote. IGU es inyección global única, en una sola etapa; IR, inyección repetitiva, en varias etapas; e IRS, inyección repetitiva selectiva, por tramos controlados."
     },
     {
       "pregunta": "¿Pueden diseñar y construir la cimentación?",
@@ -128,7 +128,6 @@
   ],
   "pendientes": [
     "El portafolio (proyectos.json) no registra ningún proyecto de pilotes o micropilotes construidos; la página lo expresa sin afirmarlo. Convendría que la empresa aporte 1–2 casos de micropilotes/pilotes para citarlos.",
-    "Definición de IRS: la empresa escribió 'Inyección Global Única' repetido; se usó la definición estándar (repetitiva y selectiva, por tramos). Confirmar.",
     "Las descripciones de usos del micropilote (recalce, estabilización de laderas, tracción) son conocimiento técnico general; validar que G&E ejecuta esas aplicaciones.",
     "Ejecución de diseños elaborados por terceros: tomado de servicios.json; confirmar.",
     "Autorización de clientes para nombrar a Univalle, Aschner, ANDERCOL, PriceSmart y Corporación Educativa Nazaret."
