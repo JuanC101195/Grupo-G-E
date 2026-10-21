@@ -55,7 +55,7 @@ p{margin:0}
 .hdr.scrolled{box-shadow:0 8px 24px rgba(15,32,45,.12)}
 .hdr .wrap{display:flex;align-items:center;gap:var(--s4);height:var(--hdr)}
 .logo{display:flex;align-items:center;text-decoration:none;margin-right:auto}
-.logo img{height:46px;width:auto}
+.logo img{height:54px;width:auto}
 .logo-plate{background:#fff;padding:8px 10px;display:inline-flex}
 .nav{display:none;gap:var(--s4)}
 .nav a{text-decoration:none;font-size:15px;font-weight:500;color:var(--ink-3);padding:8px 0;border-bottom:2px solid transparent;transition:border-color .2s}
