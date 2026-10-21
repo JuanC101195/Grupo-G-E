@@ -540,6 +540,9 @@
     $$('[data-quote]').forEach(function (b) { b.addEventListener('click', function () { quote(b.dataset.quote); }); });
     initReveal();
     initScroll();
+    // Desde las páginas de servicio: /?servicio=<slug>#cotizar abre el cotizador con ese servicio elegido
+    var pre = new URLSearchParams(location.search).get('servicio');
+    if (pre && svcBySlug[pre]) { quote(pre); }
   }
   boot();
 })();
