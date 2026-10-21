@@ -49,7 +49,10 @@
     "pendiente_confirmar": [
       "horario",
       "departamento (deducido de Medellín)"
-    ]
+    ],
+    "correo_cotizaciones": "gyeconsultoriaintegral@gmail.com",
+    "nota_correo": "Los correos @grupogye.com a veces fallan (respuesta de la empresa); las cotizaciones van al Gmail.",
+    "tiempo_respuesta": "24 horas"
   },
   "alcance": "nacional e internacional",
   "equipos": [
@@ -132,7 +135,7 @@
     "La Cimarrona (ESP El Carmen de Viboral)",
     "Bioexplora",
     "IngenioBIM",
-    "Aschner",
+    "Aschner Consultores Asociados",
     "aqua&terra",
     "MC Arquitectos",
     "EPM",
@@ -140,8 +143,33 @@
     "ACCA"
   ],
   "pendientes_confirmar": [
-    "Logo 'Aschner' (A roja): verificar",
-    "'Double C Designs' vs 'Conconcreto Designs' (proyecto 2): confirmar si es la misma marca",
     "Conteo de municipios/departamentos: 7 proyectos sin ubicación inequívoca en el brochure"
-  ]
+  ],
+  "redes": {
+    "instagram": "https://www.instagram.com/grupo_gye/"
+  },
+  "fundacion": {
+    "fecha": "2016-10-06",
+    "registro": "Cámara de Comercio de Medellín",
+    "anios": 10
+  },
+  "afiliaciones": [
+    "Cámara de Comercio de Medellín"
+  ],
+  "mercado_objetivo": [
+    "Costa Caribe"
+  ],
+  "equipo_publico": false,
+  "clientes_para_resenas": [
+    "Bioexplora",
+    "Constructora Poliobras",
+    "Aschner Consultores Asociados",
+    "PriceSmart Colombia",
+    "IngenioBIM",
+    "MC Arquitectos",
+    "ACCA Constructora y Comercializadora"
+  ],
+  "notas_clientes": {
+    "Double C Designs": "Filial de Conconcreto (respuesta de la empresa)"
+  }
 }

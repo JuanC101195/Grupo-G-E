@@ -33,12 +33,12 @@
       "consultoria-integral"
     ],
     "sector": "puentes-mitigacion",
-    "municipio": null,
-    "departamento": null,
+    "municipio": "Urabá",
+    "departamento": "Antioquia",
     "cliente": "Conconcreto Designs",
     "destacado": false,
-    "pendiente_confirmar": true,
-    "nota_pendiente": "El brochure no indica municipio ni departamento"
+    "publicar": false,
+    "motivo_no_publicar": "Confidencial (respuesta de la empresa, 2026-10-21)"
   },
   {
     "id": 3,
@@ -209,12 +209,10 @@
       "analisis-geotecnicos-especializados"
     ],
     "sector": "educativo",
-    "municipio": null,
-    "departamento": null,
+    "municipio": "Medellín",
+    "departamento": "Antioquia",
     "cliente": "FODESEP",
-    "destacado": false,
-    "pendiente_confirmar": true,
-    "nota_pendiente": "El brochure no indica ciudad de la sede"
+    "destacado": false
   },
   {
     "id": 11,
@@ -268,12 +266,10 @@
       "analisis-geotecnicos-especializados"
     ],
     "sector": "industrial",
-    "municipio": null,
-    "departamento": null,
+    "municipio": "Barbosa",
+    "departamento": "Antioquia",
     "cliente": "AG Geoconsulting – IngenioBIM",
-    "destacado": false,
-    "pendiente_confirmar": true,
-    "nota_pendiente": "El brochure no indica ubicación"
+    "destacado": false
   },
   {
     "id": 14,
@@ -308,13 +304,11 @@
       "analisis-geotecnicos-especializados"
     ],
     "sector": "portuario",
-    "municipio": null,
-    "departamento": null,
+    "municipio": "Ciénaga",
+    "departamento": "Magdalena",
     "cliente": "Aqua & Terra Consultores Asociados",
     "destacado": true,
-    "razon_destacado": "Único proyecto portuario del listado: parametrización geotécnica y estabilidad de obras de dragado.",
-    "pendiente_confirmar": true,
-    "nota_pendiente": "El brochure no indica lugar de la terminal"
+    "razon_destacado": "Único proyecto portuario del listado: parametrización geotécnica y estabilidad de obras de dragado."
   },
   {
     "id": 16,
@@ -418,12 +412,10 @@
       "analisis-geotecnicos-especializados"
     ],
     "sector": "acueducto-alcantarillado",
-    "municipio": null,
-    "departamento": null,
+    "municipio": "Medellín, Copacabana y Bello",
+    "departamento": "Antioquia",
     "cliente": "IDOM Consulting, Engineering, Architecture",
-    "destacado": false,
-    "pendiente_confirmar": true,
-    "nota_pendiente": "El brochure no indica municipio"
+    "destacado": false
   },
   {
     "id": 21,
@@ -504,13 +496,11 @@
       "interventoria-tecnica-y-administrativa"
     ],
     "sector": "mineria",
-    "municipio": null,
-    "departamento": null,
+    "municipio": "Santiago",
+    "departamento": "Antioquia",
     "cliente": "Antioquia Gold",
     "destacado": true,
-    "razon_destacado": "Interventoría técnica, operativa y financiera en el sector minero; diversifica el portafolio más allá de la edificación.",
-    "pendiente_confirmar": true,
-    "nota_pendiente": "El brochure no indica ubicación"
+    "razon_destacado": "Interventoría técnica, operativa y financiera en el sector minero; diversifica el portafolio más allá de la edificación."
   },
   {
     "id": 25,
@@ -649,11 +639,9 @@
       "construccion-de-cimentaciones"
     ],
     "sector": "educativo",
-    "municipio": null,
-    "departamento": null,
+    "municipio": "Cartagena",
+    "departamento": "Bolívar",
     "cliente": "Arráez Xeneizes Ingeniería",
-    "destacado": false,
-    "pendiente_confirmar": true,
-    "nota_pendiente": "El brochure no indica ubicación"
+    "destacado": false
   }
 ]

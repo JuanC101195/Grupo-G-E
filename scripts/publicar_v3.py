@@ -56,7 +56,6 @@ def produccion(body):
         (r'\s*<span class="tbd" title="Confirmar autorización de uso de logos">Uso de logos por confirmar</span>\.', ""),
         (r'\s*<li><span class="mono">Horario</span><span class="tbd"[^>]*>[^<]*</span></li>', ""),
         (r' · NIT <span class="tbd">por confirmar</span>', ""),
-        (r' <em>\(Prototipo: en WordPress el formulario enviará la solicitud directamente al correo de la empresa\.\)</em>', ""),
     ]
     for patron, nuevo in cambios:
         body, n = re.subn(patron, nuevo, body, flags=re.S)
@@ -109,11 +108,14 @@ def script_seguro(codigo):
             f'(0,eval)(new TextDecoder().decode(u));}})("{b64}");</script>')
 
 
-def construir(mapa):
+def construir(mapa, form=None):
     html = leer(INDEX)
     css = leer("styles.css") + CSS_ASTRA
     data = datos_publicos(leer(DATA))
     app = re.sub(r"// ?TODO[^\n]*", "", leer(APP))   # comentarios internos fuera del sitio publicado
+    if form:   # conecta el cotizador al formulario de Contact Form 7 (el prototipo local queda solo con WhatsApp)
+        assert "    form: null," in app
+        app = app.replace("    form: null,", "    form: " + json.dumps(form) + ",", 1)
 
     head = html.split("<body>", 1)[0]
     body = html.split("<body>", 1)[1].split('<script src="data.js"></script>', 1)[0]
@@ -136,6 +138,16 @@ def construir(mapa):
             f'<div class="gye-v3">\n{body}\n</div>\n{script_seguro(data)}\n{script_seguro(app)}')
 
 
+def formulario(wp):
+    """Datos del formulario «Cotización web» (lo crea scripts/formulario_cf7.py)."""
+    form = next((f for f in wp.get("contact-form-7/v1/contact-forms") if f["title"] == "Cotización web"), None)
+    if not form:
+        raise RuntimeError("Falta el formulario: corra primero python scripts/formulario_cf7.py")
+    version = next(p["version"] for p in wp.get("wp/v2/plugins") if p["plugin"].startswith("contact-form-7/"))
+    return {"id": form["id"], "version": version,
+            "endpoint": wp.base + f"contact-form-7/v1/contact-forms/{form['id']}/feedback"}
+
+
 def main():
     if "--preview" in sys.argv:
         mapa = {rel: "../prototipo/v3/../../assets/" + rel for rel in imagenes_usadas(leer(INDEX) + leer(DATA))}
@@ -150,7 +162,7 @@ def main():
     wp = WP()
     print("Subiendo imágenes…")
     mapa = subir_medios(wp, imagenes_usadas(leer(INDEX) + leer(DATA)))
-    content = "<!-- wp:html -->\n" + construir(mapa) + "\n<!-- /wp:html -->"
+    content = "<!-- wp:html -->\n" + construir(mapa, formulario(wp)) + "\n<!-- /wp:html -->"
     meta = {"ast-global-header-display": "disabled", "footer-sml-layout": "disabled", "site-post-title": "disabled",
             "site-content-layout": "page-builder", "site-sidebar-layout": "no-sidebar", "ast-breadcrumbs-content": "disabled"}
     datos = {"title": "Inicio", "slug": SLUG, "status": "publish", "content": content, "meta": meta}

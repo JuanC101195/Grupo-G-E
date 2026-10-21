@@ -309,6 +309,7 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--clay);ba
 .wnav{display:flex;justify-content:space-between;align-items:center;gap:var(--s3);margin-top:var(--s4);padding-top:var(--s4);border-top:1px solid var(--line)}
 .wnav .btn-line{color:var(--text)}
 .wnav [hidden],.wnav[hidden]{display:none}
+.hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 .done-box{display:grid;gap:var(--s3)}
 .done-box[hidden]{display:none}
 .done-box h3{font-size:28px}

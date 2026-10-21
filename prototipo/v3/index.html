@@ -39,6 +39,8 @@
   "email":"info@grupogye.com",
   "address":{"@type":"PostalAddress","streetAddress":"Cra 81A #47-73, Floresta","addressLocality":"Medellín","addressRegion":"Antioquia","addressCountry":"CO"},
   "areaServed":[{"@type":"City","name":"Medellín"},{"@type":"AdministrativeArea","name":"Antioquia"},{"@type":"Country","name":"Colombia"}],
+  "sameAs":["https://www.instagram.com/grupo_gye/"],
+  "foundingDate":"2016-10-06",
   "employee":{"@type":"Person","name":"Marlon M. Agámez Agámez","jobTitle":"Gerente Técnico y Administrativo"}
 }
 </script>
@@ -79,18 +81,18 @@
   <svg class="contours" id="contours" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
   <div class="wrap">
     <div>
-      <h1 id="h1" class="eyebrow">Consultoría geotécnica, estructural e integral en Medellín</h1>
+      <h1 id="h1" class="eyebrow">Consultoría geotécnica, estructural e integral · Medellín y la Costa Caribe</h1>
       <p class="display"><span class="line-mask"><span style="--l:0">Toda obra</span></span><span class="line-mask"><span style="--l:1">sólida empieza</span></span><span class="line-mask"><span style="--l:2"><em>bajo tierra.</em></span></span></p>
       <p class="lead">Exploramos el subsuelo hasta 150 m, diseñamos cimentaciones y estructuras, y construimos pilotes y micropilotes. Un solo equipo, del sondeo a la obra.</p>
       <div class="ctas">
         <a class="btn btn-clay" href="#cotizar">Cotizar mi proyecto
           <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" fill="none"/></svg></a>
-        <a class="btn btn-line" href="#proyectos">Ver 31 proyectos</a>
+        <a class="btn btn-line" href="#proyectos">Ver proyectos</a>
       </div>
       <div class="hero-facts">
         <div><b data-count="150" data-suffix=" m">150 m</b><span>de perforación</span></div>
-        <div><b data-count="31">31</b><span>proyectos en portafolio</span></div>
-        <div><b data-count="16">16</b><span>municipios con obras</span></div>
+        <div><b data-count="30">30</b><span>proyectos en portafolio</span></div>
+        <div><b data-count="10">10</b><span>años de experiencia</span></div>
       </div>
     </div>
 
@@ -301,10 +303,11 @@
     <div class="quote-info">
       <span class="mono">Cotizar</span>
       <h2 id="h-quote">Llevemos su proyecto a buen término.</h2>
-      <p>Cuéntenos lo básico en tres pasos. Con esa información preparamos una propuesta técnica y económica.</p>
+      <p>Cuéntenos lo básico en tres pasos. Le respondemos en menos de 24 horas con una propuesta técnica y económica.</p>
       <ul class="cinfo">
         <li><span class="mono">Teléfono</span><span><a href="tel:+573126523638">+57 312 652 3638</a><br><a href="tel:+573242489898">+57 324 248 9898</a></span></li>
         <li><span class="mono">WhatsApp</span><a href="https://wa.me/573126523638" data-wa>+57 312 652 3638</a></li>
+        <li><span class="mono">Instagram</span><a href="https://www.instagram.com/grupo_gye/" target="_blank" rel="noopener">@grupo_gye</a></li>
         <li><span class="mono">Correo</span><span><a href="mailto:info@grupogye.com">info@grupogye.com</a><br><a href="mailto:magamez@grupogye.com">magamez@grupogye.com</a></span></li>
         <li><span class="mono">Oficina</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Cra+81A+%2347-73+Medell%C3%ADn" target="_blank" rel="noopener">Cra 81A #47-73, Floresta<br>Medellín, Antioquia</a></li>
         <li><span class="mono">Horario</span><span class="tbd" title="Por confirmar">Lun–Vie · por confirmar</span></li>
@@ -350,11 +353,12 @@
         <div class="f"><label class="check"><input type="checkbox" id="habeas" name="habeas" required> Autorizo el tratamiento de mis datos personales según la <span class="tbd" title="Pendiente: publicar la política en /politica-de-privacidad/">Política de Tratamiento de Datos</span> (Ley 1581 de 2012).</label><span class="msg" aria-live="polite"></span></div>
       </fieldset>
 
+      <div class="hp" aria-hidden="true"><label for="website">Sitio web</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
       <div class="done-box" id="doneBox" hidden>
-        <span class="mono" style="color:var(--ok)">Resumen listo</span>
+        <span class="mono" id="doneTag" style="color:var(--ok)">Resumen listo</span>
         <h3 tabindex="-1" id="doneTitle">Envíe su solicitud por WhatsApp para que la atendamos.</h3>
         <ul class="summary" id="summary"></ul>
-        <p style="color:var(--muted);font-size:15px">También puede escribir a <a href="mailto:info@grupogye.com">info@grupogye.com</a>. <em>(Prototipo: en WordPress el formulario enviará la solicitud directamente al correo de la empresa.)</em></p>
+        <p style="color:var(--muted);font-size:15px" id="doneText">También puede escribirnos a info@grupogye.com.</p>
         <div class="done-actions">
           <a class="btn btn-wa" id="waSend" href="#" target="_blank" rel="noopener">Enviar por WhatsApp</a>
           <button class="btn btn-line" type="button" id="restart" style="color:var(--text)">Nueva solicitud</button>
@@ -380,7 +384,7 @@
     </div>
     <div><h2>Servicios</h2><ul id="footSvc"></ul></div>
     <div><h2>Empresa</h2><ul><li><a href="#equipos">Equipos</a></li><li><a href="#proyectos">Proyectos</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#cotizar">Cotizar</a></li></ul></div>
-    <div><h2>Contacto</h2><ul><li><a href="tel:+573126523638">+57 312 652 3638</a></li><li><a href="tel:+573242489898">+57 324 248 9898</a></li><li><a href="mailto:info@grupogye.com">info@grupogye.com</a></li><li>Cra 81A #47-73, Floresta<br>Medellín, Antioquia</li></ul></div>
+    <div><h2>Contacto</h2><ul><li><a href="tel:+573126523638">+57 312 652 3638</a></li><li><a href="tel:+573242489898">+57 324 248 9898</a></li><li><a href="mailto:info@grupogye.com">info@grupogye.com</a></li><li><a href="https://www.instagram.com/grupo_gye/" target="_blank" rel="noopener">Instagram @grupo_gye</a></li><li>Cra 81A #47-73, Floresta<br>Medellín, Antioquia</li></ul></div>
   </div>
   <div class="legal"><div class="wrap"><span>© 2026 Grupo G&amp;E S.A.S. · NIT <span class="tbd">por confirmar</span></span><span class="tbd" title="Pendiente: publicar en /politica-de-privacidad/">Política de tratamiento de datos</span></div></div>
 </footer>

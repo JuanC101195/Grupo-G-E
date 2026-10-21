@@ -40,7 +40,10 @@ window.GYE = {
    "pendiente_confirmar": [
     "horario",
     "departamento (deducido de Medellín)"
-   ]
+   ],
+   "correo_cotizaciones": "gyeconsultoriaintegral@gmail.com",
+   "nota_correo": "Los correos @grupogye.com a veces fallan (respuesta de la empresa); las cotizaciones van al Gmail.",
+   "tiempo_respuesta": "24 horas"
   },
   "capacidades_campo": [
    "Perforación directa con recuperación de muestras en suelo y roca",
@@ -152,8 +155,7 @@ window.GYE = {
     },
     {
      "pregunta": "¿Elaboran el estudio de suelos conforme a la NSR-10?",
-     "respuesta": "Hemos elaborado estudios de suelos según la NSR-10, Título H (por ejemplo, el Bloque 7 de la IU Pascual Bravo). Los alcances exigidos para una licencia o trámite específico se confirman en cada caso.",
-     "pendiente_confirmar": true
+     "respuesta": "Sí. Nuestros estudios de suelos se elaboran conforme a la NSR-10, incluido el Título H, y sirven para tramitar la licencia de construcción."
     }
    ]
   },
@@ -322,8 +324,7 @@ window.GYE = {
     },
     {
      "pregunta": "¿Qué norma aplican en el diseño estructural?",
-     "respuesta": "La normativa aplicable depende del tipo de proyecto y se confirma en cada caso; el brochure no la detalla para esta línea.",
-     "pendiente_confirmar": true
+     "respuesta": "Según el proyecto y el país: la NSR-10 para edificaciones en Colombia, el CCP-14 para puentes y los códigos ACI, entre otros."
     }
    ]
   },
@@ -367,8 +368,8 @@ window.GYE = {
     },
     {
      "pregunta": "¿Qué son los sistemas IGU, IR e IRS?",
-     "respuesta": "Son sistemas citados en el brochure junto a la construcción de micropilotes; su descripción técnica detallada se confirma con el equipo de G&E.",
-     "pendiente_confirmar": true
+     "respuesta": "Son métodos de inyección de lechada para formar el bulbo del micropilote: IGU, inyección global única, en una sola etapa; IR, inyección repetitiva, en varias etapas; e IRS, inyección repetitiva y selectiva, por tramos controlados.",
+     "nota_interna": "La empresa escribió 'IRS: Inyección Global Única' (repetido); se usó la definición estándar de IRS. Confirmar."
     }
    ]
   },
@@ -406,8 +407,7 @@ window.GYE = {
     },
     {
      "pregunta": "¿Pueden hacer interventoría de una obra que ustedes diseñaron?",
-     "respuesta": "La posibilidad de actuar en ambos roles depende de las condiciones contractuales de cada proyecto y se confirma caso a caso.",
-     "pendiente_confirmar": true
+     "respuesta": "No. Para garantizar la independencia del control, no hacemos interventoría de obras que hayamos diseñado."
     }
    ]
   }
@@ -438,28 +438,6 @@ window.GYE = {
    "departamento": "Antioquia",
    "cliente": "Dinamic Proyectos e Ingeniería",
    "destacado": false
-  },
-  {
-   "id": 2,
-   "slug": "puentes-mulatos-y-san-juan",
-   "titulo_corto": "Puentes Mulatos y San Juan",
-   "descripcion": "Consultoría geotécnica para las obras de mitigación de los puentes Mulatos y San Juan.",
-   "alcance": [
-    "Consultoría geotécnica",
-    "Obras de mitigación"
-   ],
-   "tipo": "consultoria",
-   "lineas": [
-    "analisis-geotecnicos-especializados",
-    "consultoria-integral"
-   ],
-   "sector": "puentes-mitigacion",
-   "municipio": null,
-   "departamento": null,
-   "cliente": "Conconcreto Designs",
-   "destacado": false,
-   "pendiente_confirmar": true,
-   "nota_pendiente": "El brochure no indica municipio ni departamento"
   },
   {
    "id": 3,
@@ -630,12 +608,10 @@ window.GYE = {
     "analisis-geotecnicos-especializados"
    ],
    "sector": "educativo",
-   "municipio": null,
-   "departamento": null,
+   "municipio": "Medellín",
+   "departamento": "Antioquia",
    "cliente": "FODESEP",
-   "destacado": false,
-   "pendiente_confirmar": true,
-   "nota_pendiente": "El brochure no indica ciudad de la sede"
+   "destacado": false
   },
   {
    "id": 11,
@@ -689,12 +665,10 @@ window.GYE = {
     "analisis-geotecnicos-especializados"
    ],
    "sector": "industrial",
-   "municipio": null,
-   "departamento": null,
+   "municipio": "Barbosa",
+   "departamento": "Antioquia",
    "cliente": "AG Geoconsulting – IngenioBIM",
-   "destacado": false,
-   "pendiente_confirmar": true,
-   "nota_pendiente": "El brochure no indica ubicación"
+   "destacado": false
   },
   {
    "id": 14,
@@ -729,13 +703,11 @@ window.GYE = {
     "analisis-geotecnicos-especializados"
    ],
    "sector": "portuario",
-   "municipio": null,
-   "departamento": null,
+   "municipio": "Ciénaga",
+   "departamento": "Magdalena",
    "cliente": "Aqua & Terra Consultores Asociados",
    "destacado": true,
-   "razon_destacado": "Único proyecto portuario del listado: parametrización geotécnica y estabilidad de obras de dragado.",
-   "pendiente_confirmar": true,
-   "nota_pendiente": "El brochure no indica lugar de la terminal"
+   "razon_destacado": "Único proyecto portuario del listado: parametrización geotécnica y estabilidad de obras de dragado."
   },
   {
    "id": 16,
@@ -839,12 +811,10 @@ window.GYE = {
     "analisis-geotecnicos-especializados"
    ],
    "sector": "acueducto-alcantarillado",
-   "municipio": null,
-   "departamento": null,
+   "municipio": "Medellín, Copacabana y Bello",
+   "departamento": "Antioquia",
    "cliente": "IDOM Consulting, Engineering, Architecture",
-   "destacado": false,
-   "pendiente_confirmar": true,
-   "nota_pendiente": "El brochure no indica municipio"
+   "destacado": false
   },
   {
    "id": 21,
@@ -925,13 +895,11 @@ window.GYE = {
     "interventoria-tecnica-y-administrativa"
    ],
    "sector": "mineria",
-   "municipio": null,
-   "departamento": null,
+   "municipio": "Santiago",
+   "departamento": "Antioquia",
    "cliente": "Antioquia Gold",
    "destacado": true,
-   "razon_destacado": "Interventoría técnica, operativa y financiera en el sector minero; diversifica el portafolio más allá de la edificación.",
-   "pendiente_confirmar": true,
-   "nota_pendiente": "El brochure no indica ubicación"
+   "razon_destacado": "Interventoría técnica, operativa y financiera en el sector minero; diversifica el portafolio más allá de la edificación."
   },
   {
    "id": 25,
@@ -1070,12 +1038,10 @@ window.GYE = {
     "construccion-de-cimentaciones"
    ],
    "sector": "educativo",
-   "municipio": null,
-   "departamento": null,
+   "municipio": "Cartagena",
+   "departamento": "Bolívar",
    "cliente": "Arráez Xeneizes Ingeniería",
-   "destacado": false,
-   "pendiente_confirmar": true,
-   "nota_pendiente": "El brochure no indica ubicación"
+   "destacado": false
   }
  ],
  "imagenes": {
@@ -1268,6 +1234,10 @@ window.GYE = {
   {
    "nombre": "Double C Designs",
    "logo": "../../assets/clientes/double-designs.webp"
+  },
+  {
+   "nombre": "Aschner Consultores Asociados",
+   "logo": "../../assets/clientes/aschner.webp"
   }
  ]
 };
