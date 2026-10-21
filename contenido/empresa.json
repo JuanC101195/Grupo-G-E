@@ -17,12 +17,13 @@
   "contacto": {
     "telefonos": [
       {
-        "e164": "+573242489898",
-        "visual": "+57 324 248 9898"
+        "e164": "+573126523638",
+        "visual": "+57 312 652 3638",
+        "principal": true
       },
       {
-        "e164": "+573126523638",
-        "visual": "+57 312 652 3638"
+        "e164": "+573242489898",
+        "visual": "+57 324 248 9898"
       }
     ],
     "correos": [
@@ -40,10 +41,12 @@
       "cargo": "Gerente Técnico y Administrativo",
       "correo": "magamez@grupogye.com"
     },
-    "whatsapp": null,
+    "whatsapp": {
+      "e164": "+573126523638",
+      "visual": "+57 312 652 3638"
+    },
     "horario": null,
     "pendiente_confirmar": [
-      "whatsapp",
       "horario",
       "departamento (deducido de Medellín)"
     ]

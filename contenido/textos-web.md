@@ -41,4 +41,4 @@ Grupo G&E S.A.S. nació para prestar servicios técnicos y profesionales en expl
 
 **Llevemos su proyecto a buen término.** Talento humano, equipos y tecnología especializada para sus estudios de suelos, optimización y construcción de cimentaciones y contenciones.
 
-Escríbanos a info@grupogye.com o llame al +57 324 248 9898 / +57 312 652 3638. Ing. Marlon M. Agámez Agámez, Gerente Técnico y Administrativo. Cra 81A #47-73, Floresta, Medellín.
+Escríbanos a info@grupogye.com o llame al +57 312 652 3638 / +57 324 248 9898. Ing. Marlon M. Agámez Agámez, Gerente Técnico y Administrativo. Cra 81A #47-73, Floresta, Medellín.
