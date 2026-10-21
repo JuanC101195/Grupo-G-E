@@ -1,0 +1,360 @@
+{
+  "imagenes": [
+    {
+      "archivo_lg": "operario-equipo-perforacion-portada-lg.webp",
+      "archivo_sm": "operario-equipo-perforacion-portada-sm.webp",
+      "original": "p1-1.jpeg",
+      "pagina": 1,
+      "ancho": 768,
+      "alto": 1280,
+      "tipo": "equipo",
+      "alt": "Operario junto a equipo de perforación naranja en obra al aire libre",
+      "uso_sugerido": "equipamiento",
+      "calidad": "alta"
+    },
+    {
+      "archivo_lg": "perforacion-en-campo-lg.webp",
+      "archivo_sm": "perforacion-en-campo-sm.webp",
+      "original": "p2-2.jpeg",
+      "pagina": 2,
+      "ancho": 645,
+      "alto": 484,
+      "tipo": "obra",
+      "alt": "Equipo de perforación en campo con operarios con cascos en ladera verde",
+      "uso_sugerido": "construccion",
+      "calidad": "baja"
+    },
+    {
+      "archivo_lg": "mapa-geologico-lg.webp",
+      "archivo_sm": "mapa-geologico-sm.webp",
+      "original": "p2-3.jpeg",
+      "pagina": 2,
+      "ancho": 1071,
+      "alto": 642,
+      "tipo": "mapa",
+      "alt": "Mapa geológico con unidades de suelo en colores y trazado de cauce de río",
+      "uso_sugerido": "capacidades",
+      "calidad": "media"
+    },
+    {
+      "archivo_lg": "perforacion-roto-percusion-lg.webp",
+      "archivo_sm": "perforacion-roto-percusion-sm.webp",
+      "original": "p4-2.jpeg",
+      "pagina": 4,
+      "ancho": 960,
+      "alto": 1280,
+      "tipo": "equipo",
+      "alt": "Operarios manejando equipo de perforación a roto-percusión en zona boscosa",
+      "uso_sugerido": "equipamiento",
+      "calidad": "alta"
+    },
+    {
+      "archivo_lg": "sismografo-abem-lg.webp",
+      "archivo_sm": "sismografo-abem-sm.webp",
+      "original": "p4-4.jpeg",
+      "pagina": 4,
+      "ancho": 380,
+      "alto": 387,
+      "tipo": "equipo",
+      "alt": "Sismógrafo ABEM naranja y negro con pantalla de registro",
+      "uso_sugerido": "equipamiento",
+      "calidad": "baja"
+    },
+    {
+      "archivo_lg": "talud-con-llenos-lg.webp",
+      "archivo_sm": "talud-con-llenos-sm.webp",
+      "original": "p5-2.jpeg",
+      "pagina": 5,
+      "ancho": 709,
+      "alto": 532,
+      "tipo": "obra",
+      "alt": "Talud de suelo con llenos y cuneta de concreto en vía de montaña",
+      "uso_sugerido": "capacidades",
+      "calidad": "media"
+    },
+    {
+      "archivo_lg": "diagrama-contencion-anclajes-lg.webp",
+      "archivo_sm": "diagrama-contencion-anclajes-sm.webp",
+      "original": "p5-3.jpeg",
+      "pagina": 5,
+      "ancho": 821,
+      "alto": 620,
+      "tipo": "diagrama",
+      "alt": "Sección de talud con anclajes y cargas de diseño en kN/m²",
+      "uso_sugerido": "capacidades",
+      "calidad": "media"
+    },
+    {
+      "archivo_lg": "modelo-estabilidad-taludes-lg.webp",
+      "archivo_sm": "modelo-estabilidad-taludes-sm.webp",
+      "original": "p5-4.jpeg",
+      "pagina": 5,
+      "ancho": 852,
+      "alto": 403,
+      "tipo": "diagrama",
+      "alt": "Modelo numérico de estabilidad de talud con mapa de colores de desplazamientos",
+      "uso_sugerido": "capacidades",
+      "calidad": "media"
+    },
+    {
+      "archivo_lg": "tomografia-electrica-lg.webp",
+      "archivo_sm": "tomografia-electrica-sm.webp",
+      "original": "p5-5.jpeg",
+      "pagina": 5,
+      "ancho": 898,
+      "alto": 349,
+      "tipo": "ensayo",
+      "alt": "Sección de tomografía eléctrica con distribución de resistividad en ohm·m",
+      "uso_sugerido": "capacidades",
+      "calidad": "media"
+    },
+    {
+      "archivo_lg": "ensayo-gpr-calle-lg.webp",
+      "archivo_sm": "ensayo-gpr-calle-sm.webp",
+      "original": "p5-6.jpeg",
+      "pagina": 5,
+      "ancho": 335,
+      "alto": 289,
+      "tipo": "ensayo",
+      "alt": "Operarios realizando ensayo de georradar GPR sobre calle pavimentada",
+      "uso_sugerido": "capacidades",
+      "calidad": "baja"
+    },
+    {
+      "archivo_lg": "pozo-agua-visto-desde-arriba-lg.webp",
+      "archivo_sm": "pozo-agua-visto-desde-arriba-sm.webp",
+      "original": "p5-8.jpeg",
+      "pagina": 5,
+      "ancho": 469,
+      "alto": 369,
+      "tipo": "obra",
+      "alt": "Pozo de agua visto desde arriba con paredes de concreto",
+      "uso_sugerido": "capacidades",
+      "calidad": "baja"
+    },
+    {
+      "archivo_lg": "planta-industrial-lg.webp",
+      "archivo_sm": "planta-industrial-sm.webp",
+      "original": "p5-9.jpeg",
+      "pagina": 5,
+      "ancho": 936,
+      "alto": 613,
+      "tipo": "obra",
+      "alt": "Planta industrial con torres de proceso y vehículos en patio",
+      "uso_sugerido": "proyectos",
+      "calidad": "media"
+    },
+    {
+      "archivo_lg": "diagrama-3d-cimentacion-lg.webp",
+      "archivo_sm": "diagrama-3d-cimentacion-sm.webp",
+      "original": "p5-10.jpeg",
+      "pagina": 5,
+      "ancho": 756,
+      "alto": 637,
+      "tipo": "diagrama",
+      "alt": "Diagrama 3D de cimentación con cotas y zapata en rojo",
+      "uso_sugerido": "capacidades",
+      "calidad": "media"
+    },
+    {
+      "archivo_lg": "micropilotes-ladera-1-lg.webp",
+      "archivo_sm": "micropilotes-ladera-1-sm.webp",
+      "original": "p6-2.jpeg",
+      "pagina": 6,
+      "ancho": 1037,
+      "alto": 579,
+      "tipo": "obra",
+      "alt": "Equipo de micropilotes en ladera con operarios y barrenas",
+      "uso_sugerido": "construccion",
+      "calidad": "media"
+    },
+    {
+      "archivo_lg": "micropilotes-ladera-2-lg.webp",
+      "archivo_sm": "micropilotes-ladera-2-sm.webp",
+      "original": "p6-3.jpeg",
+      "pagina": 6,
+      "ancho": 1068,
+      "alto": 524,
+      "tipo": "obra",
+      "alt": "Equipo de perforación sobre ladera bajo cielo azul durante construcción de micropilotes",
+      "uso_sugerido": "hero",
+      "calidad": "media"
+    },
+    {
+      "archivo_lg": "micropilotes-ladera-3-lg.webp",
+      "archivo_sm": "micropilotes-ladera-3-sm.webp",
+      "original": "p6-4.jpeg",
+      "pagina": 6,
+      "ancho": 560,
+      "alto": 681,
+      "tipo": "obra",
+      "alt": "Operario supervisando perforación de micropilote con equipo azul en ladera",
+      "uso_sugerido": "construccion",
+      "calidad": "baja"
+    },
+    {
+      "archivo_lg": "micropilotes-ladera-4-lg.webp",
+      "archivo_sm": "micropilotes-ladera-4-sm.webp",
+      "original": "p6-5.jpeg",
+      "pagina": 6,
+      "ancho": 519,
+      "alto": 709,
+      "tipo": "obra",
+      "alt": "Cuadrilla instalando armadura de micropilote en ladera con andamio de madera",
+      "uso_sugerido": "construccion",
+      "calidad": "media"
+    },
+    {
+      "archivo_lg": "estructura-industrial-lg.webp",
+      "archivo_sm": "estructura-industrial-sm.webp",
+      "original": "p9-18.jpeg",
+      "pagina": 9,
+      "ancho": 601,
+      "alto": 494,
+      "tipo": "obra",
+      "alt": "Operarios trabajando en altura dentro de estructura industrial metálica",
+      "uso_sugerido": "proyectos",
+      "calidad": "baja"
+    },
+    {
+      "archivo_lg": "perforacion-puerto-contenedores-lg.webp",
+      "archivo_sm": "perforacion-puerto-contenedores-sm.webp",
+      "original": "p9-19.jpeg",
+      "pagina": 9,
+      "ancho": 374,
+      "alto": 355,
+      "tipo": "obra",
+      "alt": "Equipo de perforación en patio de puerto junto a contenedores apilados",
+      "uso_sugerido": "proyectos",
+      "calidad": "baja"
+    },
+    {
+      "archivo_lg": "nucleo-perforacion-lg.webp",
+      "archivo_sm": "nucleo-perforacion-sm.webp",
+      "original": "p9-20.jpeg",
+      "pagina": 9,
+      "ancho": 815,
+      "alto": 611,
+      "tipo": "ensayo",
+      "alt": "Núcleo de perforación cilíndrico extraído del terreno sobre superficie blanca",
+      "uso_sugerido": "capacidades",
+      "calidad": "media"
+    }
+  ],
+  "logos": [
+    {
+      "archivo": "clientes/pricesmart.png",
+      "original": "p9-2.png",
+      "ancho_original": 892,
+      "alto_original": 314,
+      "tipo": "logo-cliente"
+    },
+    {
+      "archivo": "clientes/idom.png",
+      "original": "p9-3.png",
+      "ancho_original": 469,
+      "alto_original": 120,
+      "tipo": "logo-cliente"
+    },
+    {
+      "archivo": "clientes/double-designs.png",
+      "original": "p9-5.png",
+      "ancho_original": 924,
+      "alto_original": 281,
+      "tipo": "logo-cliente"
+    },
+    {
+      "archivo": "clientes/antioquia-gold.png",
+      "original": "p9-6.png",
+      "ancho_original": 274,
+      "alto_original": 156,
+      "tipo": "logo-cliente"
+    },
+    {
+      "archivo": "clientes/edu.png",
+      "original": "p9-7.png",
+      "ancho_original": 552,
+      "alto_original": 528,
+      "tipo": "logo-cliente"
+    },
+    {
+      "archivo": "clientes/la-cimarrona.png",
+      "original": "p9-9.png",
+      "ancho_original": 770,
+      "alto_original": 312,
+      "tipo": "logo-cliente"
+    },
+    {
+      "archivo": "clientes/bioexplora.png",
+      "original": "p9-10.png",
+      "ancho_original": 541,
+      "alto_original": 327,
+      "tipo": "logo-cliente"
+    },
+    {
+      "archivo": "clientes/cliente-logo-a-roja.png",
+      "original": "p9-12.png",
+      "ancho_original": 223,
+      "alto_original": 226,
+      "tipo": "logo-cliente"
+    },
+    {
+      "archivo": "clientes/aqua-y-terra.png",
+      "original": "p9-13.png",
+      "ancho_original": 676,
+      "alto_original": 358,
+      "tipo": "logo-cliente"
+    },
+    {
+      "archivo": "clientes/mc-arquitectos.png",
+      "original": "p9-14.png",
+      "ancho_original": 190,
+      "alto_original": 249,
+      "tipo": "logo-cliente"
+    },
+    {
+      "archivo": "clientes/epm.png",
+      "original": "p9-15.png",
+      "ancho_original": 276,
+      "alto_original": 124,
+      "tipo": "logo-cliente"
+    },
+    {
+      "archivo": "clientes/arquitectura-concreto.png",
+      "original": "p9-16.png",
+      "ancho_original": 280,
+      "alto_original": 280,
+      "tipo": "logo-cliente"
+    },
+    {
+      "archivo": "clientes/acca.png",
+      "original": "p9-17.png",
+      "ancho_original": 720,
+      "alto_original": 281,
+      "tipo": "logo-cliente"
+    },
+    {
+      "archivo": "marca/logo-ge.png",
+      "original": "p1-2.png",
+      "ancho_original": 826,
+      "alto_original": 330,
+      "tipo": "logo-ge"
+    }
+  ],
+  "colores_marca": {
+    "logo_ge": {
+      "franja_verde": "#076035",
+      "franja_azul": "#266BAA",
+      "franja_cafe": "#623A16",
+      "franja_naranja": "#D85C19",
+      "texto_oscuro": "#181818"
+    },
+    "brochure": {
+      "titulo_principal": "#0F202D",
+      "encabezado_seccion_azul": "#1B78B4",
+      "encabezado_seccion_verde": "#1F794D",
+      "fondo_gris_claro": "#EDF2F6"
+    },
+    "nota": "Muestreo de pixeles del logo (p1-2.png) y render del brochure a 60 dpi (pags 2-3). Encabezado naranja del brochure no muestreado; usar franja_naranja del logo."
+  }
+}

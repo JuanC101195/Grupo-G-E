@@ -1,0 +1,144 @@
+{
+  "nombre": "Grupo G&E S.A.S.",
+  "eslogan_principal": "Consultoría geotécnica, estructural e integral",
+  "eslogan_secundario": "Llevemos su proyecto a buen término",
+  "descriptor": "Exploración, diseño, interventoría y construcción de obras de infraestructura para el sector industrial, público y privado.",
+  "lineas_portada": [
+    "Exploración geológico-geotécnica",
+    "Consultoría integral",
+    "Análisis geotécnicos especializados",
+    "Análisis estructural avanzado",
+    "Construcción de cimentaciones",
+    "Interventoría técnica y administrativa"
+  ],
+  "perfil": "Grupo G&E S.A.S. es una empresa creada para prestar servicios técnicos y profesionales en exploración geológica y geotécnica, consultoría, diseño, construcción e interventoría en proyectos de infraestructura, en Ingeniería Civil, Geotecnia y Estructuras. Cuenta con un equipo profesional, dedicado y comprometido que responde en forma oportuna y con soluciones eficientes.",
+  "mision": "Dedicados a la exploración geológica y geotécnica, la consultoría, el diseño, la interventoría y la construcción de obras de infraestructura, prestamos servicios de ingeniería conceptual, básica y de detalle para el sector industrial, público y privado, a nivel local y nacional. Trabajamos de forma eficiente, ágil y oportuna, con un grupo interdisciplinario experimentado, equipos especializados y tecnología de punta.",
+  "vision": "Ser una de las principales empresas de consultoría, diseño, interventoría y construcción en los sectores industriales, públicos y privados, competentes en el mercado por su calidad, respuesta oportuna y eficiente, en búsqueda permanente del mejoramiento continuo mediante herramientas tecnológicas y personal especializado en cada disciplina.",
+  "contacto": {
+    "telefonos": [
+      {
+        "e164": "+573242489898",
+        "visual": "+57 324 248 9898"
+      },
+      {
+        "e164": "+573126523638",
+        "visual": "+57 312 652 3638"
+      }
+    ],
+    "correos": [
+      "magamez@grupogye.com",
+      "info@grupogye.com"
+    ],
+    "direccion": "Cra 81A #47-73",
+    "barrio": "Floresta",
+    "ciudad": "Medellín",
+    "departamento": "Antioquia",
+    "pais": "Colombia",
+    "razon_social": "GRUPO G&E S.A.S",
+    "gerente": {
+      "nombre": "Ing. Marlon M. Agámez Agámez",
+      "cargo": "Gerente Técnico y Administrativo",
+      "correo": "magamez@grupogye.com"
+    },
+    "whatsapp": null,
+    "horario": null,
+    "pendiente_confirmar": [
+      "whatsapp",
+      "horario",
+      "departamento (deducido de Medellín)"
+    ]
+  },
+  "alcance": "nacional e internacional",
+  "equipos": [
+    "Equipos de perforación directa con recuperación de muestras en suelo y roca",
+    "Equipos para construcción de pozos de agua",
+    "Equipos para cimentaciones profundas tipo pilotes y micropilotes",
+    "Equipos para ensayos geofísicos, geoeléctricos y Radar Electromagnético de Penetración (GPR)",
+    "Equipos de perforación a roto-percusión",
+    "Sismógrafo ABEM (refracción, reflexión, down-hole y cross-hole)"
+  ],
+  "capacidades_campo": [
+    "Perforación directa con recuperación de muestras en suelo y roca",
+    "Perforación hasta 150 m de profundidad",
+    "Ensayos geofísicos y geoeléctricos, tomografía eléctrica",
+    "GPR (Radar Electromagnético de Penetración)",
+    "Pilotes y micropilotes de cimentación",
+    "Construcción de micropilotes de cimentación · Sistemas IGU, IR e IRS"
+  ],
+  "capacidades_tecnicas": [
+    "Diseño geotécnico de llenos estructurales y taludes",
+    "Diseño de sistemas de contención en taludes con software especializado",
+    "Análisis geotécnico de estabilidad en taludes, contenciones y sistemas de cimentación",
+    "Tomografías eléctricas con propósitos geotécnicos, geológicos y ambientales",
+    "Ensayos GPR",
+    "Evaluación geológica e hidrogeológica con propósitos de ingeniería",
+    "Pozos para captación de aguas subterráneas",
+    "Exploración geotécnica en plantas industriales",
+    "Diseño y evaluación de cimentaciones superficiales, profundas y mixtas"
+  ],
+  "disciplinas_equipo": [
+    "Geotecnia",
+    "Estructuras",
+    "Hidráulica",
+    "Hidrología",
+    "Interventoría",
+    "Consultoría de proyectos"
+  ],
+  "cifras": [
+    {
+      "valor": "31",
+      "etiqueta": "proyectos listados en el brochure"
+    },
+    {
+      "valor": "150 m",
+      "etiqueta": "profundidad máxima de perforación"
+    },
+    {
+      "valor": "6",
+      "etiqueta": "líneas de servicio"
+    },
+    {
+      "valor": "16",
+      "etiqueta": "logos de clientes y aliados en el brochure"
+    },
+    {
+      "valor": "23",
+      "etiqueta": "clientes distintos en el listado de proyectos"
+    },
+    {
+      "valor": "16",
+      "etiqueta": "municipios identificados en los proyectos"
+    },
+    {
+      "valor": "5",
+      "etiqueta": "departamentos identificados: Antioquia, Atlántico, Bolívar, Cundinamarca y Valle del Cauca"
+    },
+    {
+      "valor": "3",
+      "etiqueta": "tipos de contrato: consultoría, interventoría y obra"
+    }
+  ],
+  "clientes_aliados": [
+    "PriceSmart",
+    "IDOM",
+    "Constructora Conconcreto",
+    "Double C Designs",
+    "Antioquia Gold",
+    "EDU (Empresa de Desarrollo Urbano)",
+    "Empresas Públicas de La Ceja E.S.P.",
+    "La Cimarrona (ESP El Carmen de Viboral)",
+    "Bioexplora",
+    "IngenioBIM",
+    "Aschner",
+    "aqua&terra",
+    "MC Arquitectos",
+    "EPM",
+    "Arquitectura & Concreto",
+    "ACCA"
+  ],
+  "pendientes_confirmar": [
+    "Logo 'Aschner' (A roja): verificar",
+    "'Double C Designs' vs 'Conconcreto Designs' (proyecto 2): confirmar si es la misma marca",
+    "Conteo de municipios/departamentos: 7 proyectos sin ubicación inequívoca en el brochure"
+  ]
+}
