@@ -1,0 +1,659 @@
+[
+  {
+    "id": 1,
+    "slug": "complejo-de-viviendas-amsha-el-penol",
+    "titulo_corto": "Complejo de viviendas AMSHA, El Peñol",
+    "descripcion": "Estudios geotécnicos para el complejo de viviendas AMSHA en El Peñol (Antioquia).",
+    "alcance": [
+      "Estudios geotécnicos"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "exploracion-geologico-geotecnica",
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "vivienda",
+    "municipio": "El Peñol",
+    "departamento": "Antioquia",
+    "cliente": "Dinamic Proyectos e Ingeniería",
+    "destacado": false
+  },
+  {
+    "id": 2,
+    "slug": "puentes-mulatos-y-san-juan",
+    "titulo_corto": "Puentes Mulatos y San Juan",
+    "descripcion": "Consultoría geotécnica para las obras de mitigación de los puentes Mulatos y San Juan.",
+    "alcance": [
+      "Consultoría geotécnica",
+      "Obras de mitigación"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "analisis-geotecnicos-especializados",
+      "consultoria-integral"
+    ],
+    "sector": "puentes-mitigacion",
+    "municipio": null,
+    "departamento": null,
+    "cliente": "Conconcreto Designs",
+    "destacado": false,
+    "pendiente_confirmar": true,
+    "nota_pendiente": "El brochure no indica municipio ni departamento"
+  },
+  {
+    "id": 3,
+    "slug": "planta-polar-facatativa",
+    "titulo_corto": "Planta Polar, Facatativá",
+    "descripcion": "Consultoría para la planta Polar en Facatativá: edificio de picking, cubierta, muelles de carga, patio de maniobras y bodegas.",
+    "alcance": [
+      "Edificio de picking",
+      "Cubierta",
+      "Muelles de carga",
+      "Patio de maniobras",
+      "Bodegas"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "consultoria-integral",
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "industrial",
+    "municipio": "Facatativá",
+    "departamento": "Cundinamarca",
+    "cliente": "Aschner Consultores Asociados",
+    "destacado": false
+  },
+  {
+    "id": 4,
+    "slug": "estudios-de-suelos-en-salgar-atlantico",
+    "titulo_corto": "Estudios de suelos en Salgar (Atlántico)",
+    "descripcion": "Cuatro contratos en Salgar (Atlántico): estudios de suelos de una edificación existente, caracterización de materiales viales y soporte geotécnico para contención.",
+    "alcance": [
+      "Estudios de suelos de edificación existente",
+      "Caracterización de materiales viales",
+      "Soporte geotécnico para contención",
+      "4 contratos"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "exploracion-geologico-geotecnica",
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "infraestructura-vial",
+    "municipio": "Salgar",
+    "departamento": "Atlántico",
+    "cliente": "Constructora Poliobras",
+    "destacado": false,
+    "pendiente_confirmar": true,
+    "nota_pendiente": "Ubicación según el brochure (Salgar, Atlántico); confirmar municipio exacto"
+  },
+  {
+    "id": 5,
+    "slug": "recreo-ciudad-del-rio-min-cultura",
+    "titulo_corto": "Recreo Ciudad del Río (Min. Cultura)",
+    "descripcion": "Estudios y diseños geotécnicos para el proyecto Recreo Ciudad del Río, del Ministerio de Cultura.",
+    "alcance": [
+      "Estudios geotécnicos",
+      "Diseños geotécnicos"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "institucional-publico",
+    "municipio": "Medellín",
+    "departamento": "Antioquia",
+    "cliente": "Bioexplora / Empresa de Desarrollo Urbano",
+    "destacado": false,
+    "pendiente_confirmar": true,
+    "nota_pendiente": "Ubicación deducida por el nombre 'Ciudad del Río' y el cliente EDU; confirmar"
+  },
+  {
+    "id": 6,
+    "slug": "proyecto-rueda-del-rio-la-macarena",
+    "titulo_corto": "Proyecto Rueda del Río, La Macarena",
+    "descripcion": "Estudio de suelos, diseño geotécnico y diseño de pavimentos para el proyecto Rueda del Río, La Macarena (Medellín).",
+    "alcance": [
+      "Estudio de suelos",
+      "Diseño geotécnico",
+      "Diseño de pavimentos"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "exploracion-geologico-geotecnica",
+      "analisis-geotecnicos-especializados",
+      "consultoria-integral"
+    ],
+    "sector": "institucional-publico",
+    "municipio": "Medellín",
+    "departamento": "Antioquia",
+    "cliente": "MC Arquitectos (EDU)",
+    "destacado": false
+  },
+  {
+    "id": 7,
+    "slug": "relleno-sanitario-de-la-ceja",
+    "titulo_corto": "Relleno sanitario de La Ceja",
+    "descripcion": "Interventoría técnica, administrativa y financiera de la optimización, clausura y ampliación del relleno sanitario de La Ceja.",
+    "alcance": [
+      "Interventoría técnica",
+      "Interventoría administrativa",
+      "Interventoría financiera",
+      "Optimización, clausura y ampliación"
+    ],
+    "tipo": "interventoria",
+    "lineas": [
+      "interventoria-tecnica-y-administrativa"
+    ],
+    "sector": "saneamiento-residuos",
+    "municipio": "La Ceja",
+    "departamento": "Antioquia",
+    "cliente": "Empresas Públicas de La Ceja E.S.P.",
+    "destacado": false
+  },
+  {
+    "id": 8,
+    "slug": "hospital-san-juan-de-dios-rionegro",
+    "titulo_corto": "Hospital San Juan de Dios, Rionegro",
+    "descripcion": "Estudios y diseños geotécnicos para el análisis de vulnerabilidad del Hospital San Juan de Dios de Rionegro.",
+    "alcance": [
+      "Estudios geotécnicos",
+      "Diseños geotécnicos",
+      "Insumos para análisis de vulnerabilidad"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "analisis-geotecnicos-especializados",
+      "analisis-estructural-avanzado"
+    ],
+    "sector": "salud",
+    "municipio": "Rionegro",
+    "departamento": "Antioquia",
+    "cliente": "Cliente privado",
+    "destacado": false
+  },
+  {
+    "id": 9,
+    "slug": "edificio-de-psicologia-univalle-melendez",
+    "titulo_corto": "Edificio de Psicología, Univalle (Meléndez)",
+    "descripcion": "Estudios y diseños geotécnicos para el edificio de Psicología con aislamiento sísmico en la sede Meléndez de la Universidad del Valle (Cali).",
+    "alcance": [
+      "Estudios geotécnicos",
+      "Diseños geotécnicos",
+      "Edificio con aislamiento sísmico"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "educativo",
+    "municipio": "Cali",
+    "departamento": "Valle del Cauca",
+    "cliente": "IngenioBIM",
+    "destacado": false
+  },
+  {
+    "id": 10,
+    "slug": "nueva-sede-institucion-universitaria-colegio-mayor",
+    "titulo_corto": "Nueva sede Institución Universitaria Colegio Mayor",
+    "descripcion": "Estudios geotécnicos, geológicos e hidrogeológicos para elementos modulares de la nueva sede de la Institución Universitaria Colegio Mayor.",
+    "alcance": [
+      "Estudios geotécnicos",
+      "Estudios geológicos",
+      "Estudios hidrogeológicos",
+      "Elementos modulares"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "exploracion-geologico-geotecnica",
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "educativo",
+    "municipio": null,
+    "departamento": null,
+    "cliente": "FODESEP",
+    "destacado": false,
+    "pendiente_confirmar": true,
+    "nota_pendiente": "El brochure no indica ciudad de la sede"
+  },
+  {
+    "id": 11,
+    "slug": "mall-puerta-de-los-embalses-marinilla",
+    "titulo_corto": "Mall Puerta de los Embalses, Marinilla",
+    "descripcion": "Estudios geotécnicos para el centro comercial Puerta de los Embalses en Marinilla (Antioquia).",
+    "alcance": [
+      "Estudios geotécnicos"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "exploracion-geologico-geotecnica",
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "comercial",
+    "municipio": "Marinilla",
+    "departamento": "Antioquia",
+    "cliente": "ACCA Constructora y Comercializadora",
+    "destacado": false
+  },
+  {
+    "id": 12,
+    "slug": "silos-molino-santa-marta-buga",
+    "titulo_corto": "Silos Molino Santa Marta, Buga",
+    "descripcion": "Estudios y diseños geotécnicos para los silos del Molino Santa Marta en Buga.",
+    "alcance": [
+      "Estudios geotécnicos",
+      "Diseños geotécnicos"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "industrial",
+    "municipio": "Buga",
+    "departamento": "Valle del Cauca",
+    "cliente": "Aschner Consultores Asociados",
+    "destacado": false
+  },
+  {
+    "id": 13,
+    "slug": "tanque-e-infraestructura-andercol",
+    "titulo_corto": "Tanque e infraestructura ANDERCOL",
+    "descripcion": "Estudios y diseños geotécnicos para el tanque e infraestructura de ANDERCOL.",
+    "alcance": [
+      "Estudios geotécnicos",
+      "Diseños geotécnicos"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "industrial",
+    "municipio": null,
+    "departamento": null,
+    "cliente": "AG Geoconsulting – IngenioBIM",
+    "destacado": false,
+    "pendiente_confirmar": true,
+    "nota_pendiente": "El brochure no indica ubicación"
+  },
+  {
+    "id": 14,
+    "slug": "bodega-en-marinilla",
+    "titulo_corto": "Bodega en Marinilla",
+    "descripcion": "Estudios geotécnicos para una bodega en Marinilla (Antioquia).",
+    "alcance": [
+      "Estudios geotécnicos"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "exploracion-geologico-geotecnica",
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "industrial",
+    "municipio": "Marinilla",
+    "departamento": "Antioquia",
+    "cliente": "ACCA Constructora y Comercializadora",
+    "destacado": false
+  },
+  {
+    "id": 15,
+    "slug": "terminal-portuaria-rio-cordoba",
+    "titulo_corto": "Terminal portuaria Río Córdoba",
+    "descripcion": "Parametrización geotécnica y análisis de estabilidad de obras de dragado para la terminal portuaria Río Córdoba.",
+    "alcance": [
+      "Parametrización geotécnica",
+      "Estabilidad de obras de dragado"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "portuario",
+    "municipio": null,
+    "departamento": null,
+    "cliente": "Aqua & Terra Consultores Asociados",
+    "destacado": true,
+    "razon_destacado": "Único proyecto portuario del listado: parametrización geotécnica y estabilidad de obras de dragado.",
+    "pendiente_confirmar": true,
+    "nota_pendiente": "El brochure no indica lugar de la terminal"
+  },
+  {
+    "id": 16,
+    "slug": "bloque-7-iu-pascual-bravo",
+    "titulo_corto": "Bloque 7, IU Pascual Bravo",
+    "descripcion": "Estudio de suelos según NSR-10, Título H, para el Bloque 7 de la Institución Universitaria Pascual Bravo.",
+    "alcance": [
+      "Estudio de suelos conforme a NSR-10, Título H"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "exploracion-geologico-geotecnica",
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "educativo",
+    "municipio": "Medellín",
+    "departamento": "Antioquia",
+    "cliente": "FODESEP",
+    "destacado": false,
+    "pendiente_confirmar": true,
+    "nota_pendiente": "Municipio deducido por la sede de la institución; confirmar"
+  },
+  {
+    "id": 17,
+    "slug": "villatina-y-palos-verdes",
+    "titulo_corto": "Villatina y Palos Verdes",
+    "descripcion": "Revisión de obras de contención y estabilización en los sectores Villatina y Palos Verdes.",
+    "alcance": [
+      "Revisión de obras de contención",
+      "Revisión de obras de estabilización"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "puentes-mitigacion",
+    "municipio": "Medellín",
+    "departamento": "Antioquia",
+    "cliente": "Ingeniería, Saneamiento y Desarrollo Ltda.",
+    "destacado": false,
+    "pendiente_confirmar": true,
+    "nota_pendiente": "Municipio deducido (Villatina, Medellín); confirmar"
+  },
+  {
+    "id": 18,
+    "slug": "laboratorios-de-estructuras-y-geotecnia-univalle",
+    "titulo_corto": "Laboratorios de Estructuras y Geotecnia, Univalle",
+    "descripcion": "Estudios y diseños geotécnicos para el Edificio de Laboratorios de Estructuras y Geotecnia de la Universidad del Valle.",
+    "alcance": [
+      "Estudios geotécnicos",
+      "Diseños geotécnicos"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "educativo",
+    "municipio": "Cali",
+    "departamento": "Valle del Cauca",
+    "cliente": "AG Geoconsulting – IngenioBIM",
+    "destacado": false,
+    "pendiente_confirmar": true,
+    "nota_pendiente": "Sede/municipio deducido por la universidad; confirmar"
+  },
+  {
+    "id": 19,
+    "slug": "uf1-canas-gordasuramita",
+    "titulo_corto": "UF1 Cañas Gordas–Uramita",
+    "descripcion": "Consultoría para la Unidad Funcional 1 Cañas Gordas–Uramita: estabilización de puntos críticos, calzadas elevadas, ZODMES e instrumentación geotécnica.",
+    "alcance": [
+      "Estabilización de puntos críticos",
+      "Calzadas elevadas",
+      "ZODMES",
+      "Instrumentación geotécnica"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "analisis-geotecnicos-especializados",
+      "consultoria-integral"
+    ],
+    "sector": "infraestructura-vial",
+    "municipio": "Cañas Gordas – Uramita",
+    "departamento": "Antioquia",
+    "cliente": "Consorcio Única",
+    "destacado": true,
+    "razon_destacado": "Proyecto vial con estabilización de puntos críticos, ZODMES e instrumentación geotécnica."
+  },
+  {
+    "id": 20,
+    "slug": "eliminacion-de-descargas-psmv-epm",
+    "titulo_corto": "Eliminación de descargas PSMV (EPM)",
+    "descripcion": "Exploración, ensayos y recomendaciones geotécnicas de construcción para la eliminación de descargas del PSMV de EPM.",
+    "alcance": [
+      "Exploración",
+      "Ensayos",
+      "Recomendaciones geotécnicas de construcción"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "exploracion-geologico-geotecnica",
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "acueducto-alcantarillado",
+    "municipio": null,
+    "departamento": null,
+    "cliente": "IDOM Consulting, Engineering, Architecture",
+    "destacado": false,
+    "pendiente_confirmar": true,
+    "nota_pendiente": "El brochure no indica municipio"
+  },
+  {
+    "id": 21,
+    "slug": "pricesmart-laguna-club-cartagena",
+    "titulo_corto": "PriceSmart Laguna Club, Cartagena",
+    "descripcion": "Estudio de suelos y diseño estructural para PriceSmart Laguna Club en Cartagena, en unión temporal con Dual Ingenieros.",
+    "alcance": [
+      "Estudio de suelos",
+      "Diseño estructural",
+      "Unión temporal con Dual Ingenieros"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "exploracion-geologico-geotecnica",
+      "analisis-estructural-avanzado",
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "comercial",
+    "municipio": "Cartagena",
+    "departamento": "Bolívar",
+    "cliente": "PriceSmart Colombia",
+    "destacado": true,
+    "razon_destacado": "Proyecto comercial que combina estudio de suelos y diseño estructural en unión temporal, para un cliente con cuatro obras en el portafolio."
+  },
+  {
+    "id": 22,
+    "slug": "pricesmart-san-michel-el-poblado",
+    "titulo_corto": "PriceSmart San Michel, El Poblado",
+    "descripcion": "Estudio de suelos adicional para PriceSmart San Michel, en El Poblado (Medellín).",
+    "alcance": [
+      "Estudio de suelos adicional"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "exploracion-geologico-geotecnica"
+    ],
+    "sector": "comercial",
+    "municipio": "Medellín",
+    "departamento": "Antioquia",
+    "cliente": "PriceSmart Colombia",
+    "destacado": false
+  },
+  {
+    "id": 23,
+    "slug": "parque-de-artes-y-obras-bello",
+    "titulo_corto": "Parque de Artes y Obras, Bello",
+    "descripcion": "Patología, vulnerabilidad y repotenciación estructural y geotécnica del Parque de Artes y Obras en Bello.",
+    "alcance": [
+      "Patología",
+      "Vulnerabilidad",
+      "Repotenciación estructural",
+      "Repotenciación geotécnica"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "analisis-estructural-avanzado",
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "institucional-publico",
+    "municipio": "Bello",
+    "departamento": "Antioquia",
+    "cliente": "Bioexplora",
+    "destacado": false
+  },
+  {
+    "id": 24,
+    "slug": "relavera-etapa-3-antioquia-gold",
+    "titulo_corto": "Relavera etapa 3, Antioquia Gold",
+    "descripcion": "Interventoría técnica, operativa y financiera del recrecimiento de la relavera etapa 3.",
+    "alcance": [
+      "Interventoría técnica",
+      "Interventoría operativa",
+      "Interventoría financiera",
+      "Recrecimiento de relavera"
+    ],
+    "tipo": "interventoria",
+    "lineas": [
+      "interventoria-tecnica-y-administrativa"
+    ],
+    "sector": "mineria",
+    "municipio": null,
+    "departamento": null,
+    "cliente": "Antioquia Gold",
+    "destacado": true,
+    "razon_destacado": "Interventoría técnica, operativa y financiera en el sector minero; diversifica el portafolio más allá de la edificación.",
+    "pendiente_confirmar": true,
+    "nota_pendiente": "El brochure no indica ubicación"
+  },
+  {
+    "id": 25,
+    "slug": "sedes-de-seguridad-y-justicia-de-medellin",
+    "titulo_corto": "Sedes de seguridad y justicia de Medellín",
+    "descripcion": "Estudios de suelos, patología, vulnerabilidad sísmica y reforzamiento de tres sedes de seguridad y justicia: Aures, Buenos Aires y Manrique.",
+    "alcance": [
+      "Estudios de suelos",
+      "Patología",
+      "Vulnerabilidad sísmica",
+      "Reforzamiento",
+      "3 sedes: Aures, Buenos Aires, Manrique"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "exploracion-geologico-geotecnica",
+      "analisis-estructural-avanzado"
+    ],
+    "sector": "institucional-publico",
+    "municipio": "Medellín",
+    "departamento": "Antioquia",
+    "cliente": "Bioexplora",
+    "destacado": true,
+    "razon_destacado": "Integra estudios de suelos, patología, vulnerabilidad sísmica y reforzamiento en tres sedes públicas: muestra la línea estructural."
+  },
+  {
+    "id": 26,
+    "slug": "pricesmart-serena-del-mar-cartagena",
+    "titulo_corto": "PriceSmart Serena del Mar, Cartagena",
+    "descripcion": "Estudio de suelos para licencia de construcción de PriceSmart Serena del Mar en Cartagena.",
+    "alcance": [
+      "Estudio de suelos para licencia de construcción"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "exploracion-geologico-geotecnica",
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "comercial",
+    "municipio": "Cartagena",
+    "departamento": "Bolívar",
+    "cliente": "PriceSmart Colombia",
+    "destacado": false
+  },
+  {
+    "id": 27,
+    "slug": "relleno-sanitario-de-el-carmen-de-viboral",
+    "titulo_corto": "Relleno sanitario de El Carmen de Viboral",
+    "descripcion": "Adecuación de celdas, reacomodación de residuos, clausura y abandono del relleno sanitario de El Carmen de Viboral (2 contratos).",
+    "alcance": [
+      "Adecuación de celdas",
+      "Reacomodación de residuos",
+      "Clausura y abandono",
+      "2 contratos"
+    ],
+    "tipo": "obra",
+    "lineas": [
+      "construccion-de-cimentaciones"
+    ],
+    "sector": "saneamiento-residuos",
+    "municipio": "El Carmen de Viboral",
+    "departamento": "Antioquia",
+    "cliente": "ESP El Carmen de Viboral",
+    "destacado": true,
+    "razon_destacado": "Ejecución directa en obra (adecuación de celdas, clausura) en dos contratos; evidencia la capacidad constructiva."
+  },
+  {
+    "id": 28,
+    "slug": "muro-de-contencion-via-a-mapei-la-estrella",
+    "titulo_corto": "Muro de contención vía a MAPEI, La Estrella",
+    "descripcion": "Estudio geotécnico para el muro de contención de la vía de acceso a MAPEI en La Estrella.",
+    "alcance": [
+      "Estudio geotécnico del muro de contención"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "infraestructura-vial",
+    "municipio": "La Estrella",
+    "departamento": "Antioquia",
+    "cliente": "DHM Consultores",
+    "destacado": false
+  },
+  {
+    "id": 29,
+    "slug": "acueducto-y-alcantarillado-circuito-santo-domingo",
+    "titulo_corto": "Acueducto y alcantarillado, circuito Santo Domingo",
+    "descripcion": "Estudio de suelos y diseño geotécnico para el acueducto y alcantarillado del circuito Santo Domingo (Medellín).",
+    "alcance": [
+      "Estudio de suelos",
+      "Diseño geotécnico"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "exploracion-geologico-geotecnica",
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "acueducto-alcantarillado",
+    "municipio": "Medellín",
+    "departamento": "Antioquia",
+    "cliente": "IDOM Consulting, Engineering, Architecture",
+    "destacado": false
+  },
+  {
+    "id": 30,
+    "slug": "estructura-de-cizalla-y-bascula-diaco",
+    "titulo_corto": "Estructura de cizalla y báscula, DIACO",
+    "descripcion": "Topografía y estudios geotécnicos para la estructura de cizalla y báscula de DIACO en Copacabana.",
+    "alcance": [
+      "Topografía",
+      "Estudios geotécnicos"
+    ],
+    "tipo": "consultoria",
+    "lineas": [
+      "exploracion-geologico-geotecnica",
+      "analisis-geotecnicos-especializados"
+    ],
+    "sector": "industrial",
+    "municipio": "Copacabana",
+    "departamento": "Antioquia",
+    "cliente": "LFR Ingeniería",
+    "destacado": false
+  },
+  {
+    "id": 31,
+    "slug": "corporacion-educativa-nazaret",
+    "titulo_corto": "Corporación Educativa Nazaret",
+    "descripcion": "Movimientos de tierra en las sedes Barrio Nuevo y Hosanna de la Corporación Educativa Nazaret.",
+    "alcance": [
+      "Movimientos de tierra",
+      "Sedes Barrio Nuevo y Hosanna"
+    ],
+    "tipo": "obra",
+    "lineas": [
+      "construccion-de-cimentaciones"
+    ],
+    "sector": "educativo",
+    "municipio": null,
+    "departamento": null,
+    "cliente": "Arráez Xeneizes Ingeniería",
+    "destacado": false,
+    "pendiente_confirmar": true,
+    "nota_pendiente": "El brochure no indica ubicación"
+  }
+]

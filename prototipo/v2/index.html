@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estudios de Suelos, Cimentaciones y Construcción | Grupo G&amp;E S.A.S.</title>
+<meta name="description" content="Consultoría geotécnica y construcción: estudios de suelos NSR-10, diseño de cimentaciones, estabilidad de taludes e interventoría. Cotice su proyecto en línea.">
+<link rel="canonical" href="https://grupogye.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Grupo G&amp;E · Consultoría geotécnica y construcción">
+<meta property="og:description" content="Del estudio de suelos a la obra terminada, con un solo responsable técnico.">
+<meta name="theme-color" content="#15181B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window)document.documentElement.classList.add('motion');</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"ProfessionalService","@id":"https://grupogye.com/#empresa","name":"Grupo G&E S.A.S.","url":"https://grupogye.com/",
+     "description":"Consultoría geotécnica y construcción","areaServed":"CO",
+     "hasOfferCatalog":{"@type":"OfferCatalog","name":"Servicios","itemListElement":[
+       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Estudios de suelos y exploración geotécnica"}},
+       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Diseño de cimentaciones"}},
+       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Estabilidad de taludes y contención"}},
+       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Estudios de amenaza y riesgo por remoción en masa"}},
+       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Construcción de obras civiles y geotécnicas"}},
+       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Interventoría y supervisión técnica"}}]}},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"¿Cuándo es obligatorio un estudio de suelos?","acceptedAnswer":{"@type":"Answer","text":"En Colombia, el Título H de la NSR-10 exige un estudio geotécnico para tramitar la licencia de construcción. Su alcance (número de sondeos y profundidad) depende de la categoría de la edificación: número de pisos y cargas."}},
+      {"@type":"Question","name":"¿Qué información necesito para cotizar?","acceptedAnswer":{"@type":"Answer","text":"Ubicación del lote, tipo de obra, área aproximada, número de pisos y sótanos y, si existen, planos arquitectónicos o topográficos."}},
+      {"@type":"Question","name":"¿Pueden construir lo que diseñan?","acceptedAnswer":{"@type":"Answer","text":"Sí. Grupo G&E ofrece consultoría y construcción, de modo que el mismo equipo responde por el estudio, el diseño y la ejecución."}}
+    ]}
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div class="proto" role="note">PROTOTIPO v2 · Datos <span style="border-bottom:1.5px dashed currentColor">subrayados así</span> y proyectos marcados "Ejemplo" se reemplazan con el brochure</div>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Grupo G&amp;E, inicio">
+      <span class="logo-mark" aria-hidden="true">G&amp;E</span>
+      <span class="logo-txt">Grupo G&amp;E<small>Geotecnia · Construcción</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a href="#proceso">Cómo trabajamos</a><a href="#preguntas">Preguntas</a>
+    </nav>
+    <a class="btn btn-clay" href="#cotizar">Cotizar proyecto</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="mnav" aria-label="Abrir menú">
+      <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2"/></svg>
+    </button>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Principal móvil">
+    <a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a href="#proceso">Cómo trabajamos</a><a href="#preguntas">Preguntas</a><a href="#cotizar">Cotizar proyecto</a>
+  </nav>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+
+<!-- Medidor de profundidad: la página como un sondeo -->
+<div class="gauge" aria-hidden="true">
+  <div class="gauge-ticks"></div>
+  <div class="gauge-mark"><span><b id="gDepth">0.0 m</b><em id="gLayer" style="font-style:normal">Superficie</em></span></div>
+</div>
+
+<main id="contenido">
+<section class="hero on-dark" data-stratum="Superficie" aria-labelledby="h1">
+  <svg class="contours" id="contours" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+  <div class="wrap">
+    <div>
+      <p class="mono eyebrow">Consultoría geotécnica y construcción</p>
+      <h1 id="h1"><span class="line-mask"><span style="--l:0">Toda obra</span></span><span class="line-mask"><span style="--l:1">sólida empieza</span></span><span class="line-mask"><span style="--l:2"><em>bajo tierra.</em></span></span></h1>
+      <p class="lead">Estudiamos el suelo, diseñamos la cimentación y construimos la obra. Un solo equipo responde por su proyecto desde el primer sondeo hasta la entrega.</p>
+      <div class="ctas">
+        <a class="btn btn-clay" href="#cotizar">Cotizar mi proyecto
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" fill="none"/></svg></a>
+        <a class="btn btn-line" href="#proyectos">Ver proyectos</a>
+      </div>
+      <div class="hero-facts">
+        <div><b class="tbd" title="Por confirmar con el brochure" data-count="120" data-prefix="+">+120</b><span>proyectos ejecutados</span></div>
+        <div><b class="tbd" title="Por confirmar con el brochure" data-count="15">15</b><span>años de experiencia</span></div>
+        <div><b>NSR-10</b><span>Título H, geotecnia</span></div>
+      </div>
+    </div>
+
+    <div class="strata-wrap">
+      <svg class="strata" id="strata" viewBox="0 0 480 540" role="group" aria-labelledby="st-t">
+        <title id="st-t">Perfil estratigráfico interactivo: seleccione un estrato</title>
+        <defs>
+          <pattern id="pf" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#6F6455"/><circle cx="3" cy="4" r="1.4" fill="#3E3830"/><circle cx="10" cy="10" r="1.8" fill="#8C7F6C"/><path d="M8 3l3 1-2 2z" fill="#3E3830"/></pattern>
+          <pattern id="pc" width="20" height="10" patternUnits="userSpaceOnUse"><rect width="20" height="10" fill="#8A4A2E"/><path d="M2 5h10" stroke="#B26A47" stroke-width="1.4"/></pattern>
+          <pattern id="ps" width="9" height="9" patternUnits="userSpaceOnUse"><rect width="9" height="9" fill="#A68E5E"/><circle cx="2" cy="2" r="1" fill="#D9C38F"/><circle cx="6.5" cy="6.5" r="1" fill="#D9C38F"/></pattern>
+          <pattern id="pr" width="26" height="16" patternUnits="userSpaceOnUse"><rect width="26" height="16" fill="#4E5861"/><path d="M0 .5h26M0 8.5h26M8 .5v8M21 8.5v8" stroke="#6E7a85" stroke-width="1.2"/></pattern>
+          <clipPath id="dig"><rect id="digRect" x="60" y="78" width="290" height="430"/></clipPath>
+        </defs>
+        <g stroke="#E4E7EA" stroke-width="1.5" fill="none">
+          <rect x="120" y="18" width="140" height="62"/>
+          <path d="M120 38h140M120 58h140M160 18v62M200 18v62M240 18v40"/>
+        </g>
+        <g clip-path="url(#dig)">
+          <g class="layer" tabindex="0" role="button" aria-pressed="false" data-k="0"><path class="fillp" d="M70 80H330V122C260 118 160 127 70 121Z" fill="url(#pf)"/><path class="edge" d="M70 80H330V122C260 118 160 127 70 121Z"/></g>
+          <g class="layer" tabindex="0" role="button" aria-pressed="false" data-k="1"><path class="fillp" d="M70 121C160 127 260 118 330 122V238C250 230 150 246 70 236Z" fill="url(#pc)"/><path class="edge" d="M70 121C160 127 260 118 330 122V238C250 230 150 246 70 236Z"/></g>
+          <g class="layer" tabindex="0" role="button" aria-pressed="false" data-k="2"><path class="fillp" d="M70 236C150 246 250 230 330 238V360C240 352 160 368 70 357Z" fill="url(#ps)"/><path class="edge" d="M70 236C150 246 250 230 330 238V360C240 352 160 368 70 357Z"/></g>
+          <g class="layer" tabindex="0" role="button" aria-pressed="false" data-k="3"><path class="fillp" d="M70 357C160 368 240 352 330 360V500H70Z" fill="url(#pr)"/><path class="edge" d="M70 357C160 368 240 352 330 360V500H70Z"/></g>
+        </g>
+        <path d="M60 80H340" stroke="#E4E7EA" stroke-width="2"/>
+        <line class="pile" x1="150" y1="80" x2="150" y2="400" stroke="#E9C2AC" stroke-width="8" pointer-events="none"/>
+        <line class="pile b" x1="230" y1="80" x2="230" y2="400" stroke="#E9C2AC" stroke-width="8" pointer-events="none"/>
+        <g aria-hidden="true">
+          <path d="M44 80V500" stroke="#5A6066"/>
+          <path d="M38 80h6M38 150h6M38 220h6M38 290h6M38 360h6M38 430h6M38 500h6" stroke="#A9B0B6"/>
+          <text x="34" y="84" text-anchor="end">0</text><text x="34" y="154" text-anchor="end">2</text><text x="34" y="224" text-anchor="end">4</text>
+          <text x="34" y="294" text-anchor="end">6</text><text x="34" y="364" text-anchor="end">8</text><text x="34" y="434" text-anchor="end">10</text><text x="34" y="504" text-anchor="end">12</text>
+          <text x="44" y="528" text-anchor="middle">PROF. (m)</text>
+        </g>
+        <g aria-hidden="true">
+          <g class="st-l" data-y="100"><path d="M330 100h14" stroke="#A9B0B6"/><text class="lbl" x="350" y="98">Relleno</text><text x="350" y="113">0.0 – 1.2 m</text></g>
+          <g class="st-l" data-y="178"><path d="M330 178h14" stroke="#A9B0B6"/><text class="lbl" x="350" y="176">Arcilla limosa</text><text class="nspt" x="350" y="191">N-SPT 6–9</text></g>
+          <g class="st-l" data-y="298"><path d="M330 298h14" stroke="#A9B0B6"/><text class="lbl" x="350" y="296">Arena densa</text><text class="nspt" x="350" y="311">N-SPT 28–35</text></g>
+          <g class="st-l" data-y="430"><path d="M330 430h14" stroke="#A9B0B6"/><text class="lbl" x="350" y="428">Roca meteorizada</text><text class="nspt" x="350" y="443">N-SPT &gt;50</text></g>
+        </g>
+      </svg>
+      <div class="layer-card" aria-live="polite">
+        <span class="mono" id="lcTitle">Sondeo S-01 · ilustrativo</span>
+        <p id="lcText">Así leemos un terreno antes de construir. Toque cada estrato para ver qué significa para su obra.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="value" data-stratum="Relleno" aria-label="Por qué Grupo G&amp;E">
+  <div class="wrap">
+    <div><span class="mono">01</span><h3>Del estudio a la obra</h3><p>El equipo que estudia el suelo es el mismo que construye. No hay brechas entre el diseño y la ejecución.</p></div>
+    <div><span class="mono">02</span><h3>Decisiones con datos de campo</h3><p>Exploración, laboratorio y modelación antes de recomendar. Cada cimentación se justifica con números.</p></div>
+    <div><span class="mono">03</span><h3>Norma y trazabilidad</h3><p>Informes conforme a la NSR-10, listos para licencia de construcción, con memoria de cálculo y registros de ensayo.</p></div>
+  </div>
+</section>
+
+<section class="sec" id="servicios" data-stratum="Arcilla limosa" aria-labelledby="h-svc">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="mono">Servicios</span><h2 id="h-svc">Ingeniería para lo que no se ve, y construcción para lo que sí.</h2></div>
+      <p>Seis líneas de trabajo que cubren el ciclo completo de un proyecto, desde la viabilidad del terreno hasta la obra terminada.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc">
+        <div class="svc-top"><svg class="svc-ico" viewBox="0 0 44 44" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4v26M16 30h12M14 4h16"/><path d="M4 36h36M8 41h28" stroke-dasharray="3 3"/></svg><span class="mono">GEO-01</span></div>
+        <h3>Estudios de suelos y exploración geotécnica</h3>
+        <p>Sondeos, apiques y ensayos de laboratorio para caracterizar el terreno y definir sus parámetros de diseño.</p>
+        <ul><li>SPT</li><li>Apiques</li><li>Laboratorio</li><li>Informe NSR-10</li></ul>
+        <button class="link" type="button" data-quote="suelos">Cotizar este servicio →</button>
+      </article>
+      <article class="svc">
+        <div class="svc-top"><svg class="svc-ico" viewBox="0 0 44 44" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 14h32v6H6zM12 20v20M32 20v20M22 20v14"/></svg><span class="mono">GEO-02</span></div>
+        <h3>Diseño de cimentaciones</h3>
+        <p>Cimentaciones superficiales y profundas optimizadas para la carga real del proyecto y las condiciones del suelo.</p>
+        <ul><li>Zapatas</li><li>Losas</li><li>Pilotes</li><li>Asentamientos</li></ul>
+        <button class="link" type="button" data-quote="cimentaciones">Cotizar este servicio →</button>
+      </article>
+      <article class="svc">
+        <div class="svc-top"><svg class="svc-ico" viewBox="0 0 44 44" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 40L24 8l16 32z"/><path d="M14 24l20 4M18 32l18 2"/></svg><span class="mono">GEO-03</span></div>
+        <h3>Estabilidad de taludes y contención</h3>
+        <p>Análisis y diseño de soluciones para laderas, cortes y excavaciones: muros, anclajes, pantallas y drenajes.</p>
+        <ul><li>Muros</li><li>Anclajes</li><li>Drenaje</li><li>Excavaciones</li></ul>
+        <button class="link" type="button" data-quote="taludes">Cotizar este servicio →</button>
+      </article>
+      <article class="svc">
+        <div class="svc-top"><svg class="svc-ico" viewBox="0 0 44 44" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6l18 32H4z"/><path d="M22 18v10M22 32v2"/></svg><span class="mono">GEO-04</span></div>
+        <h3>Amenaza y riesgo por remoción en masa</h3>
+        <p>Estudios de amenaza, vulnerabilidad y riesgo para planes parciales, licencias y ordenamiento territorial.</p>
+        <ul><li>Zonificación</li><li>POT</li><li>Planes parciales</li></ul>
+        <button class="link" type="button" data-quote="riesgo">Cotizar este servicio →</button>
+      </article>
+      <article class="svc">
+        <div class="svc-top"><svg class="svc-ico" viewBox="0 0 44 44" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 40V18l16-10 16 10v22M6 40h32M16 40V26h12v14"/></svg><span class="mono">CON-01</span></div>
+        <h3>Construcción de obras civiles y geotécnicas</h3>
+        <p>Ejecución de cimentaciones, contenciones, movimientos de tierra y obra civil, con control de calidad en cada etapa.</p>
+        <ul><li>Movimiento de tierras</li><li>Pilotaje</li><li>Obra civil</li></ul>
+        <button class="link" type="button" data-quote="construccion">Cotizar este servicio →</button>
+      </article>
+      <article class="svc">
+        <div class="svc-top"><svg class="svc-ico" viewBox="0 0 44 44" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="6" width="28" height="34"/><path d="M15 16h14M15 23h14M15 30l4 4 8-8"/></svg><span class="mono">CON-02</span></div>
+        <h3>Interventoría y supervisión técnica</h3>
+        <p>Seguimiento independiente a obras de terceros para verificar que se construya lo diseñado y se cumpla la norma.</p>
+        <ul><li>Control de calidad</li><li>Supervisión</li><li>Informes</li></ul>
+        <button class="link" type="button" data-quote="interventoria">Cotizar este servicio →</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-label="Sectores que atendemos">
+  <div class="ticker-track">
+    <span>Vivienda</span><span>Edificios en altura</span><span>Infraestructura vial</span><span>Industria y logística</span><span>Sector público</span><span>Comercio</span>
+    <span aria-hidden="true">Vivienda</span><span aria-hidden="true">Edificios en altura</span><span aria-hidden="true">Infraestructura vial</span><span aria-hidden="true">Industria y logística</span><span aria-hidden="true">Sector público</span><span aria-hidden="true">Comercio</span>
+  </div>
+</div>
+
+<section class="sec" id="proyectos" data-stratum="Arena densa" aria-labelledby="h-proj">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="mono">Proyectos</span><h2 id="h-proj">Obras que ya están en pie.</h2></div>
+      <p>Filtre por tipo de servicio y abra cada caso para ver el problema, el suelo encontrado y la solución que aplicamos.</p>
+    </div>
+    <div class="chips" role="group" aria-label="Filtrar proyectos por servicio" id="chips"></div>
+    <div class="proj-grid" id="projGrid" aria-live="polite"></div>
+  </div>
+</section>
+
+<dialog class="case" id="caseDlg" aria-labelledby="caseTitle">
+  <div class="case-head">
+    <span class="mono" id="caseMeta"></span>
+    <button class="case-close" type="button" id="caseClose" aria-label="Cerrar"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 3l12 12M15 3L3 15" stroke="currentColor" stroke-width="2"/></svg></button>
+  </div>
+  <div class="case-body">
+    <div class="proj-img" style="aspect-ratio:21/9"><span class="mono">Fotos del proyecto · pendiente</span></div>
+    <h2 id="caseTitle"></h2>
+    <div class="case-grid">
+      <div><span class="mono">El reto</span><p id="caseProblem"></p></div>
+      <div><span class="mono">El suelo</span><p id="caseSoil"></p></div>
+      <div><span class="mono">La solución</span><p id="caseSolution"></p></div>
+      <div><span class="mono">El resultado</span><p id="caseResult"></p></div>
+    </div>
+    <button class="btn btn-clay" type="button" id="caseQuote">Cotizar un proyecto similar</button>
+  </div>
+</dialog>
+
+<section class="sec process on-dark" id="proceso" data-stratum="Arena densa" aria-labelledby="h-proc">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="mono">Cómo trabajamos</span><h2 id="h-proc">Cuatro etapas, un solo responsable.</h2></div>
+      <p>Cada etapa entrega un resultado verificable antes de pasar a la siguiente. Usted sabe siempre en qué punto está su proyecto.</p>
+    </div>
+    <ol class="steps">
+      <li class="step"><span class="mono">Etapa 01</span><h3>Exploración</h3><p>Visita técnica, plan de exploración y toma de muestras en campo.</p></li>
+      <li class="step"><span class="mono">Etapa 02</span><h3>Análisis</h3><p>Ensayos de laboratorio, perfil estratigráfico y parámetros de diseño.</p></li>
+      <li class="step"><span class="mono">Etapa 03</span><h3>Diseño</h3><p>Recomendaciones de cimentación, contención y procesos constructivos.</p></li>
+      <li class="step"><span class="mono">Etapa 04</span><h3>Ejecución</h3><p>Construcción o acompañamiento en obra con control de calidad.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec" id="preguntas" data-stratum="Roca meteorizada" aria-labelledby="h-faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="mono">Preguntas frecuentes</span><h2 id="h-faq">Lo que nos preguntan antes de empezar.</h2></div>
+      <p>Si su duda no está aquí, escríbanos. Un ingeniero le responde directamente.</p>
+    </div>
+    <div class="faq">
+      <details><summary>¿Cuándo es obligatorio un estudio de suelos?</summary><p>En Colombia, el Título H de la NSR-10 exige un estudio geotécnico para tramitar la licencia de construcción. Su alcance (número de sondeos y profundidad) depende de la categoría de la edificación: número de pisos y cargas.</p></details>
+      <details><summary>¿Cuánto tarda un estudio de suelos?</summary><p>Depende del número de sondeos y ensayos. Para una edificación típica, entre <span class="tbd" title="Por confirmar con la empresa">2 y 4 semanas</span> desde la visita hasta la entrega del informe.</p></details>
+      <details><summary>¿Qué información necesito para cotizar?</summary><p>Ubicación del lote, tipo de obra, área aproximada, número de pisos y sótanos y, si existen, planos arquitectónicos o topográficos. Con eso enviamos una propuesta técnica y económica.</p></details>
+      <details><summary>¿Trabajan fuera de su ciudad?</summary><p><span class="tbd" title="Por confirmar con la empresa">Sí, atendemos proyectos en varias regiones del país.</span> Cuéntenos dónde está su proyecto.</p></details>
+      <details><summary>¿Pueden construir lo que diseñan?</summary><p>Sí. Esa es nuestra diferencia: el mismo equipo responde por el estudio, el diseño y la ejecución, sin intermediarios entre quien recomienda y quien construye.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec quote on-dark" id="cotizar" data-stratum="Roca firme" aria-labelledby="h-quote">
+  <div class="wrap">
+    <div class="quote-info">
+      <span class="mono">Cotizar</span>
+      <h2 id="h-quote">Cuéntenos de su proyecto.</h2>
+      <p>Tres pasos, menos de dos minutos. Le respondemos con una propuesta técnica y económica en menos de <span class="tbd" title="Por confirmar">24 horas hábiles</span>.</p>
+      <ul class="cinfo">
+        <li><span class="mono">WhatsApp</span><a class="tbd" href="#" data-wa title="Número por confirmar">+57 300 000 0000</a></li>
+        <li><span class="mono">Correo</span><a class="tbd" href="#" title="Correo por confirmar">contacto@grupogye.com</a></li>
+        <li><span class="mono">Oficina</span><span class="tbd" title="Dirección por confirmar">Dirección, ciudad</span></li>
+        <li><span class="mono">Horario</span><span class="tbd" title="Por confirmar">Lun–Vie · 7:00–17:00</span></li>
+      </ul>
+    </div>
+
+    <form class="wizard" id="wizard" novalidate>
+      <ol class="wsteps" aria-label="Pasos"><li class="current" aria-current="step">1 · Servicio</li><li>2 · Proyecto</li><li>3 · Contacto</li></ol>
+
+      <fieldset data-step="1">
+        <legend tabindex="-1">¿Qué necesita?</legend>
+        <div class="opts" id="svcOpts" role="radiogroup" aria-describedby="svcMsg">
+          <label class="opt"><input type="radio" name="servicio" value="suelos" required><span>Estudio de suelos</span></label>
+          <label class="opt"><input type="radio" name="servicio" value="cimentaciones"><span>Diseño de cimentaciones</span></label>
+          <label class="opt"><input type="radio" name="servicio" value="taludes"><span>Taludes y contención</span></label>
+          <label class="opt"><input type="radio" name="servicio" value="riesgo"><span>Amenaza y riesgo</span></label>
+          <label class="opt"><input type="radio" name="servicio" value="construccion"><span>Construcción</span></label>
+          <label class="opt"><input type="radio" name="servicio" value="interventoria"><span>Interventoría</span></label>
+          <label class="opt"><input type="radio" name="servicio" value="asesoria"><span>No estoy seguro, necesito asesoría</span></label>
+        </div>
+        <span class="msg" id="svcMsg" aria-live="polite"></span>
+      </fieldset>
+
+      <fieldset data-step="2" hidden>
+        <legend tabindex="-1">Sobre el proyecto</legend>
+        <div class="row">
+          <div class="f"><label for="ciudad">Ciudad / municipio</label><input id="ciudad" name="ciudad" required autocomplete="address-level2"><span class="msg" aria-live="polite"></span></div>
+          <div class="f"><label for="tipo">Tipo de obra</label>
+            <select id="tipo" name="tipo" required><option value="">Seleccione…</option><option>Vivienda unifamiliar</option><option>Edificio</option><option>Bodega o industria</option><option>Vía o infraestructura</option><option>Talud o ladera</option><option>Otro</option></select><span class="msg" aria-live="polite"></span></div>
+        </div>
+        <div class="row">
+          <div class="f"><label for="area">Área aproximada <span class="opt-t">(m², opcional)</span></label><input id="area" name="area" inputmode="numeric"></div>
+          <div class="f"><label for="pisos">Pisos y sótanos <span class="opt-t">(opcional)</span></label><input id="pisos" name="pisos" placeholder="Ej.: 8 pisos, 1 sótano"></div>
+        </div>
+        <div class="f"><label for="plazo">¿Para cuándo lo necesita? <span class="opt-t">(opcional)</span></label>
+          <select id="plazo" name="plazo"><option value="">Sin definir</option><option>Lo antes posible</option><option>En 1 a 3 meses</option><option>En más de 3 meses</option></select></div>
+        <div class="f"><label for="detalle">Detalles <span class="opt-t">(opcional)</span></label><textarea id="detalle" name="detalle" placeholder="Cuéntenos lo que sepa del lote o de la obra"></textarea></div>
+      </fieldset>
+
+      <fieldset data-step="3" hidden>
+        <legend tabindex="-1">¿Cómo le contactamos?</legend>
+        <div class="row">
+          <div class="f"><label for="nombre">Nombre</label><input id="nombre" name="nombre" autocomplete="name" required><span class="msg" aria-live="polite"></span></div>
+          <div class="f"><label for="empresa">Empresa <span class="opt-t">(opcional)</span></label><input id="empresa" name="empresa" autocomplete="organization"></div>
+        </div>
+        <div class="row">
+          <div class="f"><label for="tel">Teléfono / WhatsApp</label><input id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required><span class="msg" aria-live="polite"></span></div>
+          <div class="f"><label for="email">Correo</label><input id="email" name="email" type="email" autocomplete="email" required><span class="msg" aria-live="polite"></span></div>
+        </div>
+        <div class="f"><label class="check"><input type="checkbox" id="habeas" name="habeas" required> Autorizo el tratamiento de mis datos personales según la Política de Tratamiento de Datos (Ley 1581 de 2012).</label><span class="msg" aria-live="polite"></span></div>
+      </fieldset>
+
+      <div class="done-box" id="doneBox" hidden>
+        <span class="mono" style="color:var(--ok)">Solicitud lista</span>
+        <h3 tabindex="-1" id="doneTitle">Gracias. Un ingeniero revisará su proyecto.</h3>
+        <ul class="summary" id="summary"></ul>
+        <p style="color:var(--muted);font-size:15px">Para una respuesta más rápida, envíela también por WhatsApp. <em>(Prototipo: en WordPress la solicitud llegará además al correo de la empresa.)</em></p>
+        <div class="done-actions">
+          <a class="btn btn-wa" id="waSend" href="#" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+          <button class="btn btn-line" type="button" id="restart" style="color:var(--ink)">Nueva solicitud</button>
+        </div>
+      </div>
+
+      <div class="wnav" id="wnav">
+        <button class="btn btn-line" type="button" id="back" hidden>← Atrás</button>
+        <span></span>
+        <button class="btn btn-clay" type="submit" id="next">Continuar</button>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="on-dark">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="#"><span class="logo-mark" aria-hidden="true">G&amp;E</span><span class="logo-txt">Grupo G&amp;E S.A.S.<small>Geotecnia · Construcción</small></span></a>
+      <p>Consultoría geotécnica y construcción. Del estudio a la obra con un solo responsable técnico.</p>
+    </div>
+    <div><h4>Servicios</h4><ul><li><a href="#servicios">Estudios de suelos</a></li><li><a href="#servicios">Cimentaciones</a></li><li><a href="#servicios">Taludes y contención</a></li><li><a href="#servicios">Construcción</a></li></ul></div>
+    <div><h4>Empresa</h4><ul><li><a href="#proyectos">Proyectos</a></li><li><a href="#proceso">Cómo trabajamos</a></li><li><a href="#preguntas">Preguntas</a></li><li><a href="#cotizar">Cotizar</a></li></ul></div>
+    <div><h4>Contacto</h4><ul><li class="tbd">+57 300 000 0000</li><li class="tbd">contacto@grupogye.com</li><li class="tbd">Ciudad, Colombia</li></ul></div>
+  </div>
+  <div class="legal"><div class="wrap"><span>© 2026 Grupo G&amp;E S.A.S. · NIT <span class="tbd">por confirmar</span></span><a href="#">Política de tratamiento de datos</a></div></div>
+</footer>
+
+<a class="wa" href="#" data-wa aria-label="Escribir por WhatsApp (número por confirmar)">
+  <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>
+</a>
+
+<script src="app.js"></script>
+</body>
+</html>

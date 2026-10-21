@@ -1,0 +1,336 @@
+{
+  "servicios": [
+    {
+      "slug": "exploracion-geologico-geotecnica",
+      "codigo": "EXP-01",
+      "nombre": "Exploración geológico-geotécnica",
+      "resumen": "Perforación y caracterización del subsuelo en suelo y roca, con ensayos geofísicos y de campo para sustentar el diseño.",
+      "descripcion_web": "La exploración geológico-geotécnica es el primer paso para conocer el terreno donde se construirá. En G&E realizamos perforación directa con recuperación de muestras en suelo y roca, con capacidad de llegar hasta 150 m de profundidad, y la complementamos con ensayos geofísicos y geoeléctricos, tomografía eléctrica y georradar (GPR). Contamos con equipos propios, incluido un sismógrafo ABEM para refracción, reflexión, down-hole y cross-hole. Con esta información caracterizamos el subsuelo, evaluamos aspectos geológicos e hidrogeológicos con propósitos de ingeniería y entregamos los parámetros que usted necesita para diseñar cimentaciones, contenciones o vías. También exploramos en plantas industriales, donde la logística de campo exige coordinación con la operación. Si su proyecto requiere pozos para captación de aguas subterráneas, topografía de precisión o instrumentación del terreno, lo atendemos con el mismo equipo interdisciplinario, de modo que la información de campo llegue de manera directa al diseño.",
+      "incluye": [
+        "Exploración geológica-geotécnica",
+        "Perforación directa con recuperación de muestras en suelo y roca",
+        "Ensayos geofísicos y geoeléctricos, tomografía eléctrica",
+        "Ensayos GPR (Radar Electromagnético de Penetración)",
+        "Evaluación geológica e hidrogeológica con propósitos de ingeniería",
+        "Exploración geotécnica en plantas industriales",
+        "Pozos para captación de aguas subterráneas",
+        "Levantamientos topográficos de precisión y batimetrías"
+      ],
+      "equipos_relacionados": [
+        "Perforación directa con recuperación de muestras en suelo y roca",
+        "Perforación a roto-percusión",
+        "Construcción de pozos de agua",
+        "Equipos para ensayos geofísicos, geoeléctricos y GPR",
+        "Sismógrafo ABEM"
+      ],
+      "proyectos_relacionados": [
+        1,
+        4,
+        6,
+        10,
+        11,
+        14,
+        16,
+        20,
+        21,
+        22,
+        25,
+        26,
+        29,
+        30
+      ],
+      "palabras_clave": [
+        "estudio de suelos Medellín",
+        "exploración geotécnica",
+        "perforación con recuperación de muestras",
+        "tomografía eléctrica",
+        "ensayo GPR georradar Colombia",
+        "pozos para captación de aguas subterráneas"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Hasta qué profundidad pueden perforar?",
+          "respuesta": "Contamos con capacidad de perforación directa hasta 150 m de profundidad, con recuperación de muestras en suelo y roca. La viabilidad en cada sitio se confirma tras una visita técnica."
+        },
+        {
+          "pregunta": "¿Qué ensayos geofísicos realizan?",
+          "respuesta": "Ensayos geofísicos y geoeléctricos, tomografía eléctrica, georradar (GPR) y registros sísmicos con sismógrafo ABEM (refracción, reflexión, down-hole y cross-hole)."
+        },
+        {
+          "pregunta": "¿Elaboran el estudio de suelos conforme a la NSR-10?",
+          "respuesta": "Hemos elaborado estudios de suelos según la NSR-10, Título H (por ejemplo, el Bloque 7 de la IU Pascual Bravo). Los alcances exigidos para una licencia o trámite específico se confirman en cada caso.",
+          "pendiente_confirmar": true
+        }
+      ]
+    },
+    {
+      "slug": "consultoria-integral",
+      "codigo": "CON-01",
+      "nombre": "Consultoría integral",
+      "resumen": "Ingeniería conceptual, básica y de detalle con un equipo interdisciplinario, desde la exploración hasta el diseño.",
+      "descripcion_web": "Prestamos servicios de ingeniería conceptual, básica y de detalle para el sector industrial, público y privado, a nivel local y nacional. Nuestro equipo interdisciplinario reúne ingenieros diseñadores y consultores en geotecnia, estructuras, hidráulica, hidrología, interventoría y consultoría de proyectos, lo que permite abordar su proyecto de manera conjunta y no por piezas separadas. Atendemos temas como zonificación geotécnica, geotecnia vial y diseño de pavimentos, geotecnia portuaria, diseño de mejoramiento de suelos y diseños de mezcla de concreto hidráulico y asfáltico. También diseñamos llenos estructurales y sistemas de contención con software especializado. Usted cuenta con un solo interlocutor técnico que articula los estudios, los diseños y, si lo requiere, la interventoría o la construcción, con respuestas oportunas y soluciones eficientes. Podemos acompañar proyectos de infraestructura, edificaciones, plantas industriales y obras portuarias.",
+      "incluye": [
+        "Ingeniería conceptual, básica y de detalle",
+        "Zonificación geotécnica",
+        "Geotecnia portuaria",
+        "Geotecnia vial",
+        "Análisis y diseño de pavimentos",
+        "Diseño de mejoramiento de suelos",
+        "Diseño geotécnico de llenos estructurales y taludes",
+        "Diseños de mezcla de concreto hidráulico y asfáltico",
+        "Consultoría de proyectos con apoyo en hidráulica e hidrología"
+      ],
+      "equipos_relacionados": [
+        "Software especializado de diseño geotécnico y de contenciones"
+      ],
+      "proyectos_relacionados": [
+        2,
+        3,
+        6,
+        19
+      ],
+      "palabras_clave": [
+        "consultoría geotécnica y estructural",
+        "ingeniería de detalle Colombia",
+        "diseño de pavimentos",
+        "diseño de mezcla de concreto",
+        "zonificación geotécnica"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué sectores atienden?",
+          "respuesta": "Sector industrial, público y privado, a nivel local y nacional, según la misión corporativa."
+        },
+        {
+          "pregunta": "¿Pueden encargarse del estudio y del diseño en un mismo contrato?",
+          "respuesta": "Sí. El equipo interdisciplinario cubre geotecnia, estructuras, hidráulica e hidrología, de modo que el estudio y el diseño pueden coordinarse desde un mismo equipo."
+        },
+        {
+          "pregunta": "¿Prestan servicios fuera de Antioquia?",
+          "respuesta": "Sí. Hemos ejecutado proyectos en Antioquia y en otras regiones del país, como se evidencia en el listado de proyectos."
+        }
+      ]
+    },
+    {
+      "slug": "analisis-geotecnicos-especializados",
+      "codigo": "GEO-01",
+      "nombre": "Análisis geotécnicos especializados",
+      "resumen": "Diseño y análisis de fundaciones, taludes, contenciones y excavaciones, incluida la dinámica de suelos.",
+      "descripcion_web": "Esta línea concentra el análisis y diseño geotécnico de su obra. Evaluamos fundaciones superficiales, profundas y mixtas, la estabilidad de taludes y laderas, estructuras de contención, excavaciones, muros pantalla y muros en tierra reforzada, además de taludes de dragado en proyectos portuarios. Apoyamos el trabajo con análisis numérico y software especializado. En dinámica de suelos estudiamos efectos locales, interacción suelo-estructura, licuación y amenaza sísmica, con respaldo de ensayos geofísicos. Esto resulta útil en proyectos donde el comportamiento del terreno condiciona la estructura, como edificios con aislamiento sísmico, silos, tanques, obras portuarias y vías en terreno inestable. Nuestros diseños se basan en información de campo propia, lo que reduce incertidumbres entre el estudio y la ejecución. Le entregamos recomendaciones claras para que su proyecto avance con soluciones técnicas sustentadas y alineadas con las exigencias de su obra y de la entidad que la revisa.",
+      "incluye": [
+        "Análisis y diseño de fundaciones",
+        "Análisis numérico",
+        "Análisis de estabilidad de taludes y laderas",
+        "Análisis y diseño geotécnico de taludes de dragado",
+        "Análisis y diseño de estructuras de contención",
+        "Análisis y diseño de excavaciones",
+        "Muros pantalla y en tierra reforzada",
+        "Diseño y evaluación de cimentaciones superficiales, profundas y mixtas",
+        "Dinámica de suelos: evaluación de efectos locales",
+        "Dinámica de suelos: interacción suelo-estructura",
+        "Dinámica de suelos: análisis de licuación",
+        "Dinámica de suelos: estudios de amenaza sísmica",
+        "Dinámica de suelos: ensayos geofísicos"
+      ],
+      "equipos_relacionados": [
+        "Equipos para ensayos geofísicos",
+        "Sismógrafo ABEM",
+        "Software especializado de diseño geotécnico"
+      ],
+      "proyectos_relacionados": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        26,
+        28,
+        29,
+        30
+      ],
+      "palabras_clave": [
+        "diseño de cimentaciones",
+        "estabilidad de taludes",
+        "diseño de muros de contención",
+        "análisis de licuación",
+        "estudio de amenaza sísmica",
+        "muro pantalla"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué incluye el análisis de estabilidad de taludes?",
+          "respuesta": "Análisis de estabilidad de taludes y laderas, diseño de sistemas de contención con software especializado y, cuando se requiere, análisis numérico."
+        },
+        {
+          "pregunta": "¿Realizan análisis de licuación y amenaza sísmica?",
+          "respuesta": "Sí, dentro de la dinámica de suelos: licuación, efectos locales, interacción suelo-estructura y estudios de amenaza sísmica."
+        },
+        {
+          "pregunta": "¿Diseñan cimentaciones profundas?",
+          "respuesta": "Diseñamos y evaluamos cimentaciones superficiales, profundas y mixtas, y también podemos construir pilotes y micropilotes."
+        }
+      ]
+    },
+    {
+      "slug": "analisis-estructural-avanzado",
+      "codigo": "EST-01",
+      "nombre": "Análisis estructural avanzado",
+      "resumen": "Análisis y diseño de puentes, edificios, grandes superficies y estructuras portuarias; patología, vulnerabilidad sísmica y reforzamiento.",
+      "descripcion_web": "Realizamos análisis y diseño estructural de edificios, puentes, grandes superficies y estructuras portuarias. Cuando se trata de construcciones existentes, evaluamos su patología y vulnerabilidad sísmica y definimos alternativas de reforzamiento estructural. Esta línea trabaja en conjunto con geotecnia, por lo que el comportamiento del suelo y el de la estructura se estudian de manera coordinada, algo especialmente relevante en proyectos con cimentaciones complejas o en edificaciones que deben ser repotenciadas. Hemos desarrollado este tipo de trabajos en sedes de seguridad y justicia, en un parque cultural y en proyectos comerciales. Si usted necesita conocer el estado de una edificación, diseñar una nueva estructura o definir un reforzamiento, nuestro equipo le presenta resultados técnicos sustentados y recomendaciones aplicables en obra. Además, podemos acompañar el proceso con exploración del subsuelo y, de ser necesario, con la interventoría o la construcción.",
+      "incluye": [
+        "Análisis y diseño de grandes superficies",
+        "Análisis y diseño de puentes",
+        "Análisis y diseño de edificios",
+        "Análisis y diseño de estructuras portuarias",
+        "Patología y vulnerabilidad sísmica",
+        "Reforzamiento estructural"
+      ],
+      "equipos_relacionados": [
+        "Equipos de campo para exploración y ensayos de apoyo"
+      ],
+      "proyectos_relacionados": [
+        8,
+        21,
+        23,
+        25
+      ],
+      "palabras_clave": [
+        "diseño estructural",
+        "vulnerabilidad sísmica de edificios",
+        "reforzamiento estructural",
+        "patología estructural",
+        "diseño estructural de puentes"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Evalúan la vulnerabilidad sísmica de edificaciones existentes?",
+          "respuesta": "Sí. Incluye patología, vulnerabilidad sísmica y propuestas de reforzamiento estructural."
+        },
+        {
+          "pregunta": "¿Diseñan estructuras nuevas?",
+          "respuesta": "Sí: edificios, puentes, grandes superficies y estructuras portuarias."
+        },
+        {
+          "pregunta": "¿Qué norma aplican en el diseño estructural?",
+          "respuesta": "La normativa aplicable depende del tipo de proyecto y se confirma en cada caso; el brochure no la detalla para esta línea.",
+          "pendiente_confirmar": true
+        }
+      ]
+    },
+    {
+      "slug": "construccion-de-cimentaciones",
+      "codigo": "CIM-01",
+      "nombre": "Construcción de cimentaciones",
+      "resumen": "Ejecución de cimentaciones superficiales y profundas, pilotes, micropilotes y sistemas de contención y estabilización.",
+      "descripcion_web": "Además de diseñar, construimos. Ejecutamos obras civiles y cimentaciones superficiales y profundas, incluidos pilotes y micropilotes, con equipos propios para cimentaciones profundas. Construimos micropilotes de cimentación y trabajamos con los sistemas IGU, IR e IRS. También realizamos sistemas de contención y estabilización de taludes, y podemos instalar instrumentación de monitoreo, como piezómetros e inclinómetros, para verificar el comportamiento del terreno y de la obra. Hemos ejecutado obras de adecuación de celdas y clausura de rellenos sanitarios y movimientos de tierra en sedes educativas. La ventaja de integrar diseño y construcción es que las decisiones de campo se toman con conocimiento del estudio de origen, lo que facilita ajustar soluciones durante la ejecución. Si usted ya cuenta con un diseño, también podemos ejecutarlo; si no lo tiene, lo desarrollamos desde la exploración del subsuelo.",
+      "incluye": [
+        "Construcción de obras civiles",
+        "Cimentaciones superficiales y profundas, pilotes y micropilotes",
+        "Construcción de micropilotes de cimentación",
+        "Sistemas IGU, IR e IRS",
+        "Sistemas de contención y estabilización de taludes",
+        "Instalación de sistemas de monitoreo (piezómetros, inclinómetros, entre otros)"
+      ],
+      "equipos_relacionados": [
+        "Equipos para cimentaciones profundas tipo pilotes y micropilotes",
+        "Equipos de perforación a roto-percusión"
+      ],
+      "proyectos_relacionados": [
+        27,
+        31
+      ],
+      "palabras_clave": [
+        "construcción de micropilotes",
+        "pilotes de cimentación Medellín",
+        "estabilización de taludes",
+        "contención de taludes",
+        "instalación de piezómetros e inclinómetros"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Construyen pilotes y micropilotes?",
+          "respuesta": "Sí, contamos con equipos para cimentaciones profundas tipo pilotes y micropilotes."
+        },
+        {
+          "pregunta": "¿Instalan instrumentación geotécnica?",
+          "respuesta": "Sí: sistemas de monitoreo como piezómetros e inclinómetros, entre otros."
+        },
+        {
+          "pregunta": "¿Qué son los sistemas IGU, IR e IRS?",
+          "respuesta": "Son sistemas citados en el brochure junto a la construcción de micropilotes; su descripción técnica detallada se confirma con el equipo de G&E.",
+          "pendiente_confirmar": true
+        }
+      ]
+    },
+    {
+      "slug": "interventoria-tecnica-y-administrativa",
+      "codigo": "INT-01",
+      "nombre": "Interventoría técnica y administrativa",
+      "resumen": "Control técnico, administrativo y financiero de obras de infraestructura, rellenos sanitarios y proyectos mineros.",
+      "descripcion_web": "Ejercemos la interventoría técnica, administrativa y financiera de proyectos de infraestructura, con un equipo que conoce el diseño y la construcción desde adentro. Esto nos permite verificar que lo construido corresponda con lo diseñado, vigilar el cumplimiento del alcance y reportar el avance con información clara. Hemos realizado interventorías en la optimización, clausura y ampliación de un relleno sanitario y en el recrecimiento de una relavera minera, proyectos en los que el control del terreno y de los materiales es determinante. Si usted es una entidad pública, una empresa privada o un operador industrial, nuestro acompañamiento le ayuda a tomar decisiones con respaldo técnico durante la ejecución. Podemos articular la interventoría con los estudios geotécnicos y la instrumentación del proyecto, de manera que los datos de campo y de obra se interpreten de forma coordinada y oportuna.",
+      "incluye": [
+        "Interventoría técnica, administrativa y financiera"
+      ],
+      "equipos_relacionados": [
+        "Equipos de campo y de instrumentación para verificación en obra"
+      ],
+      "proyectos_relacionados": [
+        7,
+        24
+      ],
+      "palabras_clave": [
+        "interventoría técnica de obra",
+        "interventoría relleno sanitario",
+        "interventoría de obras civiles",
+        "interventoría financiera",
+        "interventoría minera"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué alcance tiene la interventoría?",
+          "respuesta": "Técnica, administrativa y financiera; en un proyecto minero del portafolio también operativa."
+        },
+        {
+          "pregunta": "¿En qué tipo de proyectos han hecho interventoría?",
+          "respuesta": "Optimización, clausura y ampliación de un relleno sanitario (La Ceja) y recrecimiento de la relavera etapa 3 de Antioquia Gold."
+        },
+        {
+          "pregunta": "¿Pueden hacer interventoría de una obra que ustedes diseñaron?",
+          "respuesta": "La posibilidad de actuar en ambos roles depende de las condiciones contractuales de cada proyecto y se confirma caso a caso.",
+          "pendiente_confirmar": true
+        }
+      ]
+    }
+  ],
+  "otros_servicios": {
+    "titulo": "Otros servicios",
+    "items": [
+      "Levantamientos topográficos de precisión",
+      "Batimetrías",
+      "Diseños de mezcla de concreto hidráulico y asfáltico",
+      "Diseño, consultoría y ejecución de pozos para captación de aguas subterráneas",
+      "Instalación de sistemas de monitoreo (piezómetros, inclinómetros, entre otros)"
+    ],
+    "vinculados_a": [
+      "exploracion-geologico-geotecnica",
+      "consultoria-integral",
+      "construccion-de-cimentaciones"
+    ]
+  }
+}
