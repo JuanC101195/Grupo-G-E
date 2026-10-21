@@ -11,14 +11,26 @@ const out = path.join(here, '..', 'capturas');
 const [w = 1440, h = 900] = process.argv.slice(2, 4).map(Number);
 const dark = process.argv[4] === 'dark';
 const mode = dark ? 'dark' : 'light';
-const edge = 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
-const port = 9300 + Math.floor(Math.random() * 500);
-const prof = fs.mkdtempSync(path.join(process.env.TEMP || '/tmp', 'gye-e2e-'));
-const browser = spawn(edge, ['--headless=new', '--disable-gpu', `--remote-debugging-port=${port}`, `--user-data-dir=${prof}`, 'about:blank']);
+const edge = String.raw`C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe`;   // ruta absoluta: no depende del PATH
+const profiles = path.join(out, '.perfiles');
+fs.mkdirSync(profiles, { recursive: true, mode: 0o700 });
+const prof = fs.mkdtempSync(path.join(profiles, 'e2e-'));
+const browser = spawn(edge, ['--headless=new', '--disable-gpu', '--remote-debugging-port=0', `--user-data-dir=${prof}`, 'about:blank']);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-
-let tabs;
-for (let i = 0; i < 40 && !tabs?.length; i++) { try { tabs = await (await fetch(`http://127.0.0.1:${port}/json`)).json(); } catch { await sleep(250); } }
+// Reintenta fn hasta que no lance error (sin await dentro de un bucle)
+const retry = async (fn, tries = 40) => {
+  try { return await fn(); } catch (e) {
+    if (tries <= 1) throw e;
+    await sleep(250);
+    return retry(fn, tries - 1);
+  }
+};
+const port = await retry(() => fs.readFileSync(path.join(prof, 'DevToolsActivePort'), 'utf8').split('\n')[0].trim() || Promise.reject(new Error('sin puerto')));
+const tabs = await retry(async () => {
+  const list = await (await fetch(`http://127.0.0.1:${port}/json`)).json();
+  if (!list.length) throw new Error('sin pestañas');
+  return list;
+});
 const ws = new WebSocket(tabs.find((t) => t.type === 'page').webSocketDebuggerUrl);
 await new Promise((r) => (ws.onopen = r));
 let id = 0; const pending = {}; const errors = [];
@@ -44,16 +56,16 @@ await sleep(5000);
 await shot('1-hero');
 
 // Modo de color: sigue al sistema y usa el logo correcto
-check(`página en modo ${mode} según el sistema`, await js(`(()=>{const c=getComputedStyle(document.body).backgroundColor.match(/\\d+/g).map(Number);const l=(c[0]+c[1]+c[2])/3;return ${dark} ? l<60 : l>200;})()`));
+check(`página en modo ${mode} según el sistema`, await js(String.raw`(()=>{const c=getComputedStyle(document.body).backgroundColor.match(/\d+/g).map(Number);const l=(c[0]+c[1]+c[2])/3;return ${dark} ? l<60 : l>200;})()`));
 check('logo visible acorde al modo', await js(`getComputedStyle(document.querySelector(".logo-${dark ? 'd' : 'l'}")).display!=="none" && getComputedStyle(document.querySelector(".logo-${dark ? 'l' : 'd'}")).display==="none"`));
 check('botón de tema refleja el modo', await js(`document.getElementById("themeBtn").getAttribute("aria-pressed")==="${dark}"`));
 
 // Auditoría de contraste WCAG AA de todo el texto visible (contra el fondo sólido real)
 async function contrastAudit() {
-  return js(`(()=>{
+  return js(String.raw`(()=>{
     const lin=v=>{v/=255;return v<=0.03928?v/12.92:Math.pow((v+0.055)/1.055,2.4)};
     const L=c=>0.2126*lin(c[0])+0.7152*lin(c[1])+0.0722*lin(c[2]);
-    const rgba=s=>{const m=s.match(/[\\d.]+/g);return m?m.map(Number):[0,0,0,0]};
+    const rgba=s=>{const m=s.match(/[\d.]+/g);return m?m.map(Number):[0,0,0,0]};
     const bad=[];let n=0;
     const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
     const seen=new Set();
@@ -144,7 +156,7 @@ check('tarjetas de diagramas de igual alto', await js('(()=>{const h=[...documen
 // Regresiones de la auditoría QA
 check('sin encabezados dentro de botones', await js('document.querySelectorAll("button h1,button h2,button h3").length === 0'));
 check('errores del formulario asociados a su campo', await js('[...document.querySelectorAll("#wizard [required]:not([type=radio])")].every(f=>f.getAttribute("aria-describedby"))'));
-check('estado de proyectos anunciado', await js('/Mostrando \\d+ de 31/.test(document.getElementById("projStatus").textContent)'));
+check('estado de proyectos anunciado', await js(String.raw`/Mostrando \d+ de 31/.test(document.getElementById("projStatus").textContent)`));
 check('Universidad del Valle no aparece como cliente', await js('!document.querySelector(".value").textContent.includes("Universidad del Valle")'));
 check('enlaces WhatsApp con número real', await js('[...document.querySelectorAll("[data-wa]")].every(a=>a.href.startsWith("https://wa.me/573242489898"))'));
 if (w < 960) {
@@ -159,4 +171,8 @@ check('marquesina se puede pausar', await js('document.querySelector(".ticker").
 check('sin errores de JavaScript', errors.length === 0, errors.join(' | '));
 console.log(`\n${w}x${h}\n` + results.join('\n'));
 ws.close(); browser.kill();
+browser.on('exit', () => {
+  // El navegador libera el perfil al cerrarse; si Windows aún lo bloquea, se limpia en la siguiente corrida
+  try { fs.rmSync(prof, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 }); } catch (e) { console.warn('perfil temporal no borrado:', e.code); }
+});
 process.exitCode = results.some((r) => r.startsWith('FAIL')) ? 1 : 0;

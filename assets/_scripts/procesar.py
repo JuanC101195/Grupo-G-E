@@ -55,7 +55,12 @@ LOGOS = {
  "p9-17.png": "acca",
 }
 def ladodeimg(im): return max(im.size)
-def calidad(lado): return "alta" if lado >= 1200 else ("media" if lado >= 700 else "baja")
+def calidad(lado):
+    if lado >= 1200:
+        return "alta"
+    if lado >= 700:
+        return "media"
+    return "baja"
 
 out = []
 for orig, (base, tipo, pag, uso, alt) in FOTOS.items():
