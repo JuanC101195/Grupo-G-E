@@ -6,7 +6,8 @@ de la portada con el servicio preseleccionado: /?servicio=<linea>#cotizar).
 
   python scripts/publicar_servicios.py --preview     → fuentes/servicios-preview/<slug>.html
   python scripts/publicar_servicios.py               → crea/actualiza las páginas en WordPress como BORRADOR
-  python scripts/publicar_servicios.py --publicar    → las publica (tras la aprobación de la empresa)
+  python scripts/publicar_servicios.py --revision    → las publica con noindex para que la empresa las revise en la web
+  python scripts/publicar_servicios.py --publicar    → las publica e indexables (tras la aprobación de la empresa)
 """
 import html
 import json
@@ -199,20 +200,24 @@ def main():
 
     from wp_api import WP
     wp = WP()
-    estado = "publish" if "--publicar" in sys.argv else "draft"
+    # --revision: publicadas para que la empresa las revise en la web, con noindex (Slim SEO las saca de Google y del sitemap)
+    # --publicar: publicadas e indexables, tras la aprobación
+    estado = "publish" if ("--publicar" in sys.argv or "--revision" in sys.argv) else "draft"
+    noindex = "--publicar" not in sys.argv
     meta = {"ast-global-header-display": "disabled", "footer-sml-layout": "disabled", "site-post-title": "disabled",
             "site-content-layout": "page-builder", "site-sidebar-layout": "no-sidebar", "ast-breadcrumbs-content": "disabled"}
     for p in paginas:
         # WordPress arma el <title> como "título – Grupo G&E": se quita el sufijo de marca del título SEO
         titulo = re.sub(r"\s*\|\s*Grupo G&E\s*$", "", p["title"])
-        datos = {"title": titulo, "slug": p["slug"], "status": estado, "meta": meta,
+        seo = {"title": p["title"], "description": p["meta_description"], "noindex": 1 if noindex else 0}
+        datos = {"title": titulo, "slug": p["slug"], "status": estado, "meta": dict(meta, slim_seo=seo),
                  "content": "<!-- wp:html -->\n" + construir(p, paginas, proyectos, servicios) + "\n<!-- /wp:html -->"}
         existente = wp.get("wp/v2/pages", slug=p["slug"], status="any", context="edit")
         if existente:
             pagina, _ = wp.request("POST", f"wp/v2/pages/{existente[0]['id']}", datos)
         else:
             pagina, _ = wp.request("POST", "wp/v2/pages", datos)
-        print(f"{estado:7} página {pagina['id']}  /{p['slug']}/")
+        print(f"{estado:7}{' (noindex)' if estado == 'publish' and noindex else ''} {pagina['link']}")
 
 
 if __name__ == "__main__":

@@ -38,12 +38,12 @@ window.GYE = {
    },
    "horario": null,
    "pendiente_confirmar": [
-    "horario",
     "departamento (deducido de Medellín)"
    ],
    "correo_cotizaciones": "gyeconsultoriaintegral@gmail.com",
    "nota_correo": "Los correos @grupogye.com a veces fallan (respuesta de la empresa); las cotizaciones van al Gmail.",
-   "tiempo_respuesta": "24 horas"
+   "tiempo_respuesta": "24 horas",
+   "nota_horario": "La empresa prefiere no publicar horario; se muestra 'respuesta en menos de 24 horas'."
   },
   "capacidades_campo": [
    "Perforación directa con recuperación de muestras en suelo y roca",
@@ -368,8 +368,7 @@ window.GYE = {
     },
     {
      "pregunta": "¿Qué son los sistemas IGU, IR e IRS?",
-     "respuesta": "Son métodos de inyección de lechada para formar el bulbo del micropilote: IGU, inyección global única, en una sola etapa; IR, inyección repetitiva, en varias etapas; e IRS, inyección repetitiva y selectiva, por tramos controlados.",
-     "nota_interna": "La empresa escribió 'IRS: Inyección Global Única' (repetido); se usó la definición estándar de IRS. Confirmar."
+     "respuesta": "Son métodos de inyección de lechada para formar el bulbo del micropilote: IGU, inyección global única, en una sola etapa; IR, inyección repetitiva, en varias etapas; e IRS, inyección repetitiva selectiva, por tramos controlados."
     }
    ]
   },
@@ -482,9 +481,7 @@ window.GYE = {
    "municipio": "Salgar",
    "departamento": "Atlántico",
    "cliente": "Constructora Poliobras",
-   "destacado": false,
-   "pendiente_confirmar": true,
-   "nota_pendiente": "Ubicación según el brochure (Salgar, Atlántico); confirmar municipio exacto"
+   "destacado": false
   },
   {
    "id": 5,

@@ -47,12 +47,12 @@
     },
     "horario": null,
     "pendiente_confirmar": [
-      "horario",
       "departamento (deducido de Medellín)"
     ],
     "correo_cotizaciones": "gyeconsultoriaintegral@gmail.com",
     "nota_correo": "Los correos @grupogye.com a veces fallan (respuesta de la empresa); las cotizaciones van al Gmail.",
-    "tiempo_respuesta": "24 horas"
+    "tiempo_respuesta": "24 horas",
+    "nota_horario": "La empresa prefiere no publicar horario; se muestra 'respuesta en menos de 24 horas'."
   },
   "alcance": "nacional e internacional",
   "equipos": [
@@ -157,7 +157,7 @@
     "Cámara de Comercio de Medellín"
   ],
   "mercado_objetivo": [
-    "Costa Caribe"
+    "Costa Caribe: toda la región (Córdoba, Bolívar, Atlántico, Magdalena, etc.)"
   ],
   "equipo_publico": false,
   "clientes_para_resenas": [
@@ -171,5 +171,10 @@
   ],
   "notas_clientes": {
     "Double C Designs": "Filial de Conconcreto (respuesta de la empresa)"
+  },
+  "nit": "901017577-0",
+  "logo": {
+    "estado": "reconstrucción vectorial aprobada por la empresa (21-oct-2026)",
+    "original_editable": false
   }
 }

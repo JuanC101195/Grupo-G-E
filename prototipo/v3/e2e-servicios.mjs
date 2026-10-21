@@ -43,7 +43,7 @@ check('sin scroll horizontal', await js('document.documentElement.scrollWidth <=
 check('un solo H1', await js('document.querySelectorAll("h1").length === 1'));
 check('H1 en Barlow Condensed', await js('getComputedStyle(document.querySelector("h1")).fontFamily.includes("Barlow")'));
 check('JSON-LD válido (Service, BreadcrumbList, FAQPage)', await js(`(()=>{try{const t=[...document.querySelectorAll('script[type="application/ld+json"]')].map(s=>JSON.parse(s.textContent)["@type"]);return ["Service","BreadcrumbList","FAQPage"].every(x=>t.includes(x))}catch(e){return false}})()`));
-check('botones "Cotizar" llevan al cotizador con el servicio', await js(String.raw`[...document.querySelectorAll('main a.btn-clay')].filter(a=>/Cotizar/.test(a.textContent)).every(a=>/\/\?servicio=[a-z-]+#cotizar$/.test(a.getAttribute("href")))`));
+check('botones "Cotizar" llevan al cotizador con el servicio', await js(String.raw`[...document.querySelectorAll('#contenido a.btn-clay')].filter(a=>/Cotizar/.test(a.textContent)).every(a=>/\/\?servicio=[a-z-]+#cotizar$/.test(a.getAttribute("href")))`));
 check('enlaces del menú apuntan a la portada', await js('[...document.querySelectorAll(".nav a")].every(a=>a.getAttribute("href").startsWith("/#"))'));
 check('WhatsApp con número principal', await js('[...document.querySelectorAll("a[href*=\'wa.me\']")].every(a=>a.href.includes("573126523638"))'));
 check('el proyecto confidencial no aparece', await js('!document.body.textContent.includes("Mulatos")'));

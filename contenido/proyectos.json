@@ -83,9 +83,7 @@
     "municipio": "Salgar",
     "departamento": "Atlántico",
     "cliente": "Constructora Poliobras",
-    "destacado": false,
-    "pendiente_confirmar": true,
-    "nota_pendiente": "Ubicación según el brochure (Salgar, Atlántico); confirmar municipio exacto"
+    "destacado": false
   },
   {
     "id": 5,
