@@ -10,6 +10,7 @@ Sitio web de **Grupo G&E S.A.S.**, consultoría geotécnica, estructural e integ
 | `prototipo/v2/`, `prototipo/index.html` | Versiones anteriores (v2 y v1), como referencia |
 | `contenido/` | Datos del brochure 2026 en JSON (empresa, servicios, 31 proyectos) y textos web |
 | `assets/` | Imágenes optimizadas (WebP), logos y `imagenes.json` con los textos alternativos y los colores de marca |
+| `assets/marca/` | Logo en vector (claro, negativo y símbolo), PNG de apoyo y su generador en `_fuente/` |
 | `seo/estrategia-seo.md` | Investigación de competencia, mapa de URLs, metadatos y plan de contenido |
 | `DESIGN.md` | Sistema de diseño |
 
@@ -23,13 +24,14 @@ python prototipo/v3/build-data.py
 node prototipo/v3/e2e.mjs 1440 900
 node prototipo/v3/e2e.mjs 390 844
 node prototipo/v3/e2e.mjs 320 640
+node prototipo/v3/e2e.mjs 1440 900 dark   # modo oscuro, con auditoría de contraste AA
 ```
 
 El prototipo se abre directamente con `prototipo/v3/index.html`.
 
 ## Datos pendientes de confirmar con la empresa
 
-WhatsApp, horario, NIT, autorización de uso de logos de clientes, logo en vector, fotos en alta resolución y la ubicación de 7 proyectos. En el sitio aparecen con subrayado punteado (`.tbd`).
+WhatsApp, horario, NIT, autorización de uso de logos de clientes, aprobación del logo reconstruido, fotos en alta resolución, la ubicación de 7 proyectos y el cliente del logo de la "A" roja. En el sitio aparecen con subrayado punteado (`.tbd`).
 
 ## Próximo paso
 

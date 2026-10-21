@@ -338,7 +338,38 @@
       "original": "p1-2.png",
       "ancho_original": 826,
       "alto_original": 330,
-      "tipo": "logo-ge"
+      "tipo": "logo-ge",
+      "nota": "Raster original del brochure (baja resolución). Reemplazado por los SVG de marca; se conserva como referencia."
+    },
+    {
+      "archivo": "marca/logo-ge.svg",
+      "tipo": "logo-ge-vector",
+      "uso": "Logo completo sobre fondos claros"
+    },
+    {
+      "archivo": "marca/logo-ge-negativo.svg",
+      "tipo": "logo-ge-vector",
+      "uso": "Logo completo sobre fondos oscuros"
+    },
+    {
+      "archivo": "marca/logo-ge-simbolo.svg",
+      "tipo": "logo-ge-vector",
+      "uso": "Símbolo sobre fondos claros (favicon, avatar)"
+    },
+    {
+      "archivo": "marca/logo-ge-simbolo-negativo.svg",
+      "tipo": "logo-ge-vector",
+      "uso": "Símbolo sobre fondos oscuros"
+    },
+    {
+      "archivo": "marca/logo-ge-1600.png",
+      "tipo": "logo-ge-png",
+      "uso": "Logo en PNG de 1600 px (documentos, correo)"
+    },
+    {
+      "archivo": "marca/logo-ge-simbolo-512.png",
+      "tipo": "logo-ge-png",
+      "uso": "Perfil de Google Business Profile y WhatsApp; logo de los datos estructurados"
     }
   ],
   "colores_marca": {
