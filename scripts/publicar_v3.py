@@ -9,6 +9,7 @@
   python scripts/publicar_v3.py --publicar
 """
 import base64
+import html
 import json
 import re
 import sys
@@ -163,6 +164,12 @@ def main():
     content = "<!-- wp:html -->\n" + construir(mapa, formulario(wp)) + "\n<!-- /wp:html -->"
     meta = {"ast-global-header-display": "disabled", "footer-sml-layout": "disabled", "site-post-title": "disabled",
             "site-content-layout": "page-builder", "site-sidebar-layout": "no-sidebar", "ast-breadcrumbs-content": "disabled"}
+    # Título y descripción para Google (plugin Slim SEO): los mismos del <head> del prototipo
+    head = leer(INDEX).split("<body>", 1)[0]
+    meta["slim_seo"] = {
+        "title": html.unescape(re.search(r"<title>(.*?)</title>", head).group(1)),
+        "description": html.unescape(re.search(r'<meta name="description" content="([^"]+)"', head).group(1)),
+    }
     datos = {"title": "Inicio", "slug": SLUG, "status": "publish", "content": content, "meta": meta}
     existente = wp.get(PAGES, slug=SLUG, status="any", context="edit")
     if existente:
