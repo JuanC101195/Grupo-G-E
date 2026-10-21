@@ -119,7 +119,7 @@ check('sin scroll horizontal', await js('document.documentElement.scrollWidth <=
 check('etiquetas del perfil visibles', await js('document.querySelectorAll(".st-l.on").length === 4'));
 check('contador llegó a 150 m', await js('document.querySelector("[data-count]").textContent === "150 m"'));
 check('6 servicios del brochure', await js('document.querySelectorAll(".svc").length === 6'));
-check('12 logos de clientes', await js('document.querySelectorAll(".logos img").length === 12'));
+check('13 logos de clientes', await js('document.querySelectorAll(".logos img").length === 13'));
 // antes de cualquier paso que fuerce la carga de imágenes: los logos deben cargar solos al llegar a ellos
 await js('document.querySelector(".logos").scrollIntoView({block:"center"})'); await sleep(2500);
 check('logos de clientes cargados al verlos', await js('[...document.querySelectorAll(".logos img")].every(i=>i.complete&&i.naturalWidth>0)'));
@@ -132,14 +132,15 @@ check('estrato muestra su explicación', (await js('document.getElementById("lcT
 await js('document.getElementById("proyectos").scrollIntoView()'); await sleep(900);
 check('vista previa muestra 9', await until('[...document.querySelectorAll(".proj")].filter(c=>!c.hidden).length === 9'));
 await js('document.querySelector(".chip[data-f=\'vias-taludes\']").click()'); await sleep(900);
-check('filtro vías y taludes deja 5', await until('[...document.querySelectorAll(".proj")].filter(c=>!c.hidden).length === 5'));
+check('filtro vías y taludes deja 4', await until('[...document.querySelectorAll(".proj")].filter(c=>!c.hidden).length === 4'));
 await shot('2-proyectos-filtrados');
 await js('document.querySelector(".chip[data-f=\'todos\']").click()'); await sleep(1000);
 check('"Todos" vuelve a la vista previa de 9', await until('[...document.querySelectorAll(".proj")].filter(c=>!c.hidden).length === 9'));
 await js('document.getElementById("moreProj").click()'); await sleep(1000);
-check('"Ver todos" muestra los 31', await until('[...document.querySelectorAll(".proj")].filter(c=>!c.hidden).length === 31'));
+check('"Ver todos" muestra los 30', await until('[...document.querySelectorAll(".proj")].filter(c=>!c.hidden).length === 30'));
+check('el proyecto confidencial no se publica', await js('!document.getElementById("projGrid").textContent.includes("Mulatos")'));
 await js('document.getElementById("proyectos").scrollIntoView()'); await sleep(1200);
-check('tarjetas visibles en pantalla con opacidad 1', await js('[...document.querySelectorAll(".proj")].filter(c=>{const r=c.getBoundingClientRect();return !c.hidden&&r.top>0&&r.bottom<innerHeight;}).every(c=>getComputedStyle(c).opacity==="1")'));
+check('tarjetas visibles en pantalla con opacidad 1', await until('[...document.querySelectorAll(".proj")].filter(c=>{const r=c.getBoundingClientRect();return !c.hidden&&r.top>0&&r.bottom<innerHeight;}).every(c=>getComputedStyle(c).opacity==="1")'));
 await js('document.querySelectorAll("img").forEach(i=>{i.loading="eager"})');
 check('todas las imágenes cargan', await until('[...document.images].every(i=>i.complete&&i.naturalWidth>0)', 10000),
   await js('[...document.images].filter(i=>!(i.complete&&i.naturalWidth>0)).map(i=>i.currentSrc||i.src).join(" ")'));
@@ -183,7 +184,7 @@ check('tarjetas de diagramas de igual alto', await js('(()=>{const h=[...documen
 // Regresiones de la auditoría QA
 check('sin encabezados dentro de botones', await js('document.querySelectorAll("button h1,button h2,button h3").length === 0'));
 check('errores del formulario asociados a su campo', await js('[...document.querySelectorAll("#wizard [required]:not([type=radio])")].every(f=>f.getAttribute("aria-describedby"))'));
-check('estado de proyectos anunciado', await js(String.raw`/Mostrando \d+ de 31/.test(document.getElementById("projStatus").textContent)`));
+check('estado de proyectos anunciado', await js(String.raw`/Mostrando \d+ de 30/.test(document.getElementById("projStatus").textContent)`));
 check('Universidad del Valle no aparece como cliente', await js('!document.querySelector(".value").textContent.includes("Universidad del Valle")'));
 check('enlaces WhatsApp con número real', await js('[...document.querySelectorAll("[data-wa]")].every(a=>a.href.startsWith("https://wa.me/573126523638"))'));
 if (w < 960) {

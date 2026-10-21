@@ -16,6 +16,7 @@ CLIENT_LOGOS = {  # archivo en assets/clientes → nombre visible
     "arquitectura-concreto.png": "Arquitectura & Concreto", "bioexplora.png": "Bioexplora",
     "aqua-y-terra.png": "aqua&terra", "mc-arquitectos.png": "MC Arquitectos", "acca.png": "ACCA",
     "la-cimarrona.png": "La Cimarrona E.S.P.", "double-designs.png": "Double C Designs",
+    "aschner.png": "Aschner Consultores Asociados",
 }
 
 
@@ -43,7 +44,8 @@ def main():
                                             "capacidades_campo", "equipos", "cifras")},
         "servicios": servicios["servicios"],
         "otros": servicios["otros_servicios"]["items"],
-        "proyectos": proyectos["proyectos"] if isinstance(proyectos, dict) else proyectos,
+        # los proyectos marcados "publicar": false (confidenciales) no salen en la página
+        "proyectos": [x for x in (proyectos["proyectos"] if isinstance(proyectos, dict) else proyectos) if x.get("publicar", True)],
         "imagenes": imgs,
         "clientes": [{"nombre": n, "logo": "../../assets/clientes/" + f.replace(".png", ".webp")}
                      for f, n in CLIENT_LOGOS.items() if (ROOT / "assets/clientes" / f).exists()],

@@ -308,7 +308,11 @@
     apply(false);
 
     var seen = {};
-    list.forEach(function (p) { if (p.municipio && !seen[p.municipio]) { seen[p.municipio] = 1; $('#where').appendChild(el('span', 'pl', p.municipio)); } });
+    list.forEach(function (p) {   // "Medellín, Copacabana y Bello" o "Cañas Gordas – Uramita" → un municipio por etiqueta
+      (p.municipio || '').split(/, | y | – /).forEach(function (m) {
+        if (m && !seen[m]) { seen[m] = 1; $('#where').appendChild(el('span', 'pl', m)); }
+      });
+    });
 
     function openCase(p) {
       current = p;
@@ -428,7 +432,7 @@
     }
     var DONE = {
       whatsapp: ['Resumen listo', 'Envíe su solicitud por WhatsApp para que la atendamos.', 'También puede escribirnos a info@grupogye.com.'],
-      ok: ['Solicitud enviada', 'Recibimos su solicitud. Le responderemos pronto.', 'Si es urgente, escríbanos también por WhatsApp.'],
+      ok: ['Solicitud enviada', 'Recibimos su solicitud. Le responderemos en menos de 24 horas.', 'Si es urgente, escríbanos también por WhatsApp.'],
       fallo: ['No se pudo enviar', 'Envíe su solicitud por WhatsApp para que la atendamos.',
         'Hubo un problema al enviar el formulario. Su resumen está listo para enviarlo por WhatsApp o al correo info@grupogye.com.']
     };

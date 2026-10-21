@@ -11,7 +11,7 @@ import urllib.request
 from wp_api import WP
 
 TITULO = "Cotización web"
-DESTINO = "info@grupogye.com"   # pendiente con la empresa: ¿también magamez@grupogye.com?
+DESTINO = "gyeconsultoriaintegral@gmail.com"   # pedido de la empresa: los buzones @grupogye.com a veces fallan
 CAMPOS = """[text* servicio]
 [text* ciudad]
 [text* tipo]
@@ -67,7 +67,7 @@ def envio_prueba(base, form_id):
         "area": "1200", "pisos": "8 pisos", "plazo": "Sin definir",
         "detalle": "Envío de prueba de la página web. Puede ignorarse.",
         "nombre": "PRUEBA página web", "empresa": "", "tel": "3000000000",
-        "email": "info@grupogye.com", "habeas": "1",
+        "email": "gyeconsultoriaintegral@gmail.com", "habeas": "1",
     }
     url = base + f"contact-form-7/v1/contact-forms/{form_id}/feedback"
     boundary = "----gyeprueba7f3a"   # CF7 solo acepta multipart/form-data, como el navegador
