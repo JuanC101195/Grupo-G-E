@@ -70,6 +70,7 @@ CSS_ASTRA = """
 .gye-v3{font-family:var(--f-body)}
 .gye-v3 h1,.gye-v3 h2,.gye-v3 h3,.gye-v3 .display,.gye-v3 legend,.gye-v3 .faq summary{font-family:var(--f-display)!important}
 .gye-v3 .hero h1,.gye-v3 footer h2,.gye-v3 .mono{font-family:var(--f-mono)!important}
+.gye-v3 footer h2{font-size:13px!important;line-height:1!important;font-weight:600!important;letter-spacing:.06em;text-transform:uppercase;margin:0 0 var(--s3)!important}
 .gye-v3 p,.gye-v3 li,.gye-v3 a,.gye-v3 span,.gye-v3 label,.gye-v3 input,.gye-v3 select,.gye-v3 textarea,.gye-v3 button,.gye-v3 figcaption{font-family:inherit}
 .gye-v3 button:not(.btn):not(.chip):not(.link):not(.more-inc){background:none;border:0;color:inherit;padding:0;box-shadow:none}
 .gye-v3 .btn,.gye-v3 .chip,.gye-v3 .link{box-shadow:none;text-transform:none;letter-spacing:normal;line-height:1}

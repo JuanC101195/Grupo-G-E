@@ -175,6 +175,7 @@ await js('document.getElementById("cotizar").scrollIntoView()'); await sleep(700
 await shot('4-cotizacion-enviada');
 
 // Tipografía propia (el tema de WordPress no debe imponer la suya) y logos que cargan solos al llegar a ellos
+check('títulos del pie en tamaño pequeño', await js('[...document.querySelectorAll("footer h2")].every(h=>parseFloat(getComputedStyle(h).fontSize)<=16)'));
 check('títulos con Barlow Condensed', await js('getComputedStyle(document.getElementById("h-svc")).fontFamily.includes("Barlow")'));
 
 // Diagramas técnicos: marco uniforme 16:10, sin tarjetas estiradas
