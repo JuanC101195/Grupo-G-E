@@ -271,8 +271,7 @@
         },
         {
           "pregunta": "¿Qué son los sistemas IGU, IR e IRS?",
-          "respuesta": "Son métodos de inyección de lechada para formar el bulbo del micropilote: IGU, inyección global única, en una sola etapa; IR, inyección repetitiva, en varias etapas; e IRS, inyección repetitiva y selectiva, por tramos controlados.",
-          "nota_interna": "La empresa escribió 'IRS: Inyección Global Única' (repetido); se usó la definición estándar de IRS. Confirmar."
+          "respuesta": "Son métodos de inyección de lechada para formar el bulbo del micropilote: IGU, inyección global única, en una sola etapa; IR, inyección repetitiva, en varias etapas; e IRS, inyección repetitiva selectiva, por tramos controlados."
         }
       ]
     },

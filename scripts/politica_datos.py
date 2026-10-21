@@ -10,7 +10,7 @@ from wp_api import WP
 
 SLUG = "politica-de-privacidad"
 VIGENCIA = "21 de octubre de 2026"
-NIT = "[NIT pendiente]"
+NIT = "901017577-0"
 CORREO = "gyeconsultoriaintegral@gmail.com"
 
 SECCIONES = [

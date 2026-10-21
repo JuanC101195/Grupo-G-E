@@ -54,8 +54,6 @@ def produccion(body):
     cambios = [
         (r'<div class="proto"[^>]*>.*?</div>\s*', ""),
         (r'\s*<span class="tbd" title="Confirmar autorización de uso de logos">Uso de logos por confirmar</span>\.', ""),
-        (r'\s*<li><span class="mono">Horario</span><span class="tbd"[^>]*>[^<]*</span></li>', ""),
-        (r' · NIT <span class="tbd">por confirmar</span>', ""),
     ]
     for patron, nuevo in cambios:
         body, n = re.subn(patron, nuevo, body, flags=re.S)
