@@ -2,7 +2,8 @@
 
 Se guarda como BORRADOR para que la empresa la apruebe (y, idealmente, la revise su asesor jurídico).
   python scripts/politica_datos.py            → crea/actualiza el borrador en WordPress
-  python scripts/politica_datos.py --publicar → la publica (solo tras la aprobación de la empresa)
+  python scripts/politica_datos.py --revision → la publica con noindex y sin enlazar, para revisión
+  python scripts/politica_datos.py --publicar → la publica indexable (solo tras la aprobación de la empresa)
 """
 import sys
 
@@ -70,10 +71,15 @@ def html():
 
 def main():
     wp = WP()
-    estado = "publish" if "--publicar" in sys.argv else "draft"
+    # --revision: publicada con noindex y sin enlazar, para que la empresa la revise en la web
+    estado = "publish" if ("--publicar" in sys.argv or "--revision" in sys.argv) else "draft"
+    seo = {"title": "Política de tratamiento de datos personales | Grupo G&E",
+           "description": "Cómo Grupo G&E S.A.S. recolecta, usa y protege sus datos personales según la Ley 1581 de 2012, y cómo ejercer sus derechos.",
+           "noindex": 0 if "--publicar" in sys.argv else 1}
     data = {"title": "Política de tratamiento de datos personales", "slug": SLUG, "status": estado,
             "content": "<!-- wp:html -->\n" + html() + "\n<!-- /wp:html -->",
-            "meta": {"site-post-title": "disabled", "site-content-layout": "page-builder", "site-sidebar-layout": "no-sidebar"}}
+            "meta": {"site-post-title": "disabled", "site-content-layout": "page-builder", "site-sidebar-layout": "no-sidebar",
+                     "slim_seo": seo}}
     # reutiliza la página de privacidad que trae WordPress (id 3) en lugar de crear otra
     existente = wp.get("wp/v2/pages", slug=SLUG, status="any", context="edit") or wp.get("wp/v2/pages", slug="privacy-policy", status="any", context="edit")
     if existente:
