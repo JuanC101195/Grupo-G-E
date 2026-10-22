@@ -4,70 +4,56 @@
   "title": "Pilotes y Micropilotes: Diseño y Construcción | Grupo G&E",
   "meta_description": "Diseño y construcción de pilotes y micropilotes con sistemas IGU, IR e IRS y equipos propios. Del estudio de suelos a la obra, con un solo equipo técnico.",
   "h1": "Pilotes y micropilotes: diseño y construcción",
-  "bajada": "Cuando el suelo superficial no alcanza, la carga debe llegar a estratos más firmes. Diseñamos y construimos cimentaciones profundas con equipos propios y sistemas de inyección IGU, IR e IRS.",
+  "bajada": "Diseñamos y construimos pilotes y micropilotes con equipos propios y sistemas de inyección IGU, IR e IRS, desde el estudio de suelos hasta la obra.",
   "secciones": [
     {
       "h2": "Cuándo se necesita una cimentación profunda",
       "parrafos": [
-        "Una cimentación superficial, como una zapata o una losa, transmite la carga a los estratos cercanos a la superficie. Funciona bien cuando esos estratos son resistentes y poco deformables. Cuando el suelo superior es blando, suelto, está rellenado o es susceptible de asentarse, o cuando las cargas son altas o hay sismo y empujes laterales importantes, la carga se lleva a mayor profundidad mediante pilotes o micropilotes.",
-        "La decisión no se toma por intuición. Se toma con un estudio de suelos que identifique el perfil del terreno, la profundidad de los estratos competentes y el nivel del agua, y con el análisis de las cargas de la estructura. Por eso en G&E siempre partimos del estudio geotécnico y diseñamos y evaluamos cimentaciones superficiales, profundas y mixtas, y solo recomendamos una solución profunda cuando el terreno y la estructura lo justifican."
+        "Una zapata o una losa transmite la carga a los estratos cercanos a la superficie y funciona cuando son resistentes. Si el suelo superior es blando, suelto, rellenado o susceptible de asentarse, o las cargas, el sismo y los empujes laterales son importantes, la carga se lleva a mayor profundidad con pilotes o micropilotes.",
+        "La decisión se toma con un estudio de suelos y el análisis de las cargas. Por eso en G&E partimos siempre del estudio geotécnico, evaluamos cimentaciones superficiales, profundas y mixtas, y solo recomendamos una solución profunda cuando el terreno y la estructura lo justifican."
       ]
     },
     {
       "h2": "Pilotes y micropilotes: en qué se diferencian",
       "parrafos": [
-        "Un pilote es un elemento esbelto, generalmente de concreto reforzado, que transfiere la carga al terreno por fricción a lo largo de su fuste, por apoyo en su punta o por ambos mecanismos. Se emplea para estructuras de cargas considerables, como edificios, puentes o tanques. Un micropilote es de diámetro pequeño, se perfora y se inyecta con lechada de cemento y lleva un refuerzo de acero. Su tamaño permite trabajar con equipos compactos, en sitios de acceso limitado, bajo techo, junto a estructuras existentes o en terrenos difíciles.",
-        "Los micropilotes sirven también para reforzar o recalzar cimentaciones de edificaciones existentes, para estabilizar laderas y para resistir cargas de tracción. Contamos con equipos propios para pilotes y micropilotes y con equipos de perforación a roto-percusión, lo que nos permite perforar materiales duros y entregar un solo responsable de la ejecución."
+        "Un pilote es un elemento esbelto, generalmente de concreto reforzado, que transfiere la carga por fricción, por apoyo en su punta o por ambos. Un micropilote, de diámetro pequeño, se perfora e inyecta con lechada de cemento y lleva refuerzo de acero; sirve en accesos limitados y junto a estructuras existentes.",
+        "Contamos con equipos propios para pilotes, micropilotes y perforación a roto-percusión, lo que permite perforar materiales duros y tener un solo responsable de la ejecución."
       ],
       "lista": [
         "Pilotes: cargas altas, edificios, puentes, tanques y estructuras industriales.",
-        "Micropilotes: accesos reducidos, espacios con poca altura libre, recalce de estructuras existentes.",
-        "Ambos: suelos blandos o heterogéneos donde la capa competente está a profundidad."
+        "Micropilotes: accesos reducidos, poca altura libre, recalce de estructuras existentes.",
+        "Micropilotes también refuerzan cimentaciones, estabilizan laderas y resisten tracción.",
+        "Ambos: suelos blandos o heterogéneos con la capa competente a profundidad."
       ]
     },
     {
       "h2": "Sistemas de inyección IGU, IR e IRS",
       "parrafos": [
-        "En el micropilote, la lechada de cemento inyectada forma el bulbo que se adhiere al terreno y transmite la carga. La forma de inyectar determina cuánta adherencia se logra, y por eso se distinguen tres sistemas, que G&E construye.",
-        "IGU, inyección global única, inyecta la lechada en una sola etapa. IR, inyección repetitiva, vuelve a inyectar en varias etapas para mejorar el bulbo y la adherencia con el terreno. IRS, inyección repetitiva selectiva, inyecta por tramos controlados, de modo que se puede concentrar el tratamiento en las zonas del terreno que más lo necesitan. La elección entre uno y otro depende del tipo de suelo, de la carga que debe resistir el micropilote y de lo que indique el diseño y las pruebas, no de una preferencia comercial."
+        "En el micropilote, la lechada inyectada forma el bulbo que se adhiere al terreno y transmite la carga. G&E construye tres sistemas; la elección depende del tipo de suelo, de la carga que debe resistir el micropilote y de lo que indiquen el diseño y las pruebas, no de una preferencia comercial.",
+        "En el diseño verificamos la capacidad geotécnica, el asentamiento esperado y la interacción entre el elemento y la estructura. En obra controlamos los registros de perforación y la preparación e inyección de la lechada, para que lo construido corresponda con lo diseñado."
       ],
       "lista": [
-        "IGU: una etapa de inyección; más sencillo y rápido de ejecutar.",
-        "IR: varias etapas de inyección; busca mayor adherencia en el bulbo.",
-        "IRS: varias etapas y por tramos controlados; permite tratar zonas específicas."
+        "IGU, inyección global única: una etapa; el más sencillo y rápido.",
+        "IR, inyección repetitiva: varias etapas; busca mayor adherencia en el bulbo.",
+        "IRS, inyección repetitiva selectiva: por tramos controlados; trata zonas específicas."
       ]
     },
     {
-      "h2": "Diseñamos y construimos: un solo equipo técnico",
+      "h2": "Un solo equipo: diseño, construcción y experiencia",
       "parrafos": [
-        "La ventaja de integrar el diseño y la construcción es que las decisiones de campo se toman conociendo el estudio de origen. Si durante la perforación el terreno se comporta distinto de lo esperado, el ingeniero que diseñó puede ajustar longitudes, el sistema de inyección o la secuencia, sin pasar por cadenas de comunicación entre empresas. Si usted ya cuenta con un diseño de otro consultor, también podemos ejecutarlo; si no lo tiene, lo desarrollamos desde la exploración del subsuelo.",
-        "Diseñar el elemento no basta: hay que verificar la capacidad geotécnica, el asentamiento esperado y la interacción entre el pilote o micropilote y la estructura. Nuestro equipo reúne ingenieros en geotecnia y estructuras que trabajan estos aspectos en conjunto. Y si el proyecto lo requiere, podemos instalar instrumentación de monitoreo, como piezómetros e inclinómetros, para comprobar el comportamiento del terreno y de la obra durante la ejecución. Debe tenerse en cuenta que, por independencia, no hacemos interventoría de las obras que nosotros mismos diseñamos."
-      ]
-    },
-    {
-      "h2": "Experiencia relacionada en nuestro portafolio",
-      "parrafos": [
-        "En el área de diseño de cimentaciones, nuestro portafolio incluye estudios y diseños geotécnicos para el edificio de Psicología con aislamiento sísmico de la Universidad del Valle, en Cali, para los silos del Molino Santa Marta en Buga y para el tanque e infraestructura de ANDERCOL en Barbosa, además del estudio de suelos y diseño estructural de PriceSmart Laguna Club en Cartagena. En esos proyectos nuestra participación fue el estudio y el diseño; son casos en los que el comportamiento del suelo condiciona el diseño y donde se evalúan cimentaciones superficiales, profundas y mixtas.",
-        "En construcción, hemos ejecutado la adecuación de celdas, la reacomodación de residuos y la clausura del relleno sanitario de El Carmen de Viboral (dos contratos) y movimientos de tierra en dos sedes de la Corporación Educativa Nazaret, en Cartagena. Son obras de ejecución directa que muestran nuestra capacidad constructiva en campo."
-      ]
-    },
-    {
-      "h2": "Qué necesitamos para proponerle una solución",
-      "parrafos": [
-        "Para plantear una solución de pilotes o micropilotes necesitamos conocer el estudio de suelos del lote, o realizarlo, además de las cargas de la estructura, las restricciones de acceso y altura libre, la presencia de edificaciones vecinas y el plazo deseado. Con esa información definimos el tipo de elemento, la longitud, el sistema de inyección y el programa de ejecución.",
-        "El costo depende del número y la longitud de los elementos, del tipo de terreno, del sistema de inyección, del acceso y de la logística. No publicamos precios; respondemos las cotizaciones en menos de 24 horas y, si lo requiere, hacemos una visita técnica para ajustar la propuesta a su obra. Atendemos proyectos en todo el país, incluida la Costa Caribe.",
-        "Durante la construcción llevamos el control de lo que define la calidad del elemento: los registros de perforación, que permiten contrastar lo hallado con lo previsto en el estudio, y las condiciones de preparación e inyección de la lechada. Esa trazabilidad entre el diseño y la obra le permite al propietario y a quien ejerza la interventoría verificar que lo construido corresponde con lo diseñado."
+        "Integrar diseño y construcción permite ajustar longitudes, el sistema de inyección o la secuencia si el terreno se comporta distinto de lo esperado. Si ya tiene un diseño de otro consultor, lo ejecutamos; si no, lo desarrollamos. Instalamos piezómetros e inclinómetros si se requiere. Por independencia, no hacemos interventoría de obras que diseñamos.",
+        "Nuestra participación en cimentaciones ha sido estudio y diseño geotécnico, como en Univalle (Cali) y los silos del Molino Santa Marta (Buga), y en construcción, la clausura del relleno sanitario de El Carmen de Viboral. Para cotizar, envíenos el estudio de suelos, las cargas y el acceso; respondemos en menos de 24 horas."
       ]
     }
   ],
   "incluye": [
-    "Estudio de suelos y análisis de la alternativa de cimentación",
+    "Estudio de suelos y análisis de alternativa de cimentación",
     "Diseño de cimentaciones superficiales, profundas y mixtas",
     "Construcción de pilotes de cimentación",
     "Construcción de micropilotes con sistemas IGU, IR e IRS",
     "Equipos propios de pilotes, micropilotes y roto-percusión",
-    "Sistemas de contención y estabilización asociados a la cimentación",
-    "Instalación de instrumentación (piezómetros, inclinómetros)",
+    "Contención y estabilización asociadas a la cimentación",
+    "Instrumentación de monitoreo: piezómetros e inclinómetros",
     "Ejecución de diseños elaborados por terceros"
   ],
   "faq": [
@@ -77,27 +63,21 @@
     },
     {
       "pregunta": "¿Qué son los sistemas IGU, IR e IRS?",
-      "respuesta": "Son métodos de inyección de lechada para formar el bulbo del micropilote. IGU es inyección global única, en una sola etapa; IR, inyección repetitiva, en varias etapas; e IRS, inyección repetitiva selectiva, por tramos controlados."
+      "respuesta": "Son métodos de inyección de lechada para formar el bulbo del micropilote: IGU, inyección global única; IR, inyección repetitiva en varias etapas; e IRS, repetitiva selectiva, por tramos controlados."
     },
     {
       "pregunta": "¿Pueden diseñar y construir la cimentación?",
-      "respuesta": "Sí. Podemos partir del estudio de suelos, diseñar la cimentación y construirla. Si usted ya tiene un diseño, también podemos ejecutarlo."
+      "respuesta": "Sí. Partimos del estudio de suelos, diseñamos y construimos la cimentación. Si ya tiene un diseño, también podemos ejecutarlo."
     },
     {
       "pregunta": "¿Hacen la interventoría de los pilotes que construyen?",
-      "respuesta": "No hacemos interventoría de obras que hayamos diseñado, para garantizar la independencia del control. La interventoría debe contratarse con un tercero independiente."
-    },
-    {
-      "pregunta": "¿Instalan instrumentación para monitorear el terreno?",
-      "respuesta": "Sí, instalamos sistemas de monitoreo como piezómetros e inclinómetros, entre otros, para verificar el comportamiento del terreno y de la obra."
+      "respuesta": "No de obras que hayamos diseñado, para garantizar la independencia del control. La interventoría debe contratarse con un tercero independiente."
     }
   ],
   "proyectos_relacionados": [
     27,
     31,
     9,
-    12,
-    13,
     21
   ],
   "enlaces_internos": [
@@ -116,7 +96,7 @@
   ],
   "cta": {
     "titulo": "Cotice su cimentación profunda",
-    "texto": "Envíenos el estudio de suelos o la ubicación del proyecto y las cargas previstas. Respondemos en menos de 24 horas con una propuesta de diseño y construcción."
+    "texto": "Envíenos el estudio de suelos o la ubicación y las cargas previstas. Respondemos en menos de 24 horas con una propuesta."
   },
   "palabras_clave": [
     "pilotes y micropilotes",
