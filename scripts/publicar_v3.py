@@ -64,9 +64,18 @@ def produccion(body):
     return re.sub(r' title="[^"]*"', "", body)
 
 
-# Astra pone margen inferior a h1–h3, p y legend dentro del contenido. Este reinicio va ANTES de styles.css:
-# le gana a Astra (mismo peso, más tarde en la página) y deja que los márgenes propios del sitio se apliquen después.
-CSS_RESET_ASTRA = ".gye-v3 :is(h1,h2,h3,h4,p,legend,ul,ol,figure,blockquote){margin:0}\n"
+# Astra mete márgenes e interlineados propios dentro del contenido. Este reinicio va ANTES de styles.css y usa
+# :where() para pesar solo una clase: le gana a Astra (ul/ol, button, .entry-content :where(h3)) por ir después,
+# pero pierde contra las clases del sitio (.cinfo, .wsteps, .eyebrow…), que se aplican luego.
+# Solo `p` necesita más peso, porque Astra usa `.entry-content p`.
+CSS_RESET_ASTRA = (
+    ".gye-v3 :where(h1,h2,h3,h4,legend,ul,ol,figure,blockquote){margin:0}"
+    # Mismos valores que las reglas h2/h3 de styles.css: Astra les gana con `.entry-content :where(h2)`
+    ".gye-v3 :where(h1,h2){line-height:1}.gye-v3 :where(h2){font-size:clamp(38px,5.4vw,62px);font-weight:700}"
+    ".gye-v3 :where(h3){font-size:23px;font-weight:700;line-height:1.1}"
+    ".gye-v3 :where(button){font-weight:inherit;line-height:inherit}"
+    ".gye-v3 p{margin:0}\n"
+)
 
 # Ajustes para convivir con el tema actual (Astra) mientras llega el tema propio
 CSS_ASTRA = """
@@ -81,8 +90,6 @@ CSS_ASTRA = """
 .gye-v3 a{box-shadow:none}
 .gye-v3 input,.gye-v3 select,.gye-v3 textarea{box-shadow:none;max-width:none}
 .gye-v3 h1,.gye-v3 h2,.gye-v3 h3{color:inherit;clear:none}
-.gye-v3 ul,.gye-v3 ol{margin:0}
-.gye-v3 figure{margin:0}
 .gye-v3 svg{display:block}
 .gye-v3 .logo img{max-width:none}
 """

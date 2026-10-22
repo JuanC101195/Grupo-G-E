@@ -122,6 +122,7 @@ check('6 servicios del brochure', await js('document.querySelectorAll(".svc").le
 check('13 logos de clientes', await js('document.querySelectorAll(".logos img").length === 13'));
 // al inicio el paso 1 del cotizador está visible: su título no debe montarse sobre la barra de pasos
 check('título del cotizador no se monta sobre los pasos', await js('(()=>{const l=document.querySelector("#wizard fieldset:not([hidden]) legend");return l && l.getBoundingClientRect().top >= document.querySelector(".wsteps").getBoundingClientRect().bottom - 1})()'));
+check('opciones del cotizador del mismo tamaño', await js('(()=>{const h=[...document.querySelectorAll("[data-step=\\"1\\"] .opt>span")].map(x=>Math.round(x.getBoundingClientRect().height)).filter(Boolean);return h.length>2&&Math.max(...h)-Math.min(...h)<=1})()'));
 // antes de cualquier paso que fuerce la carga de imágenes: los logos deben cargar solos al llegar a ellos
 await js('document.querySelector(".logos").scrollIntoView({block:"center"})'); await sleep(2500);
 check('logos de clientes cargados al verlos', await js('[...document.querySelectorAll(".logos img")].every(i=>i.complete&&i.naturalWidth>0)'));
