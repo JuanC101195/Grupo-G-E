@@ -279,18 +279,23 @@
       if (active !== 'todos') { return card.dataset.group === active; }
       return expanded || i < CONFIG.projectsPreview;
     }
+    var timers = new WeakMap();   // un temporizador por tarjeta: cada clic cancela la animación pendiente
     function apply(animate) {
       $$('.proj', grid).forEach(function (c, i) {
         var show = visible(c, i);
-        if (!animate || !motion) { c.hidden = !show; return; }
-        if (!show && !c.hidden) {
+        clearTimeout(timers.get(c));
+        if (!animate || !motion) { c.hidden = !show; c.classList.remove('out'); return; }
+        if (!show) {
+          if (c.hidden) { return; }
           c.classList.add('out');
-          setTimeout(function () { c.hidden = true; }, 280);
-        } else if (show && c.hidden) {
-          setTimeout(function () {
+          timers.set(c, setTimeout(function () { c.hidden = true; }, 280));
+        } else if (c.hidden || c.classList.contains('out')) {
+          // entra (o vuelve si estaba saliendo): estado inicial fijado con un reflow, sin depender de requestAnimationFrame
+          timers.set(c, setTimeout(function () {
             c.hidden = false; c.classList.add('out', 'in');
-            requestAnimationFrame(function () { requestAnimationFrame(function () { c.classList.remove('out'); }); });
-          }, 280);
+            void c.offsetWidth;
+            c.classList.remove('out');
+          }, c.hidden ? 280 : 0));
         }
       });
       moreBtn.parentElement.hidden = expanded || active !== 'todos';
