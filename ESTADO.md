@@ -65,7 +65,7 @@ node prototipo/v3/e2e-servicios.mjs https://grupogye.com/estudio-de-suelos/ 1440
 - WordPress convierte `&&` en `&#038;&#038;` dentro del contenido. El JS se publica en base64 con un cargador mínimo (`script_seguro`).
 - ModSecurity bloquea la subida binaria de imágenes. Se suben como multipart.
 - Astra impone sus tipografías y tamaños. Los overrides están en `CSS_ASTRA`, en `publicar_v3.py`.
-- Astra también mete márgenes (p. ej. 108 px bajo `p.display`, 45 px bajo `legend`) y su propio interlineado en los títulos. `CSS_RESET_ASTRA` pone los márgenes en 0 **antes** de `styles.css`. Para alturas de «2 líneas» se usa `2lh`, no `em`.
+- Astra también mete márgenes (p. ej. 108 px bajo `p.display`, 45 px bajo `legend`) y su propio interlineado en los títulos. `CSS_RESET_ASTRA` va **antes** de `styles.css` con `:where()`: le gana a Astra pero pierde contra las clases del sitio. Si se cambia el tamaño o el peso de `h2`/`h3` en `styles.css`, hay que copiarlo también en `CSS_RESET_ASTRA` (Astra los pisaba: los títulos salían a 48 px y sin negrita). Para alturas de «2 líneas» se usa `2lh`, no `em`.
 - Revisión visual del 22-oct: tarjetas y logos del mismo alto, filtro de proyectos sin tarjetas atascadas, títulos equilibrados y área táctil en el pie. `e2e.mjs` ya verifica esas alineaciones.
 - Toda página nueva debe llevar `META_ASTRA` y el marco `envolver()` de `publicar_servicios.py`. Si no, muestra el encabezado y el pie viejos de Astra.
 - Contact Form 7 por API exige `context=save` para guardar y multipart para enviar.
