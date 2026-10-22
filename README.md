@@ -13,6 +13,7 @@ Sitio web de **Grupo G&E S.A.S.**, consultoría geotécnica, estructural e integ
 | `assets/marca/` | Logo en vector (claro, negativo y símbolo), PNG de apoyo y su generador en `_fuente/` |
 | `seo/estrategia-seo.md` | Investigación de competencia, mapa de URLs, metadatos y plan de contenido |
 | `DESIGN.md` | Sistema de diseño |
+| `ESTADO.md` | **Estado del proyecto: qué está en vivo, cómo se publica y qué falta** |
 
 ## Cómo trabajar
 
