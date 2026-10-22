@@ -13,6 +13,8 @@ REGLAS = {
     "/contact/": "/#cotizar",
     "/recursos/": "/#preguntas",
     "/proximamente/": "/",
+    # la empresa pidió no enfocar la página solo en Medellín (22-oct-2026)
+    "/estudio-de-suelos-medellin/": "/estudio-de-suelos/",
 }
 
 

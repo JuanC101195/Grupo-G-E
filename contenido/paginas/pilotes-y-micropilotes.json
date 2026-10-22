@@ -47,7 +47,7 @@
     {
       "h2": "Experiencia relacionada en nuestro portafolio",
       "parrafos": [
-        "En el área de diseño de cimentaciones, el portafolio incluye estudios y diseños geotécnicos para el edificio de Psicología con aislamiento sísmico de la Universidad del Valle, en Cali, para los silos del Molino Santa Marta en Buga y para el tanque e infraestructura de ANDERCOL en Barbosa, además del estudio de suelos y diseño estructural de PriceSmart Laguna Club en Cartagena. Son estructuras en las que el comportamiento del suelo condiciona el diseño y donde se evalúan cimentaciones superficiales, profundas y mixtas.",
+        "En el área de diseño de cimentaciones, nuestro portafolio incluye estudios y diseños geotécnicos para el edificio de Psicología con aislamiento sísmico de la Universidad del Valle, en Cali, para los silos del Molino Santa Marta en Buga y para el tanque e infraestructura de ANDERCOL en Barbosa, además del estudio de suelos y diseño estructural de PriceSmart Laguna Club en Cartagena. En esos proyectos nuestra participación fue el estudio y el diseño; son casos en los que el comportamiento del suelo condiciona el diseño y donde se evalúan cimentaciones superficiales, profundas y mixtas.",
         "En construcción, hemos ejecutado la adecuación de celdas, la reacomodación de residuos y la clausura del relleno sanitario de El Carmen de Viboral (dos contratos) y movimientos de tierra en dos sedes de la Corporación Educativa Nazaret, en Cartagena. Son obras de ejecución directa que muestran nuestra capacidad constructiva en campo."
       ]
     },
@@ -110,8 +110,8 @@
       "slug": "estabilidad-de-taludes"
     },
     {
-      "texto": "estudio de suelos en Medellín",
-      "slug": "estudio-de-suelos-medellin"
+      "texto": "estudio de suelos para su proyecto",
+      "slug": "estudio-de-suelos"
     }
   ],
   "cta": {
@@ -122,7 +122,7 @@
     "pilotes y micropilotes",
     "construcción de micropilotes",
     "micropilotes IGU IR IRS",
-    "pilotes de cimentación Medellín",
+    "pilotes de cimentación",
     "cimentación profunda",
     "recalce de cimentaciones"
   ],

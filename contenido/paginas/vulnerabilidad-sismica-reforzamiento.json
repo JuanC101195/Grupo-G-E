@@ -53,7 +53,7 @@
       "h2": "Diseño estructural nuevo: normas y alcance",
       "parrafos": [
         "Además de evaluar lo existente, realizamos análisis y diseño estructural de edificios, puentes, grandes superficies y estructuras portuarias. Según el proyecto y el país, aplicamos la NSR-10 para edificaciones en Colombia, el CCP-14 para puentes y los códigos ACI, entre otros.",
-        "El costo de un estudio de vulnerabilidad o de un diseño de reforzamiento depende del tamaño y la complejidad de la edificación, de la información disponible, de los ensayos o exploraciones que se necesiten y del alcance del diseño. Por eso no publicamos precios. Si desea una cotización, envíenos la ubicación, el uso, el número de pisos, el año aproximado de construcción y los planos si los tiene. Respondemos en menos de 24 horas y atendemos edificaciones en Medellín y en todo el país."
+        "El costo de un estudio de vulnerabilidad o de un diseño de reforzamiento depende del tamaño y la complejidad de la edificación, de la información disponible, de los ensayos o exploraciones que se necesiten y del alcance del diseño. Por eso no publicamos precios. Si desea una cotización, envíenos la ubicación, el uso, el número de pisos, el año aproximado de construcción y los planos si los tiene. Respondemos en menos de 24 horas y atendemos edificaciones en todo el país."
       ]
     }
   ],
@@ -98,8 +98,8 @@
   ],
   "enlaces_internos": [
     {
-      "texto": "estudio de suelos en Medellín",
-      "slug": "estudio-de-suelos-medellin"
+      "texto": "estudio de suelos para su proyecto",
+      "slug": "estudio-de-suelos"
     },
     {
       "texto": "estudios geotécnicos y exploración del subsuelo",
