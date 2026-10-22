@@ -10,6 +10,12 @@ Además hay **5 páginas de servicio para posicionar en Google**. Están publica
 
 El objetivo de negocio es que los clientes lleguen por Google y no solo por referidos.
 
+## Dónde quedamos (22-oct-2026)
+- Todo lo hecho está publicado en vivo. Las pruebas en vivo pasan: portada a 1440, 1024 y 390 oscuro; las 5 páginas de servicio en escritorio y celular.
+- PR #16 (revisión visual) y #17 (cotizador y títulos) ya están mezclados.
+- **Falta abrir y mezclar el PR de `feat/quienes-somos`.** Esa rama trae el rediseño de «Quiénes somos» y esta actualización de ESTADO.md.
+- Ya se les enviaron a los dueños los enlaces de las 5 páginas de servicio y de la política. **Aún no responden.** Mientras tanto no hay cambios pendientes de nuestro lado.
+
 ---
 
 ## Qué hay en vivo
@@ -97,6 +103,10 @@ node prototipo/v3/e2e-servicios.mjs https://grupogye.com/estudio-de-suelos/ 1440
 - [ ] Google Search Console con la cuenta de la empresa, y enviar `https://grupogye.com/sitemap.xml`.
 - [ ] Google Business Profile. Clientes para pedir reseñas: Bioexplora, Poliobras, Aschner, PriceSmart, IngenioBIM, MC Arquitectos y ACCA.
 - [ ] Quitar los íconos sociales de Astra (solo se ven en la página 404): *Apariencia → Personalizar → Encabezado / Pie*.
+
+### Notas de diseño
+- Los cambios que afectan títulos o márgenes se comparan en vivo contra el prototipo local, propiedad por propiedad (márgenes, interlineado, tamaño y peso de letra). Astra pisa estilos que el prototipo local no muestra.
+- Si un `span` usa la letra de los títulos, hay que agregarlo a la regla `font-family:var(--f-display)!important` de `CSS_ASTRA`. Astra fuerza `span{font-family:inherit}`.
 
 ### Siguiente fase técnica
 - [ ] Tema propio de WordPress que reemplace Astra (con `theme.json` desde `DESIGN.md`).
