@@ -4,103 +4,81 @@
   "title": "Estudios Geotécnicos y Exploración del Subsuelo | Grupo G&E",
   "meta_description": "Exploración geológico-geotécnica con perforación directa hasta 150 m, muestreo en suelo y roca, geofísica y GPR, bajo NSR-10. Cobertura en todo Colombia.",
   "h1": "Estudios geotécnicos y exploración del subsuelo",
-  "bajada": "Perforación con recuperación de muestras hasta 150 m, ensayos geofísicos y georradar con equipos propios, para proyectos medianos y grandes en todo el país.",
+  "bajada": "Perforación con recuperación de muestras hasta 150 m, geofísica y georradar con equipos propios, para proyectos medianos y grandes en todo el país.",
   "secciones": [
     {
-      "h2": "Para qué sirve un estudio geotécnico en proyectos de mayor escala",
+      "h2": "Para qué sirve en proyectos de mayor escala",
       "parrafos": [
-        "Cuando una obra es grande, profunda o sensible, el costo de equivocarse con el terreno es alto. Un estudio geotécnico bien planteado reduce la incertidumbre sobre lo que hay debajo del proyecto: tipos de suelo y roca, resistencia, deformabilidad, presencia de agua, posibles zonas débiles y comportamiento ante un sismo. Con esos datos se diseñan cimentaciones, contenciones, excavaciones, terraplenes o plataformas con criterios sustentados y no con supuestos.",
-        "En Grupo G&E esta línea se llama exploración geológico-geotécnica y es la puerta de entrada a casi todo nuestro trabajo. Atendemos proyectos de los sectores industrial, público y privado: plantas, bodegas, edificios institucionales, centros comerciales, vías, redes de acueducto y alcantarillado y obras portuarias. Nuestros estudios se elaboran conforme a la NSR-10, incluido el Título H, y se pueden ejecutar en cualquier región de Colombia. Si su proyecto es una vivienda o un lote urbano, puede interesarle más nuestra página de estudio de suelos."
+        "Cuando una obra es grande, profunda o sensible, equivocarse con el terreno cuesta caro. Un estudio geotécnico reduce la incertidumbre sobre suelo, roca, resistencia, agua y comportamiento ante un sismo, para diseñar cimentaciones, contenciones y excavaciones con criterios sustentados y no con supuestos. Es la puerta de entrada a casi todo nuestro trabajo.",
+        "Atendemos proyectos industriales, públicos y privados: plantas, bodegas, edificios institucionales, centros comerciales, vías, redes y obras portuarias, conforme a la NSR-10, incluido el Título H. Si su proyecto es una vivienda o un lote urbano, puede interesarle más nuestra página de estudio de suelos."
       ]
     },
     {
-      "h2": "Perforación directa con recuperación de muestras hasta 150 m",
+      "h2": "Perforación directa hasta 150 m",
       "parrafos": [
-        "La perforación es la herramienta central de la exploración. Contamos con equipos propios de perforación directa con recuperación de muestras en suelo y roca, con capacidad de llegar hasta 150 m de profundidad, y con equipos de perforación a roto-percusión. Recuperar muestras permite ver y ensayar el material real, determinar su clasificación y su resistencia, y construir el perfil estratigráfico que sirve de base al diseño. En roca, la recuperación de núcleos aporta información sobre su calidad y su grado de fracturamiento.",
-        "La profundidad de exploración se define según el tipo de obra: una cimentación profunda, una excavación con sótanos, un talud alto o una estructura industrial pesada no requieren la misma investigación que una bodega liviana. La viabilidad de cada perforación se confirma tras una visita técnica al sitio, porque el acceso, la topografía y las condiciones del terreno determinan qué equipo y qué logística se necesitan."
+        "Contamos con equipos propios de perforación directa con recuperación de muestras en suelo y roca, hasta 150 m de profundidad, y con equipos de roto-percusión. Recuperar muestras permite ver y ensayar el material real y construir el perfil del terreno. En roca, los núcleos informan su calidad y fracturamiento.",
+        "La profundidad se define según la obra: una cimentación profunda, un sótano, un talud alto o una estructura industrial pesada no requieren la misma investigación. La viabilidad de cada perforación se confirma tras una visita técnica al sitio."
       ],
       "lista": [
         "Perforación en suelo y roca con recuperación de muestras.",
-        "Ensayos de campo durante la perforación, como la penetración estándar (SPT).",
-        "Registro del nivel freático y de las condiciones de agua subterránea.",
-        "Equipos de roto-percusión para terrenos donde se requiere penetrar materiales duros.",
-        "Construcción de pozos para captación de aguas subterráneas, cuando el proyecto lo necesita."
+        "Ensayos de campo, como la penetración estándar (SPT).",
+        "Registro del nivel freático y del agua subterránea.",
+        "Roto-percusión para penetrar materiales duros.",
+        "Pozos para captación de aguas subterráneas, si el proyecto lo necesita."
       ]
     },
     {
-      "h2": "Geofísica y georradar: ver el subsuelo sin perforarlo todo",
+      "h2": "Geofísica y georradar",
       "parrafos": [
-        "Las perforaciones entregan información precisa pero puntual. Los métodos geofísicos complementan esa información entre puntos y permiten investigar áreas amplias de manera menos invasiva. G&E dispone de un sismógrafo ABEM para ensayos de refracción, reflexión, down-hole y cross-hole, de equipos de tomografía eléctrica y de georradar (GPR).",
-        "Cada método responde a una pregunta distinta. La refracción sísmica estima velocidades y espesores de capas desde la superficie, útil para ubicar el techo de roca. La reflexión busca imágenes de estructuras más profundas. El down-hole y el cross-hole miden la velocidad de las ondas sísmicas dentro de perforaciones, y de ahí se obtienen parámetros de rigidez del terreno, como la velocidad de onda de corte, que interviene en la clasificación del sitio para el diseño sismorresistente y en los estudios de dinámica de suelos. La tomografía eléctrica mide la resistividad del terreno y produce imágenes útiles para identificar el nivel de agua, el contacto entre suelo y roca o zonas anómalas. El GPR emplea ondas electromagnéticas para detectar rellenos, cavidades, estructuras enterradas o redes en profundidades someras."
+        "Las perforaciones son precisas pero puntuales. Los métodos geofísicos complementan la información entre puntos y cubren áreas amplias de forma menos invasiva. Contamos con sismógrafo ABEM, tomografía eléctrica y georradar (GPR); cada método responde a una pregunta distinta, desde ubicar el techo de roca hasta detectar rellenos o cavidades."
       ],
       "lista": [
-        "Refracción y reflexión sísmica para espesores de capas y profundidad de roca.",
-        "Down-hole y cross-hole para velocidades de onda dentro del terreno.",
-        "Tomografía eléctrica con fines geotécnicos, geológicos y ambientales.",
-        "GPR para exploración somera y detección de anomalías."
+        "Refracción y reflexión sísmica: espesores de capas y profundidad de roca.",
+        "Down-hole y cross-hole: velocidades de onda para la clasificación sísmica del sitio.",
+        "Tomografía eléctrica: agua, contacto suelo-roca y zonas anómalas.",
+        "GPR: rellenos, cavidades y estructuras enterradas a poca profundidad.",
+        "Todos aplican a fines geotécnicos, geológicos y ambientales."
       ]
     },
     {
-      "h2": "Del campo al informe: lo que usted recibe",
+      "h2": "Del campo al informe y a la obra",
       "parrafos": [
-        "Las muestras recuperadas pasan a ensayos de laboratorio que clasifican el material y estiman su resistencia y compresibilidad. Con esos resultados y los datos de campo, el equipo caracteriza el subsuelo, evalúa aspectos geológicos e hidrogeológicos con propósitos de ingeniería y calcula los parámetros que el diseño necesita. El informe incluye la descripción del perfil del terreno, las condiciones del agua, las recomendaciones de cimentación y excavación y las precauciones constructivas pertinentes.",
-        "Una ventaja de nuestro modelo es que la información no se queda en un documento aparte. El mismo grupo que explora cuenta con ingenieros en geotecnia, estructuras, hidráulica, hidrología e interventoría, de modo que los hallazgos de campo pasan de manera directa al diseño geotécnico y, si usted lo requiere, a la construcción de las cimentaciones. También trabajamos dentro de plantas industriales en operación, donde la exploración exige coordinar accesos, seguridad y horarios con la planta."
-      ]
-    },
-    {
-      "h2": "Proyectos en la Costa Caribe y en el resto del país",
-      "parrafos": [
-        "Nuestros proyectos están en todo el país. En la Costa Caribe hicimos el estudio de suelos y el diseño estructural de PriceSmart Laguna Club en Cartagena, en unión temporal con Dual Ingenieros, y el estudio de suelos para la licencia de construcción de PriceSmart Serena del Mar, también en Cartagena. En Ciénaga, Magdalena, realizamos la parametrización geotécnica y el análisis de estabilidad de obras de dragado de la terminal portuaria Río Córdoba, y en Salgar, Atlántico, cuatro contratos con estudios de suelos, caracterización de materiales viales y soporte geotécnico para contención.",
-        "En el interior, realizamos estudios y diseños geotécnicos para el edificio de Psicología con aislamiento sísmico de la Universidad del Valle (Cali), para los silos del Molino Santa Marta en Buga y para la eliminación de descargas del PSMV de EPM en el área metropolitana de Medellín. Esa diversidad de suelos, climas y tipos de obra es la mejor garantía de que su proyecto no será nuestro primer encuentro con terrenos exigentes."
-      ]
-    },
-    {
-      "h2": "Cómo se define el alcance y de qué depende el costo",
-      "parrafos": [
-        "El alcance de una exploración se define con usted: tipo de obra, cargas previstas, ubicación, profundidad de interés, restricciones de acceso y normativa aplicable. El costo depende del número y la profundidad de las perforaciones, de si hay roca, del traslado y la logística de los equipos, de los ensayos geofísicos y de laboratorio que se incluyan y de los plazos de campo. Por eso no publicamos tarifas: preferimos entender su proyecto y entregar una propuesta ajustada.",
-        "Si necesita iniciar con rapidez, escríbanos con la ubicación y una descripción breve de la obra. Respondemos las cotizaciones en menos de 24 horas, y una visita técnica permite confirmar la viabilidad y afinar el plan de exploración antes de comprometer recursos."
+        "Las muestras pasan a laboratorio y, con los datos de campo, se caracteriza el subsuelo. El informe incluye el perfil del terreno, las condiciones del agua y las recomendaciones de cimentación y excavación. El mismo grupo cuenta con geotecnia, estructuras, hidráulica e interventoría, y también explora dentro de plantas industriales en operación.",
+        "Hicimos el estudio de suelos y diseño estructural de PriceSmart Laguna Club (Cartagena), la parametrización geotécnica de la terminal portuaria Río Córdoba (Ciénaga) y estudios y diseños para Univalle (Cali) y los silos del Molino Santa Marta (Buga). No publicamos tarifas: cada alcance se cotiza en menos de 24 horas, tras entender su proyecto."
       ]
     }
   ],
   "incluye": [
-    "Perforación directa con recuperación de muestras en suelo y roca hasta 150 m",
+    "Perforación con muestras hasta 150 m",
     "Perforación a roto-percusión",
     "Ensayos de campo y registro del nivel freático",
     "Refracción, reflexión, down-hole y cross-hole con sismógrafo ABEM",
-    "Tomografía eléctrica y ensayos geoeléctricos",
-    "Georradar (GPR)",
+    "Tomografía eléctrica y georradar (GPR)",
     "Ensayos de laboratorio sobre las muestras recuperadas",
-    "Evaluación geológica e hidrogeológica con propósitos de ingeniería",
-    "Informe conforme a la NSR-10, incluido el Título H",
-    "Exploración geotécnica en plantas industriales"
+    "Evaluación geológica e hidrogeológica para ingeniería",
+    "Informe conforme a la NSR-10, incluido el Título H"
   ],
   "faq": [
     {
       "pregunta": "¿Hasta qué profundidad pueden perforar?",
-      "respuesta": "Contamos con capacidad de perforación directa hasta 150 m de profundidad, con recuperación de muestras en suelo y roca. La viabilidad en cada sitio se confirma tras una visita técnica."
+      "respuesta": "Hasta 150 m con perforación directa, con recuperación de muestras en suelo y roca. La viabilidad en cada sitio se confirma tras una visita técnica."
     },
     {
       "pregunta": "¿Qué ensayos geofísicos realizan?",
-      "respuesta": "Ensayos geofísicos y geoeléctricos, tomografía eléctrica, georradar (GPR) y registros sísmicos con sismógrafo ABEM: refracción, reflexión, down-hole y cross-hole."
+      "respuesta": "Refracción, reflexión, down-hole y cross-hole con sismógrafo ABEM, además de tomografía eléctrica y georradar (GPR)."
     },
     {
       "pregunta": "¿Los estudios cumplen la NSR-10?",
-      "respuesta": "Sí. Nuestros estudios de suelos se elaboran conforme a la NSR-10, incluido el Título H. Cuando el proyecto está fuera de Colombia, el marco normativo se acuerda según el país."
+      "respuesta": "Sí. Nuestros estudios de suelos se elaboran conforme a la NSR-10, incluido el Título H."
     },
     {
       "pregunta": "¿Trabajan fuera de Antioquia?",
       "respuesta": "Sí. Hemos participado en proyectos en Antioquia, Atlántico, Bolívar, Cundinamarca, Magdalena y Valle del Cauca, y la cobertura es nacional."
-    },
-    {
-      "pregunta": "¿Pueden explorar dentro de una planta industrial en operación?",
-      "respuesta": "Sí, realizamos exploración geotécnica en plantas industriales. La logística de campo se coordina con la operación de la planta."
     }
   ],
   "proyectos_relacionados": [
     21,
-    26,
     15,
-    4,
     9,
     12
   ],
@@ -120,7 +98,7 @@
   ],
   "cta": {
     "titulo": "Planifiquemos la exploración de su proyecto",
-    "texto": "Cuéntenos la ubicación y el tipo de obra. Respondemos en menos de 24 horas y coordinamos una visita técnica para definir el plan de perforación y geofísica."
+    "texto": "Cuéntenos ubicación y tipo de obra. Respondemos en menos de 24 horas y coordinamos una visita técnica."
   },
   "palabras_clave": [
     "estudios geotécnicos",
@@ -133,7 +111,6 @@
   ],
   "pendientes": [
     "Salgar (Atlántico): el municipio exacto está marcado como pendiente de confirmar en proyectos.json (id 4); confirmar antes de publicar.",
-    "Cuando el proyecto está fuera de Colombia, el marco normativo se acuerda según el país: confirmar que la empresa lo desea afirmar (el JSON dice alcance nacional e internacional pero no cita proyectos fuera del país).",
     "Las descripciones de cada método geofísico son conocimiento técnico general; validar con un ingeniero de G&E que correspondan a cómo usan cada equipo.",
     "Autorización de clientes para nombrar a PriceSmart, Aqua & Terra y Aschner en la web."
   ]

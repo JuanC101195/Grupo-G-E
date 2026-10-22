@@ -4,56 +4,41 @@
   "title": "Vulnerabilidad Sísmica y Reforzamiento | Grupo G&E",
   "meta_description": "Evaluación de patología y vulnerabilidad sísmica y diseño de reforzamiento estructural de edificaciones existentes, con geotecnia integrada, en todo el país.",
   "h1": "Vulnerabilidad sísmica y reforzamiento estructural",
-  "bajada": "Evaluamos cómo se comporta una edificación existente ante un sismo, diagnosticamos sus daños y definimos alternativas de reforzamiento sustentadas, estudiando juntos suelo y estructura.",
+  "bajada": "Evaluamos cómo se comporta una edificación existente ante un sismo, diagnosticamos sus daños y definimos alternativas de reforzamiento, estudiando juntos suelo y estructura.",
   "secciones": [
     {
-      "h2": "Qué es la vulnerabilidad sísmica y cuándo conviene evaluarla",
+      "h2": "Qué es la vulnerabilidad sísmica y cuándo evaluarla",
       "parrafos": [
-        "La vulnerabilidad sísmica de una edificación es una medida de qué tan susceptible es a sufrir daños cuando ocurre un sismo. Depende de cómo fue diseñada y construida, de los materiales, del estado en que se encuentra hoy y del suelo sobre el que se apoya. Colombia cuenta con un reglamento de construcción sismo resistente, la NSR-10, que exige a las edificaciones nuevas un nivel de seguridad que muchas edificaciones antiguas no tienen, bien porque se construyeron antes de que existieran esas exigencias, bien porque fueron modificadas sin el análisis adecuado.",
-        "Evaluar la vulnerabilidad no significa que el edificio esté mal. Es la forma técnica de saberlo con certeza y de decidir con datos si necesita intervención. Entre las situaciones que lo justifican están las edificaciones antiguas, los cambios de uso o de ocupación, las ampliaciones o adiciones de pisos, los daños visibles tras un evento o por deterioro, y las edificaciones de atención a la comunidad, como hospitales, sedes de seguridad y justicia o equipamientos públicos, cuyo buen funcionamiento es esencial después de un sismo."
+        "La vulnerabilidad sísmica mide qué tan susceptible es una edificación a sufrir daños en un sismo. Depende de cómo fue diseñada y construida, de sus materiales, de su estado actual y del suelo. La NSR-10 exige a las edificaciones nuevas una seguridad que muchas antiguas no tienen, o que perdieron al modificarse sin análisis.",
+        "Evaluar no significa que el edificio esté mal: es la forma técnica de saber con certeza, y decidir con datos, si necesita intervención. Se justifica en edificaciones antiguas, cambios de uso, ampliaciones, daños visibles y edificaciones esenciales después de un sismo, como hospitales y sedes de seguridad y justicia."
       ]
     },
     {
-      "h2": "Patología estructural: entender el estado real de la edificación",
+      "h2": "Patología estructural: el estado real de la edificación",
       "parrafos": [
-        "La patología estructural es el diagnóstico de los daños y deterioros de una estructura y de sus causas. No es lo mismo una fisura superficial en un muro divisorio que una grieta en una viga o una columna, ni es lo mismo la humedad ocasional que la corrosión del acero de refuerzo. El diagnóstico distingue lo que es cosmético de lo que compromete la seguridad.",
-        "Un estudio patológico revisa el estado del concreto y del acero, los elementos con deformaciones o fisuras, el efecto de la humedad y de los agentes agresivos, los asentamientos diferenciales de la cimentación y las modificaciones que se hayan hecho con el tiempo. En muchos casos los problemas que parecen estructurales tienen origen en el suelo, y por eso integramos el análisis geotécnico desde el principio."
+        "La patología estructural diagnostica los daños de una estructura y sus causas, y distingue lo cosmético de lo que compromete la seguridad. Muchos problemas que parecen estructurales nacen en el suelo, por eso integramos la geotecnia desde el principio.",
+        "Un estudio patológico revisa el estado del concreto y del acero, las deformaciones y fisuras, el efecto de la humedad y de los agentes agresivos, los asentamientos diferenciales y las modificaciones hechas con el tiempo. Estos son los hallazgos más frecuentes:"
       ],
       "lista": [
-        "Fisuras y grietas: su ubicación, patrón y evolución.",
+        "Fisuras y grietas: ubicación, patrón y evolución.",
         "Corrosión del refuerzo y deterioro del concreto.",
         "Asentamientos de la cimentación y movimientos del terreno.",
         "Modificaciones, aperturas de muros o adiciones sin diseño.",
-        "Deterioro por humedad, filtraciones y falta de mantenimiento."
+        "Humedad, filtraciones y falta de mantenimiento."
       ]
     },
     {
-      "h2": "Cómo evaluamos la vulnerabilidad de una edificación existente",
+      "h2": "Cómo evaluamos y qué alternativas de reforzamiento planteamos",
       "parrafos": [
-        "La evaluación se apoya en tres pilares: conocer la estructura, conocer el suelo y comparar la capacidad con la demanda sísmica. Se reúne la información disponible, como planos, memorias y antecedentes, y se verifica en sitio que la edificación corresponda con ellos. Se complementa con ensayos y exploraciones cuando la información falta. Con eso se construye un modelo analítico de la estructura y se compara su capacidad con las fuerzas que un sismo de diseño le impondría, teniendo en cuenta el tipo de suelo del sitio.",
-        "El resultado es un diagnóstico claro: qué elementos o mecanismos de falla son los críticos, qué nivel de seguridad tiene la edificación y qué debe hacerse. El reglamento colombiano contiene disposiciones sobre la evaluación e intervención de edificaciones existentes, y el estudio se enmarca en ellas según el caso. Para que usted pueda tomar decisiones, el informe separa lo urgente de lo recomendable.",
-        "Conviene saber que una evaluación de vulnerabilidad no se limita a calcular: requiere criterio de ingeniería para interpretar el estado de los materiales, la calidad de los detalles constructivos y el posible efecto de elementos no estructurales, como muros de mampostería, sobre el comportamiento global. Por eso el trabajo de campo y la revisión del edificio en sitio pesan tanto como el modelo."
+        "Reunimos planos y antecedentes, verificamos la edificación en sitio y, si falta información, hacemos ensayos y exploraciones. Con un modelo analítico comparamos su capacidad con la demanda de un sismo de diseño, considerando el suelo. El informe señala los elementos críticos, el nivel de seguridad y qué hacer, separando lo urgente de lo recomendable.",
+        "Si hace falta mejorar el desempeño, planteamos alternativas: nuevos elementos, refuerzo de columnas, vigas o uniones, mejora de la cimentación o reducción de cargas. Se comparan por desempeño, facilidad constructiva e impacto en el uso del inmueble, lo que facilita decidir al propietario. Por independencia, no hacemos interventoría de obras que diseñamos."
       ]
     },
     {
-      "h2": "Reforzamiento estructural: alternativas según el caso",
+      "h2": "Suelo y estructura en conjunto, y cotización",
       "parrafos": [
-        "Cuando la evaluación indica que la edificación necesita mejorar su desempeño, se plantean alternativas de reforzamiento estructural. Según el caso pueden consistir en aumentar la rigidez o la resistencia de la estructura con nuevos elementos, reforzar columnas, vigas o uniones, mejorar la cimentación o reducir las cargas. No hay una receta general: la mejor alternativa es la que logra el desempeño buscado con la menor intervención y la menor afectación al uso del edificio.",
-        "Las alternativas se comparan por desempeño, por facilidad constructiva y por impacto en la operación del inmueble, lo que facilita decidir al propietario o a la entidad. Podemos acompañar el proceso con exploración del subsuelo y, de ser necesario, con la interventoría o la construcción. Por independencia, no ejercemos la interventoría de obras que hayamos diseñado nosotros mismos."
-      ]
-    },
-    {
-      "h2": "Suelo y estructura estudiados en conjunto",
-      "parrafos": [
-        "Esta línea de G&E trabaja con geotecnia. El comportamiento del suelo y el de la estructura se estudian de manera coordinada, algo especialmente relevante en edificaciones que deben repotenciarse o que tienen cimentaciones complejas. En el Parque de Artes y Obras, en Bello, para Bioexplora, realizamos patología, vulnerabilidad y repotenciación estructural y geotécnica. En tres sedes de seguridad y justicia de Medellín (Aures, Buenos Aires y Manrique), también para Bioexplora, estudiamos suelos, patología, vulnerabilidad sísmica y reforzamiento.",
-        "En el Hospital San Juan de Dios de Rionegro hicimos los estudios y diseños geotécnicos que sirven de insumo al análisis de vulnerabilidad de la edificación. En Cartagena, desarrollamos el estudio de suelos y el diseño estructural de PriceSmart Laguna Club, en unión temporal con Dual Ingenieros. Esa combinación de geotecnia y estructuras es una de nuestras fortalezas y reduce los vacíos entre disciplinas."
-      ]
-    },
-    {
-      "h2": "Diseño estructural nuevo: normas y alcance",
-      "parrafos": [
-        "Además de evaluar lo existente, realizamos análisis y diseño estructural de edificios, puentes, grandes superficies y estructuras portuarias. Según el proyecto y el país, aplicamos la NSR-10 para edificaciones en Colombia, el CCP-14 para puentes y los códigos ACI, entre otros.",
-        "El costo de un estudio de vulnerabilidad o de un diseño de reforzamiento depende del tamaño y la complejidad de la edificación, de la información disponible, de los ensayos o exploraciones que se necesiten y del alcance del diseño. Por eso no publicamos precios. Si desea una cotización, envíenos la ubicación, el uso, el número de pisos, el año aproximado de construcción y los planos si los tiene. Respondemos en menos de 24 horas y atendemos edificaciones en todo el país."
+        "Estudiamos suelo y estructura en conjunto. Para Bioexplora, en el Parque de Artes y Obras (Bello) hicimos patología, vulnerabilidad y repotenciación, y en tres sedes de seguridad y justicia de Medellín, suelos, patología, vulnerabilidad y reforzamiento. En el Hospital San Juan de Dios de Rionegro, los estudios geotécnicos para el análisis de vulnerabilidad.",
+        "También diseñamos estructuras nuevas: edificios, puentes, grandes superficies y obras portuarias, con NSR-10, CCP-14 y ACI según proyecto y país. Para cotizar, envíenos ubicación, uso, pisos, año aproximado de construcción y planos; no publicamos precios y respondemos en menos de 24 horas. Esa combinación de geotecnia y estructuras es una de nuestras fortalezas."
       ]
     }
   ],
@@ -62,10 +47,9 @@
     "Patología estructural: diagnóstico de daños y causas",
     "Evaluación de vulnerabilidad sísmica",
     "Estudio de suelos y análisis geotécnico asociado",
-    "Alternativas de reforzamiento estructural",
-    "Diseño del reforzamiento elegido",
-    "Análisis y diseño estructural de edificios, puentes, grandes superficies y estructuras portuarias",
-    "Aplicación de NSR-10, CCP-14 y ACI según el proyecto y el país",
+    "Alternativas y diseño del reforzamiento estructural",
+    "Diseño estructural de edificios, puentes y estructuras portuarias",
+    "Aplicación de NSR-10, CCP-14 y ACI según proyecto",
     "Informe con prioridades de intervención"
   ],
   "faq": [
@@ -78,16 +62,12 @@
       "respuesta": "Según el proyecto y el país: la NSR-10 para edificaciones en Colombia, el CCP-14 para puentes y los códigos ACI, entre otros."
     },
     {
-      "pregunta": "¿Diseñan estructuras nuevas?",
-      "respuesta": "Sí: edificios, puentes, grandes superficies y estructuras portuarias."
-    },
-    {
       "pregunta": "¿Hacen también la interventoría del reforzamiento?",
-      "respuesta": "Podemos acompañar el proceso con exploración, interventoría o construcción, pero no hacemos interventoría de obras que nosotros mismos diseñamos, para garantizar la independencia del control."
+      "respuesta": "Podemos acompañar con exploración, interventoría o construcción, pero no hacemos interventoría de obras que nosotros diseñamos, para garantizar la independencia del control."
     },
     {
       "pregunta": "¿Cuánto cuesta evaluar un edificio?",
-      "respuesta": "Depende del tamaño y complejidad de la edificación, de la información disponible y de los ensayos necesarios. Con los datos de su inmueble enviamos la cotización en menos de 24 horas."
+      "respuesta": "Depende del tamaño y la complejidad de la edificación, la información disponible y los ensayos necesarios. Con los datos de su inmueble cotizamos en menos de 24 horas."
     }
   ],
   "proyectos_relacionados": [
@@ -112,7 +92,7 @@
   ],
   "cta": {
     "titulo": "Conozca el estado de su edificación",
-    "texto": "Envíenos la ubicación, el uso y la antigüedad del inmueble. Respondemos en menos de 24 horas con una propuesta de evaluación."
+    "texto": "Envíenos ubicación, uso y antigüedad del inmueble. Respondemos en menos de 24 horas con una propuesta de evaluación."
   },
   "palabras_clave": [
     "vulnerabilidad sísmica de edificios",
