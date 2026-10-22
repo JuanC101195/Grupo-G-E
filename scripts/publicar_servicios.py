@@ -16,7 +16,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from publicar_v3 import CSS_ASTRA, script_seguro, svg_data_uri  # noqa: E402
+from publicar_v3 import CSS_ASTRA, CSS_RESET_ASTRA, script_seguro, svg_data_uri  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 V3 = ROOT / "prototipo" / "v3"
@@ -53,15 +53,17 @@ CSS_PAGINA = """
 .svc-rel{padding:0 0 var(--s6)}
 .svc-rel h2,.svc-faq h2{font:700 clamp(28px,3.4vw,40px)/1.05 var(--f-display);text-transform:uppercase;margin:0 0 var(--s4)}
 .svc-rel .proj{cursor:default;min-height:0}
+@media (min-width:700px){.svc-rel .proj-grid{grid-template-columns:repeat(2,1fr)}}
 .svc-rel .proj:hover{transform:none}
 .svc-faq{padding:0 0 var(--s6)}
 .svc-links{display:flex;flex-wrap:wrap;gap:var(--s2);margin-top:var(--s5)}
 .svc-links a{border:1.5px solid var(--line);background:var(--paper);padding:10px 14px;text-decoration:none;font-weight:500;font-size:15px}
 .svc-links a:hover{border-color:var(--text)}
+.svc-links a::first-letter{text-transform:uppercase}
 .svc-cta{background:var(--ink);color:#fff;padding:var(--s6) 0}
 .svc-cta .wrap{display:grid;gap:var(--s4);align-items:center}
 @media (min-width:900px){.svc-cta .wrap{grid-template-columns:1fr auto}}
-.svc-cta h2{font:800 clamp(32px,4.4vw,52px)/1 var(--f-display);text-transform:uppercase;margin:0 0 var(--s2)}
+.svc-cta h2{font:800 clamp(32px,4.4vw,52px)/1 var(--f-display);text-transform:uppercase;margin:0 0 var(--s3)}
 .svc-cta p{color:var(--muted-dark);max-width:40em}
 .svc-cta .ctas{display:flex;flex-wrap:wrap;gap:var(--s3)}
 """
@@ -94,8 +96,13 @@ def piezas_portada():
     return header, footer
 
 
+NOMBRE_CORTO = {"estudio-de-suelos": "Estudio de suelos", "estudios-geotecnicos": "Estudios geotécnicos",
+                "pilotes-y-micropilotes": "Pilotes y micropilotes", "estabilidad-de-taludes": "Estabilidad de taludes",
+                "vulnerabilidad-sismica-reforzamiento": "Vulnerabilidad sísmica"}
+
+
 def lista_servicios_pie(paginas):
-    return "".join(f'<li><a href="/{p["slug"]}/">{e(p["h1"])}</a></li>' for p in paginas)
+    return "".join(f'<li><a href="/{p["slug"]}/">{e(NOMBRE_CORTO.get(p["slug"], p["h1"]))}</a></li>' for p in paginas)
 
 
 def jsonld(p, servicio_nombre):
@@ -179,7 +186,7 @@ def envolver(contenido, paginas, extra_head="", css_extra=""):
     head = idx.split("<body>", 1)[0]
     scripts_head = "\n".join(script_seguro(c) for c in re.findall(r"<script>(.*?)</script>", head, flags=re.S))
     fuentes = re.search(r'<link href="https://fonts\.googleapis\.com/css2[^"]+" rel="stylesheet">', head).group(0)
-    css = (V3 / "styles.css").read_text(encoding="utf-8") + CSS_ASTRA + CSS_PAGINA + css_extra
+    css = CSS_RESET_ASTRA + (V3 / "styles.css").read_text(encoding="utf-8") + CSS_ASTRA + CSS_PAGINA + css_extra
     wa = (f'<a class="wa" href="{WA}" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a Grupo G&amp;E">'
           + re.search(r'<a class="wa"[^>]*>(.*?)</a>', idx, re.S).group(1) + "</a>")
     js = (V3 / "pagina.js").read_text(encoding="utf-8")

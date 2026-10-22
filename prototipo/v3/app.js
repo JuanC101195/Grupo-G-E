@@ -203,6 +203,10 @@
   // ---------- Hero: perfil estratigráfico ----------
   function initStrata() {
     var svg = $('#strata'), layers = $$('.layer', svg), title = $('#lcTitle'), text = $('#lcText');
+    var angosto = matchMedia('(max-width: 599px)');
+    function encuadre() { svg.setAttribute('viewBox', angosto.matches ? '0 0 352 540' : '0 0 480 540'); }
+    angosto.addEventListener('change', encuadre);
+    encuadre();
     var defTitle = title.textContent, defText = text.textContent;
     function select(g) {
       var was = g.classList.contains('active');

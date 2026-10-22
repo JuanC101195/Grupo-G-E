@@ -64,6 +64,10 @@ def produccion(body):
     return re.sub(r' title="[^"]*"', "", body)
 
 
+# Astra pone margen inferior a h1–h3, p y legend dentro del contenido. Este reinicio va ANTES de styles.css:
+# le gana a Astra (mismo peso, más tarde en la página) y deja que los márgenes propios del sitio se apliquen después.
+CSS_RESET_ASTRA = ".gye-v3 :is(h1,h2,h3,h4,p,legend,ul,ol,figure,blockquote){margin:0}\n"
+
 # Ajustes para convivir con el tema actual (Astra) mientras llega el tema propio
 CSS_ASTRA = """
 .tbd{border-bottom:0!important;cursor:auto!important}
@@ -110,7 +114,7 @@ def script_seguro(codigo):
 
 def construir(mapa, form=None):
     html = leer(INDEX)
-    css = leer("styles.css") + CSS_ASTRA
+    css = CSS_RESET_ASTRA + leer("styles.css") + CSS_ASTRA
     data = datos_publicos(leer(DATA))
     app = re.sub(r"// ?TODO[^\n]*", "", leer(APP))   # comentarios internos fuera del sitio publicado
     if form:   # conecta el cotizador al formulario de Contact Form 7 (el prototipo local queda solo con WhatsApp)

@@ -120,6 +120,8 @@ check('etiquetas del perfil visibles', await js('document.querySelectorAll(".st-
 check('contador llegó a 150 m', await js('document.querySelector("[data-count]").textContent === "150 m"'));
 check('6 servicios del brochure', await js('document.querySelectorAll(".svc").length === 6'));
 check('13 logos de clientes', await js('document.querySelectorAll(".logos img").length === 13'));
+// al inicio el paso 1 del cotizador está visible: su título no debe montarse sobre la barra de pasos
+check('título del cotizador no se monta sobre los pasos', await js('(()=>{const l=document.querySelector("#wizard fieldset:not([hidden]) legend");return l && l.getBoundingClientRect().top >= document.querySelector(".wsteps").getBoundingClientRect().bottom - 1})()'));
 // antes de cualquier paso que fuerce la carga de imágenes: los logos deben cargar solos al llegar a ellos
 await js('document.querySelector(".logos").scrollIntoView({block:"center"})'); await sleep(2500);
 check('logos de clientes cargados al verlos', await js('[...document.querySelectorAll(".logos img")].every(i=>i.complete&&i.naturalWidth>0)'));
@@ -181,6 +183,15 @@ check('títulos con Barlow Condensed', await js('getComputedStyle(document.getEl
 
 // Diagramas técnicos: marco uniforme 16:10, sin tarjetas estiradas
 check('diagramas con marco uniforme 16:10', await js('[...document.querySelectorAll(".calc img")].every(i=>{const r=i.getBoundingClientRect();return Math.abs(r.height-r.width*10/16)<2})'));
+// Detalles visuales (auditoría 22-oct)
+check('logos de clientes del mismo alto', await js('(()=>{const h=[...document.querySelectorAll(".logos img")].map(i=>Math.round(i.getBoundingClientRect().height));return Math.max(...h)-Math.min(...h)<=1})()'));
+{
+  const filas = await js('(()=>{const filas={};document.querySelectorAll(".svc").forEach(s=>{const k=Math.round(s.getBoundingClientRect().top);(filas[k]=filas[k]||[]).push([Math.round(s.querySelector("p").getBoundingClientRect().top),Math.round(s.querySelector("h3").getBoundingClientRect().height)])});return Object.values(filas)})()');
+  const ok = filas.every(f => { const t = f.map(x => x[0]); return Math.max(...t) - Math.min(...t) <= 2; });
+  check('descripciones de servicios alineadas por fila', ok, ok ? '' : JSON.stringify(filas));
+}
+check('sin margen extra bajo el título grande', await js('parseFloat(getComputedStyle(document.querySelector("p.display")).marginBottom) === 0'));
+
 // solo se comparan tarjetas de la misma fila (en celular van apiladas y es normal que difieran)
 check('tarjetas de diagramas de igual alto', await js('(()=>{const f=[...document.querySelectorAll(".calc figure")].map(x=>x.getBoundingClientRect());const filas={};f.forEach(r=>{(filas[Math.round(r.top)]=filas[Math.round(r.top)]||[]).push(r.height)});return Object.values(filas).every(h=>Math.max(...h)-Math.min(...h)<=1)})()'));
 
