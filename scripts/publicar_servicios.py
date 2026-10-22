@@ -162,25 +162,39 @@ def cuerpo(p, paginas, proyectos, servicio_nombre):
 </section>"""
 
 
-def construir(p, paginas, proyectos, servicios):
+def paginas_servicio():
+    return [json.loads(f.read_text(encoding="utf-8")) for f in sorted(PAGINAS.glob("*.json"))]
+
+
+# Metadatos de Astra para que no dibuje su encabezado, pie ni título (el sitio usa los suyos)
+META_ASTRA = {"ast-global-header-display": "disabled", "footer-sml-layout": "disabled", "site-post-title": "disabled",
+              "site-content-layout": "page-builder", "site-sidebar-layout": "no-sidebar", "ast-breadcrumbs-content": "disabled"}
+
+
+def envolver(contenido, paginas, extra_head="", css_extra=""):
+    """Marco común de las páginas interiores: estilos, encabezado, pie, WhatsApp y JS del sitio."""
     header, footer = piezas_portada()
     footer = footer.replace('<ul id="footSvc"></ul>', f"<ul>{lista_servicios_pie(paginas)}</ul>")
     idx = (V3 / "index.html").read_text(encoding="utf-8")
     head = idx.split("<body>", 1)[0]
     scripts_head = "\n".join(script_seguro(c) for c in re.findall(r"<script>(.*?)</script>", head, flags=re.S))
     fuentes = re.search(r'<link href="https://fonts\.googleapis\.com/css2[^"]+" rel="stylesheet">', head).group(0)
-    css = (V3 / "styles.css").read_text(encoding="utf-8") + CSS_ASTRA + CSS_PAGINA
+    css = (V3 / "styles.css").read_text(encoding="utf-8") + CSS_ASTRA + CSS_PAGINA + css_extra
     wa = (f'<a class="wa" href="{WA}" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a Grupo G&amp;E">'
           + re.search(r'<a class="wa"[^>]*>(.*?)</a>', idx, re.S).group(1) + "</a>")
-    servicio_nombre = servicios[p["linea"]]["nombre"]
     js = (V3 / "pagina.js").read_text(encoding="utf-8")
-    return (f"{scripts_head}\n{fuentes}\n<style>{css}</style>\n{jsonld(p, servicio_nombre)}\n"
+    return (f"{scripts_head}\n{fuentes}\n<style>{css}</style>\n{extra_head}\n"
             f'<div class="gye-v3"><a class="skip" href="#contenido">Saltar al contenido</a>{header}'
-            f'<main id="contenido">{cuerpo(p, paginas, proyectos, servicio_nombre)}</main>{footer}{wa}</div>\n{script_seguro(js)}')
+            f'<main id="contenido">{contenido}</main>{footer}{wa}</div>\n{script_seguro(js)}')
+
+
+def construir(p, paginas, proyectos, servicios):
+    servicio_nombre = servicios[p["linea"]]["nombre"]
+    return envolver(cuerpo(p, paginas, proyectos, servicio_nombre), paginas, jsonld(p, servicio_nombre))
 
 
 def main():
-    paginas = [json.loads(f.read_text(encoding="utf-8")) for f in sorted(PAGINAS.glob("*.json"))]
+    paginas = paginas_servicio()
     servicios = {s["slug"]: s for s in cargar("servicios.json")["servicios"]}
     pj = cargar("proyectos.json")
     proyectos = {x["id"]: x for x in (pj["proyectos"] if isinstance(pj, dict) else pj) if x.get("publicar", True)}
@@ -204,8 +218,7 @@ def main():
     # --publicar: publicadas e indexables, tras la aprobación
     estado = "publish" if ("--publicar" in sys.argv or "--revision" in sys.argv) else "draft"
     noindex = "--publicar" not in sys.argv
-    meta = {"ast-global-header-display": "disabled", "footer-sml-layout": "disabled", "site-post-title": "disabled",
-            "site-content-layout": "page-builder", "site-sidebar-layout": "no-sidebar", "ast-breadcrumbs-content": "disabled"}
+    meta = META_ASTRA
     for p in paginas:
         # WordPress arma el <title> como "título – Grupo G&E": se quita el sufijo de marca del título SEO
         titulo = re.sub(r"\s*\|\s*Grupo G&E\s*$", "", p["title"])

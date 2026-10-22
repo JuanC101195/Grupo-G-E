@@ -10,7 +10,7 @@
       "h2": "Para qué sirve un estudio geotécnico en proyectos de mayor escala",
       "parrafos": [
         "Cuando una obra es grande, profunda o sensible, el costo de equivocarse con el terreno es alto. Un estudio geotécnico bien planteado reduce la incertidumbre sobre lo que hay debajo del proyecto: tipos de suelo y roca, resistencia, deformabilidad, presencia de agua, posibles zonas débiles y comportamiento ante un sismo. Con esos datos se diseñan cimentaciones, contenciones, excavaciones, terraplenes o plataformas con criterios sustentados y no con supuestos.",
-        "En Grupo G&E esta línea se llama exploración geológico-geotécnica y es la puerta de entrada a casi todo nuestro trabajo. Atendemos proyectos de los sectores industrial, público y privado: plantas, bodegas, edificios institucionales, centros comerciales, vías, redes de acueducto y alcantarillado y obras portuarias. Nuestros estudios se elaboran conforme a la NSR-10, incluido el Título H, y se pueden ejecutar en cualquier región de Colombia. Si su proyecto es una vivienda o un lote urbano en Medellín, puede interesarle más nuestra página de estudio de suelos en Medellín."
+        "En Grupo G&E esta línea se llama exploración geológico-geotécnica y es la puerta de entrada a casi todo nuestro trabajo. Atendemos proyectos de los sectores industrial, público y privado: plantas, bodegas, edificios institucionales, centros comerciales, vías, redes de acueducto y alcantarillado y obras portuarias. Nuestros estudios se elaboran conforme a la NSR-10, incluido el Título H, y se pueden ejecutar en cualquier región de Colombia. Si su proyecto es una vivienda o un lote urbano, puede interesarle más nuestra página de estudio de suelos."
       ]
     },
     {
@@ -50,8 +50,8 @@
     {
       "h2": "Proyectos en la Costa Caribe y en el resto del país",
       "parrafos": [
-        "Nuestra sede está en Medellín, pero los proyectos están en todo el país. En la Costa Caribe hicimos el estudio de suelos y el diseño estructural de PriceSmart Laguna Club en Cartagena, en unión temporal con Dual Ingenieros, y el estudio de suelos para la licencia de construcción de PriceSmart Serena del Mar, también en Cartagena. En Ciénaga, Magdalena, realizamos la parametrización geotécnica y el análisis de estabilidad de obras de dragado de la terminal portuaria Río Córdoba, y en Salgar, Atlántico, cuatro contratos con estudios de suelos, caracterización de materiales viales y soporte geotécnico para contención.",
-        "En el interior, ejecutamos estudios y diseños geotécnicos para el edificio de Psicología con aislamiento sísmico de la Universidad del Valle (Cali), para los silos del Molino Santa Marta en Buga y para la eliminación de descargas del PSMV de EPM en el área metropolitana de Medellín. Esa diversidad de suelos, climas y tipos de obra es la mejor garantía de que su proyecto no será nuestro primer encuentro con terrenos exigentes."
+        "Nuestros proyectos están en todo el país. En la Costa Caribe hicimos el estudio de suelos y el diseño estructural de PriceSmart Laguna Club en Cartagena, en unión temporal con Dual Ingenieros, y el estudio de suelos para la licencia de construcción de PriceSmart Serena del Mar, también en Cartagena. En Ciénaga, Magdalena, realizamos la parametrización geotécnica y el análisis de estabilidad de obras de dragado de la terminal portuaria Río Córdoba, y en Salgar, Atlántico, cuatro contratos con estudios de suelos, caracterización de materiales viales y soporte geotécnico para contención.",
+        "En el interior, realizamos estudios y diseños geotécnicos para el edificio de Psicología con aislamiento sísmico de la Universidad del Valle (Cali), para los silos del Molino Santa Marta en Buga y para la eliminación de descargas del PSMV de EPM en el área metropolitana de Medellín. Esa diversidad de suelos, climas y tipos de obra es la mejor garantía de que su proyecto no será nuestro primer encuentro con terrenos exigentes."
       ]
     },
     {
@@ -89,7 +89,7 @@
     },
     {
       "pregunta": "¿Trabajan fuera de Antioquia?",
-      "respuesta": "Sí. Hemos ejecutado proyectos en Antioquia, Atlántico, Bolívar, Cundinamarca, Magdalena y Valle del Cauca. La sede está en Medellín y la cobertura es nacional."
+      "respuesta": "Sí. Hemos participado en proyectos en Antioquia, Atlántico, Bolívar, Cundinamarca, Magdalena y Valle del Cauca, y la cobertura es nacional."
     },
     {
       "pregunta": "¿Pueden explorar dentro de una planta industrial en operación?",
@@ -106,8 +106,8 @@
   ],
   "enlaces_internos": [
     {
-      "texto": "estudio de suelos en Medellín",
-      "slug": "estudio-de-suelos-medellin"
+      "texto": "estudio de suelos para su proyecto",
+      "slug": "estudio-de-suelos"
     },
     {
       "texto": "pilotes y micropilotes",

@@ -2,10 +2,13 @@
 
 Se guarda como BORRADOR para que la empresa la apruebe (y, idealmente, la revise su asesor jurídico).
   python scripts/politica_datos.py            → crea/actualiza el borrador en WordPress
-  python scripts/politica_datos.py --publicar → la publica (solo tras la aprobación de la empresa)
+  python scripts/politica_datos.py --revision → la publica con noindex y sin enlazar, para revisión
+  python scripts/politica_datos.py --publicar → la publica indexable (solo tras la aprobación de la empresa)
 """
 import sys
+from pathlib import Path
 
+from publicar_servicios import META_ASTRA
 from wp_api import WP
 
 SLUG = "politica-de-privacidad"
@@ -51,29 +54,49 @@ SECCIONES = [
      f"<p>Esta política rige desde el {VIGENCIA}. Cualquier cambio sustancial se publicará en esta misma página.</p>"),
 ]
 
+# Estilos propios del texto legal; el resto (encabezado, pie, colores, modo oscuro) viene del marco del sitio
 CSS = """
-.gye-legal{max-width:820px;margin:0 auto;padding:48px 20px 80px;color:#0F202D;font:400 17px/1.7 "IBM Plex Sans",system-ui,sans-serif}
-.gye-legal h1{font:800 clamp(32px,5vw,48px)/1.05 "Barlow Condensed","Arial Narrow",sans-serif;text-transform:uppercase;margin:0 0 8px}
-.gye-legal h2{font:700 22px/1.2 "Barlow Condensed","Arial Narrow",sans-serif;text-transform:uppercase;margin:36px 0 8px}
-.gye-legal a{color:#B84A10}
-.gye-legal .meta{color:#4E5D6A;font-size:14px;margin-bottom:24px}
-.gye-legal .volver{display:inline-block;margin-bottom:24px;font-weight:600;text-decoration:none}
+.legal-doc{max-width:46em}
+.legal-doc h2{font:700 clamp(22px,2.4vw,28px)/1.1 var(--f-display);text-transform:uppercase;margin:var(--s5) 0 var(--s2)}
+.legal-doc h2:first-child{margin-top:0}
+.legal-doc p{margin:0 0 var(--s3)}
+.legal-doc ul{margin:0 0 var(--s3);padding:0;list-style:none;display:grid;gap:8px}
+.legal-doc li{padding-left:22px;position:relative}
+.legal-doc li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:9px;background:var(--clay)}
+.legal-doc a{color:var(--accent)}
 """
 
 
 def html():
+    """Contenido completo de la página, dentro del mismo marco de las páginas de servicio."""
+    sys.path.insert(0, str(Path(__file__).parent))
+    from publicar_servicios import envolver, paginas_servicio
     cuerpo = "".join(f"<h2>{t}</h2>{c}" for t, c in SECCIONES)
-    return (f'<style>@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=IBM+Plex+Sans:wght@400;600&display=swap");{CSS}</style>'
-            f'<article class="gye-legal"><a class="volver" href="/">← Volver a Grupo G&amp;E</a>'
-            f'<h1>Política de tratamiento de datos personales</h1><p class="meta">Vigente desde el {VIGENCIA}</p>{cuerpo}</article>')
+    contenido = f"""
+<section class="svc-hero on-dark" aria-labelledby="h1"><div class="wrap">
+  <nav class="crumbs" aria-label="Ruta"><a href="/">Inicio</a><span aria-hidden="true">›</span><span aria-current="page">Datos personales</span></nav>
+  <h1 id="h1">Política de tratamiento de datos personales</h1>
+  <p class="lead">Grupo G&amp;E S.A.S. · NIT {NIT} · Vigente desde el {VIGENCIA}</p>
+</div></section>
+<div class="stripe-bar" aria-hidden="true"></div>
+<section class="svc-main"><div class="wrap"><article class="svc-art legal-doc">{cuerpo}</article>
+  <aside class="svc-side"><div class="svc-card"><h2>Sus datos, sus derechos</h2>
+    <p>Para consultar, corregir o pedir que borremos sus datos, escríbanos a <a href="mailto:{CORREO}">{CORREO}</a>.</p>
+    <a class="btn btn-clay" href="mailto:{CORREO}">Escribir sobre mis datos</a></div></aside>
+</div></section>"""
+    return envolver(contenido, paginas_servicio(), css_extra=CSS)
 
 
 def main():
     wp = WP()
-    estado = "publish" if "--publicar" in sys.argv else "draft"
+    # --revision: publicada con noindex y sin enlazar, para que la empresa la revise en la web
+    estado = "publish" if ("--publicar" in sys.argv or "--revision" in sys.argv) else "draft"
+    seo = {"title": "Política de tratamiento de datos personales | Grupo G&E",
+           "description": "Cómo Grupo G&E S.A.S. recolecta, usa y protege sus datos personales según la Ley 1581 de 2012, y cómo ejercer sus derechos.",
+           "noindex": 0 if "--publicar" in sys.argv else 1}
     data = {"title": "Política de tratamiento de datos personales", "slug": SLUG, "status": estado,
             "content": "<!-- wp:html -->\n" + html() + "\n<!-- /wp:html -->",
-            "meta": {"site-post-title": "disabled", "site-content-layout": "page-builder", "site-sidebar-layout": "no-sidebar"}}
+            "meta": dict(META_ASTRA, slim_seo=seo)}   # sin encabezado ni pie de Astra: usa los del sitio
     # reutiliza la página de privacidad que trae WordPress (id 3) en lugar de crear otra
     existente = wp.get("wp/v2/pages", slug=SLUG, status="any", context="edit") or wp.get("wp/v2/pages", slug="privacy-policy", status="any", context="edit")
     if existente:
